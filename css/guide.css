@@ -539,6 +539,51 @@ body {
   overflow-wrap: anywhere;
 }
 
+.file-tree-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.file-tree-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #334155;
+  min-width: 0;
+}
+
+.file-tree-list code {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: rgba(15, 23, 42, 0.05);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.file-tree-list span {
+  color: #64748b;
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.file-tree-list span::before {
+  content: "· ";
+  color: #94a3b8;
+}
+
 .file-tree pre {
   margin: 0;
   font-size: 0.75rem;
@@ -557,8 +602,9 @@ body {
   .file-tree {
     padding: 0.85rem;
   }
-  .file-tree pre {
-    font-size: 0.6875rem;
+  .file-tree-list li,
+  .file-tree-list code {
+    font-size: 0.75rem;
   }
 }
 
