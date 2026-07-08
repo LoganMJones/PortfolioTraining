@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/terminal.css">
+</head>
+<!-- TERMINAL — developer CLI aesthetic. Search: EDIT HERE · ADD -->
+<body class="has-theme-switcher theme-terminal">
+
+  <nav class="theme-switcher" aria-label="Switch layout">
+    <div class="theme-switcher-inner">
+      <span class="theme-switcher-label">Layouts:</span>
+      <a href="../index.html">All</a>
+      <a href="document.html">Doc</a>
+      <a href="classic.html">Classic</a>
+      <a href="minimal.html">Minimal</a>
+      <a href="editorial.html">Editorial</a>
+      <a href="bold.html">Bold</a>
+      <a href="academic.html">Academic</a>
+      <a href="creative.html">Creative</a>
+      <a href="terminal.html" aria-current="page">Terminal</a>
+      <a href="brutalist.html">Brutal</a>
+      <a href="deck.html">Deck</a>
+      <a href="../guide.html" class="theme-switcher-guide">📖 Guide</a>
+    </div>
+  </nav>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="term-window" id="main">
+    <div class="term-titlebar" role="presentation">
+      <span class="term-dot term-dot-red"></span>
+      <span class="term-dot term-dot-yellow"></span>
+      <span class="term-dot term-dot-green"></span>
+      <span class="term-title">portfolio — zsh</span>
+    </div>
+
+    <div class="term-body">
+
+      <div class="privacy-notice term-notice">
+        <strong>🔒 Public site</strong> — don't post private data. <a href="../guide.html#privacy">Privacy guide</a>
+      </div>
+
+      <div class="trainer-tip term-tip">
+        <strong>👋 Terminal layout</strong> — CLI-style blocks. Search <code>EDIT HERE</code>. File: <code>themes/terminal.html</code>
+      </div>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~</span> <span class="term-cmd">whoami</span></p>
+      <p class="term-output term-name">Your Name</p>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~</span> <span class="term-cmd">cat about.txt</span></p>
+      <div class="term-output term-block">
+        <p>I am a [your role] working on [your focus]. This layout reads like a terminal session — great for CS, data science, or anyone who wants a distinct developer vibe.</p>
+      </div>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~/education</span> <span class="term-cmd">ls -la</span></p>
+      <ul class="term-output term-list">
+        <li><span class="term-dim">drwx</span> University Name — M.S. [Field] (Expected 2027)</li>
+        <li><span class="term-dim">drwx</span> Previous U — B.S. [Field] (2023)</li>
+      </ul>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~/research</span> <span class="term-cmd">git log --oneline</span></p>
+      <ul class="term-output term-list">
+        <li><span class="term-hash">a1b2c3d</span> Research Intern — Lab Name (Summer 2025)</li>
+        <li><span class="term-hash">e4f5g6h</span> Undergraduate thesis — Advisor: Dr. Name</li>
+      </ul>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~/skills</span> <span class="term-cmd">echo $SKILLS</span></p>
+      <p class="term-output term-inline">Python · R · SQL · Git · LaTeX · Statistical modeling</p>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~/projects</span> <span class="term-cmd">open demo.mp4</span></p>
+      <div class="term-output">
+        <div class="media-placeholder media-placeholder--video" role="img" aria-label="Video placeholder — replace with your project demo">
+          <span>ADD VIDEO HERE</span>
+          <small>Replace this block with a &lt;video&gt; or embed. See guide.</small>
+        </div>
+      </div>
+
+      <p class="term-line"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~</span> <span class="term-cmd">cat contact.sh</span></p>
+      <div class="term-output term-block term-contact">
+        <p><span class="term-comment"># EDIT HERE — EMAIL</span></p>
+        <p>mail -s "Hello" <a href="mailto:you@university.edu">you@university.edu</a></p>
+        <p>curl -L <a href="https://github.com/yourusername" rel="noopener noreferrer">github.com/yourusername</a></p>
+        <p>wget <a href="../assets/cv.pdf">cv.pdf</a></p>
+      </div>
+
+      <p class="term-line term-blink" aria-hidden="true"><span class="term-prompt">guest@portfolio</span> <span class="term-path">~</span> <span class="term-cursor">█</span></p>
+
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

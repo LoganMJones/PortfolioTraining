@@ -1,6 +1,6 @@
-# Portfolio Template — 6 Layouts
+# Portfolio Template — 10 Layouts
 
-Six ready-made portfolio designs for graduate school and professional development. **No coding tools required** — edit everything on github.com in your browser.
+Ten portfolio designs for graduate school and professional development — from plain CV pages to terminal windows and full-screen slides. **No coding tools required** — edit everything on github.com in your browser.
 
 **Live demo:** [loganmjones.github.io/PortfolioTraining](https://loganmjones.github.io/PortfolioTraining/)
 
@@ -9,20 +9,31 @@ Six ready-made portfolio designs for graduate school and professional developmen
 ## Start here
 
 1. **[Setup Guide](guide.html)** — step-by-step for non-technical users
-2. **[Pick a layout](index.html)** — preview all 6 themes
+2. **[Pick a layout](index.html)** — preview all 10 themes
 3. **Customize one** — search your file for `EDIT HERE`
 
 ---
 
-## The 6 layouts
+## The 10 layouts
+
+### Simple starters
 
 | Layout | File | Style |
 |--------|------|-------|
-| **Editorial** | `themes/editorial.html` | Dark hero, bold type, bento grid |
+| **Document** | `themes/document.html` | Plain single-column CV — easiest start |
 | **Classic** | `themes/classic.html` | Sidebar + photo, resume-style |
-| **Minimal** | `themes/minimal.html` | Black & white, Swiss simplicity |
-| **Bold** | `themes/bold.html` | Gradients, colorful cards |
-| **Academic** | `themes/academic.html` | Formal serif, great for grad apps |
+| **Minimal** | `themes/minimal.html` | Black & white, text-first |
+
+### Distinct layouts
+
+| Layout | File | Style |
+|--------|------|-------|
+| **Terminal** | `themes/terminal.html` | CLI window, developer vibe |
+| **Brutalist** | `themes/brutalist.html` | Giant type, thick borders, raw energy |
+| **Deck** | `themes/deck.html` | Full-screen scroll-snap slides |
+| **Editorial** | `themes/editorial.html` | Magazine hero, gallery, video |
+| **Bold** | `themes/bold.html` | Gradients, colorful impact cards |
+| **Academic** | `themes/academic.html` | Formal serif, publications, poster |
 | **Creative** | `themes/creative.html` | Dark mosaic grid, playful |
 
 Every layout shares a **black bar at the top** so you can switch between them like separate pages.
@@ -79,15 +90,19 @@ Search for `trainer-tip` and delete those yellow boxes — they're training help
 ├── index.html              ← layout picker (homepage)
 ├── guide.html              ← detailed setup guide
 ├── themes/
-│   ├── editorial.html
+│   ├── document.html
 │   ├── classic.html
 │   ├── minimal.html
+│   ├── terminal.html
+│   ├── brutalist.html
+│   ├── deck.html
+│   ├── editorial.html
 │   ├── bold.html
 │   ├── academic.html
 │   └── creative.html
 ├── css/
 │   ├── shared.css          ← theme switcher (don't edit)
-│   ├── editorial.css       ← colors for Editorial
+│   ├── document.css        ← colors for Document
 │   ├── classic.css
 │   └── ...
 ├── js/main.js
@@ -100,7 +115,7 @@ Search for `trainer-tip` and delete those yellow boxes — they're training help
 
 | Time | Activity |
 |------|----------|
-| 10 min | Why portfolios matter; demo the 6 layouts |
+| 10 min | Why portfolios matter; demo the 10 layouts |
 | 15 min | Copy template, enable GitHub Pages |
 | 10 min | Walk through [guide.html](guide.html) together |
 | 30 min | Students pick a layout, search `EDIT HERE`, fill in content |
