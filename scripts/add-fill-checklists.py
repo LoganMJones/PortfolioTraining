@@ -11,13 +11,13 @@ CHECKLISTS = json.loads((ROOT / "theme-checklists.json").read_text(encoding="utf
 MARKER_START = '    <div class="fill-checklist"'
 MARKER_END = '    </div>\n\n'
 
-AI_TIP = """      <p class="fill-checklist-ai"><strong>Using an AI coding assistant?</strong> Select and copy this entire blue box into Cursor or another agentic coding AI. Ask it to walk you through every item below — your text, photos, PDFs, and video — then implement the changes in <code>index.html</code> and tell you what to upload to <code>assets/</code>.</p>
+AI_TIP = """      <p class="fill-checklist-ai"><strong>Using an AI coding assistant?</strong> Copy this whole blue box into Cursor, Copilot, or another coding assistant. Ask it to go through each item with you (text, photos, PDFs, video), update <code>index.html</code>, and tell you what to put in <code>assets/</code>.</p>
 
 """
 
 def image_rows(images: list) -> str:
     if not images:
-        return "      <tr><td colspan=\"4\"><em>None — text and links only</em></td></tr>\n"
+        return "      <tr><td colspan=\"4\"><em>None (text and links only)</em></td></tr>\n"
     rows = []
     for img in images:
         size = f"{img['minWidth']}×{img['minHeight']} px min"
@@ -50,7 +50,7 @@ def video_rows(videos: list) -> str:
     if not videos:
         return ""
     items = "".join(
-        f"<li><strong>{v['count']}× video</strong> — {v['notes']} "
+        f"<li><strong>{v['count']}× video</strong>: {v['notes']} "
         f"(search <code>{v['slot']}</code>)</li>\n"
         for v in videos
     )
@@ -75,13 +75,13 @@ def build_html(theme: str, data: dict) -> str:
     return f"""    <div class="fill-checklist" id="fill-checklist">
       <strong>📋 To fully fill out {label}</strong>
       <span class="fill-checklist-summary">Gather: {summary}</span>
-      <p class="fill-checklist-intro">Replace every placeholder below — no extra sections needed. Delete this box when done.</p>
+      <p class="fill-checklist-intro">Replace every placeholder below. No extra sections required. Delete this box when finished.</p>
 {AI_TIP}
       <p><strong>Text to write</strong> (search <code>EDIT HERE</code> or replace placeholder copy)</p>
       <ul class="fill-checklist-text">
 {text_list(data['text'])}      </ul>
 
-      <p><strong>Photos to upload</strong> (to <code>assets/</code> on GitHub — JPG recommended, compress to ~500 KB each)</p>
+      <p><strong>Photos to upload</strong> (to <code>assets/</code> on GitHub; JPG recommended, about 500 KB each)</p>
       <table class="fill-checklist-table">
         <thead><tr><th>Qty</th><th>Filename</th><th>Min size</th><th>Find in HTML</th></tr></thead>
         <tbody>

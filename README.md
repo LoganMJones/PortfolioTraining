@@ -1,4 +1,4 @@
-# Portfolio Template — 10 Layouts
+# Portfolio Template: 10 Layouts
 
 Ten portfolio designs for graduate school and professional development. **Preview on the demo site, then use the template for your chosen layout.**
 
@@ -9,9 +9,9 @@ Ten portfolio designs for graduate school and professional development. **Previe
 ## Start here
 
 1. **[Preview layouts](index.html)** on the live demo
-2. **[Use your layout's template](guide.html#get-layout)** on GitHub — one repo per layout
-3. **Enable GitHub Pages** — follow the setup guide
-4. **Edit `index.html`** — search for `EDIT HERE`
+2. **[Use your layout's template](guide.html#get-layout)** on GitHub: one repo per layout
+3. **Enable GitHub Pages**: follow the setup guide
+4. **Edit `index.html`**: search for `EDIT HERE`
 
 | Layout | Template repository | ZIP |
 |--------|---------------------|-----|
@@ -29,9 +29,7 @@ Ten portfolio designs for graduate school and professional development. **Previe
 > **Instructors:** use [PortfolioTraining](https://github.com/LoganMJones/PortfolioTraining) (this repo) to demo all 10 layouts.  
 > **Students:** preview here, then **Use this template** on the single layout you chose.
 
-**Contact the architect:** [Logan Jones](https://www.loganjones.org/)
-
-**Built with:** This entire project was architected by Logan Jones with [Cursor AI](https://cursor.com/) assistance.
+**Built by** [Logan Jones](https://www.loganjones.org/) with help from [Cursor](https://cursor.com/).
 
 ---
 
@@ -47,7 +45,7 @@ Ten portfolio designs for graduate school and professional development. **Previe
 
 1. Create a [fine-grained personal access token](https://github.com/settings/tokens?type=beta) with **Contents: Read and write** on this repo and all `PortfolioTraining-*` template repos.
 2. In this repo go to **Settings → Secrets and variables → Actions** and add `TEMPLATE_PUBLISH_TOKEN` with that PAT.
-3. Push to `main` — the workflow regenerates `solo/`, commits ZIPs, and force-pushes each layout repo.
+3. Push to `main`: the workflow regenerates `solo/`, commits ZIPs, and force-pushes each layout repo.
 
 You can also trigger it manually from the **Actions** tab → **Publish template repos** → **Run workflow**.
 

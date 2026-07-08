@@ -34,10 +34,10 @@ def credit_inner(theme: str) -> str:
 
 def architect_credit_inner() -> str:
     return (
-        f"Entire project architected by "
+        f'Built by '
         f'<a href="{CONFIG["architectUrl"]}" rel="noopener noreferrer">{CONFIG["architectName"]}</a> '
-        f'with <a href="{CONFIG["cursorUrl"]}" target="_blank" rel="noopener noreferrer">'
-        f'{CONFIG["cursorName"]}</a> assistance.'
+        f'with help from <a href="{CONFIG["cursorUrl"]}" target="_blank" rel="noopener noreferrer">'
+        f'Cursor</a>.'
     )
 
 

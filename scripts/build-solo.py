@@ -80,7 +80,7 @@ def template_readme(theme: str) -> str:
     checklist_md = checklist_markdown(theme, checklists[theme])
     return f"""# {label} Portfolio Template
 
-A single-layout portfolio starter for graduate school and professional development. **No coding tools required** — edit everything on github.com in your browser.
+A single-layout portfolio starter for graduate school and professional development. **No coding tools required.** Edit everything on github.com in your browser.
 
 **Preview this layout:** [{label} demo]({PROJECT_URL}themes/{theme}.html)
 
@@ -90,9 +90,9 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+3. Open `index.html`. The blue **fill checklist** box lists every photo, PDF, and text block you need.
 4. Search `EDIT HERE` and `ADD` to replace placeholders.
-5. Colors: edit `css/{theme}.css` — only the hex codes at the top.
+5. Colors: edit `css/{theme}.css`. Change only the hex codes at the top.
 
 **Full setup guide:** [{GUIDE_URL}]({GUIDE_URL})
 
@@ -108,7 +108,7 @@ A single-layout portfolio starter for graduate school and professional developme
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Your portfolio — edit this |
+| `index.html` | Your portfolio (edit this) |
 | `css/{theme}.css` | Colors and layout |
 | `css/shared.css` | Media helpers (rarely edit) |
 | `js/main.js` | Mobile menu (optional) |
@@ -122,7 +122,7 @@ Download the [ZIP]({zip_url}) and upload files to a new repo manually.
 
 ---
 
-Part of [Portfolio Training]({PROJECT_URL}) · Entire project architected by [{architect}]({architect_url}) with [{cursor_name}]({cursor_url}) assistance
+Part of [Portfolio Training]({PROJECT_URL}) · Built by [{architect}]({architect_url}) with help from [{cursor_name}]({cursor_url}).
 """
 
 
@@ -130,9 +130,9 @@ def checklist_markdown(theme: str, data: dict) -> str:
     lines = [
         f"## What you need to fill out {data['label']}",
         "",
-        "Everything below completes the **basic template** — no extra sections required.",
+        "Everything below completes the **basic template**. No extra sections required.",
         "",
-        "**AI shortcut:** Copy this entire checklist into Cursor or another agentic coding AI. Ask it to prompt you for each text block, image, PDF, and video, then implement the changes in `index.html` and tell you what to upload to `assets/`.",
+        "**AI shortcut:** Copy this checklist into Cursor, Copilot, or another coding assistant. Ask it to request each text block, image, PDF, and video from you, update `index.html`, and tell you what to put in `assets/`.",
         "",
         "### Text",
         "",
@@ -142,7 +142,7 @@ def checklist_markdown(theme: str, data: dict) -> str:
     lines.extend(["", "### Photos (upload to `assets/`)", ""])
     if data["images"]:
         total = sum(i["count"] for i in data["images"])
-        lines.append(f"**{total} images total** — JPG recommended, ~500 KB each after compression.")
+        lines.append(f"**{total} images total.** JPG recommended, about 500 KB each after compression.")
         lines.append("")
         lines.append("| Qty | Subject | Min size | Filename |")
         lines.append("|-----|---------|----------|----------|")
@@ -167,7 +167,7 @@ def checklist_markdown(theme: str, data: dict) -> str:
     if data["video"]:
         lines.extend(["", "### Video", ""])
         for v in data["video"]:
-            lines.append(f"- {v['count']}× — {v['notes']}")
+            lines.append(f"- {v['count']}×: {v['notes']}")
     lines.append("")
     return "\n".join(lines)
 
