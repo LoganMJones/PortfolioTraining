@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/deck.css">
+</head>
+<!-- DECK — full-screen scroll-snap slides. Search: EDIT HERE · ADD -->
+<body class="theme-deck">
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <nav class="deck-dots" aria-label="Slide navigation">
+    <a href="#slide-1" aria-current="true"><span class="visually-hidden">Title</span></a>
+    <a href="#slide-2"><span class="visually-hidden">About</span></a>
+    <a href="#slide-3"><span class="visually-hidden">Work</span></a>
+    <a href="#slide-4"><span class="visually-hidden">Media</span></a>
+    <a href="#slide-5"><span class="visually-hidden">Contact</span></a>
+  </nav>
+
+  <main class="deck" id="main">
+
+    <section class="deck-slide deck-slide--title" id="slide-1" tabindex="-1">
+      <div class="deck-inner">
+        <p class="deck-kicker">Portfolio · 2025</p>
+        <h1>Your Name</h1>
+        <p class="deck-sub">[Your role] · [Your field]</p>
+        <p class="deck-hint">Scroll down — each section is a full-screen slide</p>
+      </div>
+      <span class="deck-num" aria-hidden="true">01</span>
+    </section>
+
+    <section class="deck-slide" id="slide-2" tabindex="-1" aria-labelledby="deck-about">
+      <div class="deck-inner">
+        <h2 id="deck-about">About</h2>
+        <p class="deck-text">I am a [your role] interested in [your areas]. This layout feels like a presentation deck — one idea per screen. Great for talks, demos, or making a strong first impression.</p>
+        <div class="privacy-notice deck-notice">
+          <strong>🔒 Public site</strong> — <a href="https://loganmjones.github.io/PortfolioTraining/guide.html#privacy">privacy guide</a>
+        </div>
+        <div class="trainer-tip deck-tip">
+          <strong>👋 Deck layout</strong> — full-screen slides. Search <code>EDIT HERE</code>. File: <code>index.html</code>
+        </div>
+      </div>
+      <span class="deck-num" aria-hidden="true">02</span>
+    </section>
+
+    <section class="deck-slide deck-slide--dark" id="slide-3" tabindex="-1" aria-labelledby="deck-work">
+      <div class="deck-inner">
+        <h2 id="deck-work">Selected work</h2>
+        <ul class="deck-list">
+          <li><strong>Research Intern</strong> — Lab Name (2025)<br><span>One-line outcome.</span></li>
+          <li><strong>M.S. candidate</strong> — University (Expected 2027)<br><span>Focus area.</span></li>
+          <li><strong>Project</strong> — <a href="#">Link</a><br><span>What you built.</span></li>
+        </ul>
+      </div>
+      <span class="deck-num" aria-hidden="true">03</span>
+    </section>
+
+    <section class="deck-slide deck-slide--media" id="slide-4" tabindex="-1" aria-labelledby="deck-media">
+      <div class="deck-inner deck-inner--wide">
+        <h2 id="deck-media">Media</h2>
+        <div class="deck-media-grid">
+          <div class="media-placeholder media-placeholder--video" role="img" aria-label="Video placeholder">
+            <span>ADD VIDEO HERE</span>
+            <small>Project demo or talk recording</small>
+          </div>
+          <figure class="media-figure">
+            <div class="media-placeholder" role="img" aria-label="Image placeholder">
+              <span>ADD HERO IMAGE HERE</span>
+            </div>
+            <figcaption>Replace with your photo or project image.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <span class="deck-num" aria-hidden="true">04</span>
+    </section>
+
+    <section class="deck-slide deck-slide--accent" id="slide-5" tabindex="-1" aria-labelledby="deck-contact">
+      <div class="deck-inner">
+        <h2 id="deck-contact">Let's connect</h2>
+        <p class="deck-contact-line"><a href="mailto:you@university.edu">you@university.edu</a></p>
+        <p class="deck-contact-line"><a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a> · <a href="./assets/cv.pdf">Download CV</a></p>
+        <p class="deck-footer-note">© <span id="year"></span> Your Name</p>
+      </div>
+      <span class="deck-num" aria-hidden="true">05</span>
+    </section>
+
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

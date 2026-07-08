@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/creative.css">
+</head>
+<body class="theme-creative">
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">Your Name</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="site-nav" aria-label="Main">
+        <a href="#mosaic">Intro</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <div class="privacy-notice">
+      <strong>🔒 Public portfolio</strong>
+      Only share work you're allowed to show publicly. No client-confidential designs, private commissions, or personal info you wouldn't put on a public Instagram.
+    </div>
+
+    <div class="trainer-tip">
+      <strong>👋 Creative layout</strong> Visual-first: <strong>mosaic intro, photo gallery, image-led projects, mixed image + video row</strong>. Delete any section you don't need.
+    </div>
+
+    <!-- Mosaic intro -->
+    <section id="mosaic" class="mosaic" aria-label="Introduction">
+      <div class="tile tile-hero">
+        <h1>Your Name</h1>
+        <p>Designer · researcher · maker — one line that captures your vibe.</p>
+      </div>
+      <div class="tile tile-photo">
+        <!-- ADD YOUR PHOTO HERE -->
+        <div class="media-placeholder media-placeholder--square" style="height:100%;min-height:12rem;"><span>📷</span> Photo</div>
+      </div>
+      <div class="tile tile-accent">
+        <h2>Currently</h2>
+        <p>MS candidate at University Name. Building X. Applying to Y.</p>
+      </div>
+      <div class="tile tile-image">
+        <!-- ADD HERO IMAGE HERE — assets/hero.jpg -->
+        <div class="media-placeholder media-placeholder--wide" style="height:100%;min-height:10rem;"><span>🖼</span> Hero visual</div>
+      </div>
+    </section>
+
+    <!-- Photo gallery -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p class="section-note">Process shots, field work, exhibitions — tell a visual story. Replace or remove placeholders.</p>
+      <div class="media-gallery gallery-large">
+        <!-- ADD GALLERY IMAGES HERE — assets/gallery-1.jpg through gallery-6.jpg -->
+        <div class="media-placeholder"><span>🖼</span> 1</div>
+        <div class="media-placeholder"><span>🖼</span> 2</div>
+        <div class="media-placeholder"><span>🖼</span> 3</div>
+        <div class="media-placeholder"><span>🖼</span> 4</div>
+        <div class="media-placeholder"><span>🖼</span> 5</div>
+        <div class="media-placeholder"><span>🖼</span> 6</div>
+      </div>
+    </section>
+
+    <!-- Image-led projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-mosaic">
+        <article class="project-tile project-tile--large">
+          <div class="media-placeholder media-placeholder--wide" style="min-height:14rem;"><span>🖼</span> ADD PROJECT IMAGE</div>
+          <div class="project-tile-text">
+            <h3>Flagship Project</h3>
+            <p>Your best work gets the biggest tile. Description + link.</p>
+            <a href="#">View case study →</a>
+          </div>
+        </article>
+        <article class="project-tile">
+          <div class="media-placeholder media-placeholder--square" style="min-height:10rem;"><span>🖼</span></div>
+          <h3>Project Two</h3>
+          <p>Short description.</p>
+        </article>
+        <article class="project-tile">
+          <div class="media-placeholder media-placeholder--square" style="min-height:10rem;"><span>🖼</span></div>
+          <h3>Project Three</h3>
+          <p>Short description.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mixed media row -->
+    <section id="media" class="section">
+      <h2>Mixed media</h2>
+      <div class="media-row">
+        <figure class="media-figure">
+          <div class="media-placeholder media-placeholder--wide"><span>🖼</span> Image — process or detail shot</div>
+          <figcaption>Caption for the image (required for accessibility).</figcaption>
+        </figure>
+        <div class="media-row-video">
+          <h3 class="sr-only">Video reel</h3>
+          <!-- ADD VIDEO HERE
+          <div class="media-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Describe the video reel" loading="lazy" allowfullscreen></iframe>
+          </div>
+          -->
+          <div class="media-placeholder media-placeholder--video">
+            <span aria-hidden="true">▶</span>
+            ADD VIDEO — reel, timelapse, or demo
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD AUDIO HERE — optional
+      <div class="media-audio">
+        <p>Podcast or interview clip</p>
+        <audio controls preload="none" src="./assets/clip.mp3">Audio not supported.</audio>
+      </div>
+      -->
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-tile">
+        <h2>Say hello</h2>
+        <div class="contact-links">
+          <a href="mailto:you@university.edu">Email</a>
+          <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><p>&copy; <span id="year"></span> Your Name · Creative</p></footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

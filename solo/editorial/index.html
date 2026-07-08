@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/editorial.css">
+</head>
+<!--
+  EDITORIAL — magazine-style layout with hero image, featured project + video
+  Search: EDIT HERE · ADD HERO IMAGE · ADD PROJECT IMAGE · ADD VIDEO · ADD PDF
+  Colors: css/editorial.css | Delete privacy-notice & trainer-tip when done
+-->
+<body class="theme-editorial">
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#">Your Name</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#featured">Featured</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO with full-width image -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <!-- ADD HERO IMAGE HERE — upload to assets/hero.jpg, then replace placeholder:
+      <img class="hero-bg" src="./assets/hero.jpg" alt="Describe the image for screen readers" width="1600" height="900" fetchpriority="high">
+      -->
+      <div class="hero-bg media-placeholder media-placeholder--wide" role="img" aria-label="Placeholder: add a wide hero image in assets/hero.jpg">
+        <span aria-hidden="true">🖼</span>
+        ADD HERO IMAGE HERE — lab, campus, or research visual (assets/hero.jpg)
+      </div>
+      <div class="hero-overlay">
+        <div class="wrap hero-content">
+          <div class="privacy-notice">
+            <strong>🔒 Your site is public</strong>
+            GitHub Pages is visible to anyone on the internet. Never post passwords, unpublished data, private addresses, SSNs, or anything you wouldn't share in a job interview handout.
+          </div>
+          <p class="eyebrow">Graduate Student · Researcher</p>
+          <h1 id="hero-heading">Your Name</h1>
+          <p class="hero-lead">One sentence about your field, interests, and what you're working toward.</p>
+          <div class="hero-actions">
+            <a class="btn btn-fill" href="#featured">Featured work</a>
+            <!-- ADD PDF HERE — upload CV to assets/cv.pdf -->
+            <a class="file-download" href="./assets/cv.pdf">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="trainer-tip">
+        <strong>👋 Editorial layout</strong>
+        This theme supports <strong>hero images, project photos, video embeds, PDFs, and galleries</strong>.
+        Search <code>ADD</code> to find every media slot. Delete this box when done.
+      </div>
+
+      <section id="about" class="section">
+        <div class="section-head"><span class="section-num">01</span><h2>About</h2></div>
+        <div class="about-grid">
+          <div>
+            <p class="lead">Write 2–3 paragraphs about your background, research interests, and career goals.</p>
+            <blockquote class="pull-quote">A short quote that captures what drives your work — a research question, motto, or mission.</blockquote>
+            <p>What experience backs it up? Where are you headed next?</p>
+          </div>
+          <aside class="about-aside">
+            <!-- ADD YOUR PHOTO HERE
+            <figure class="media-figure">
+              <img src="./assets/photo.jpg" alt="Portrait of Your Name" width="400" height="400" loading="lazy" class="media-img media-img--square">
+              <figcaption>Your Name — optional caption</figcaption>
+            </figure>
+            -->
+            <div class="media-placeholder media-placeholder--square" role="img" aria-label="Placeholder for headshot">
+              <span aria-hidden="true">📷</span>
+              ADD YOUR PHOTO HERE
+            </div>
+            <dl class="meta-list">
+              <div><dt>Focus</dt><dd>Your research area</dd></div>
+              <div><dt>Location</dt><dd>City, State</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-head"><span class="section-num">02</span><h2>Experience &amp; education</h2></div>
+        <div class="entries">
+          <article class="entry">
+            <time datetime="2025">2025</time>
+            <div>
+              <h3>Research Intern</h3>
+              <p class="entry-org">Organization or Lab</p>
+              <ul><li>Measurable outcome with action verbs.</li></ul>
+            </div>
+          </article>
+          <article class="entry">
+            <time datetime="2027">2027</time>
+            <div>
+              <h3>MS in [Field]</h3>
+              <p class="entry-org">University Name · GPA 3.9</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- FEATURED PROJECT — image + video -->
+    <section id="featured" class="section section-dark" aria-labelledby="featured-heading">
+      <div class="wrap">
+        <div class="section-head"><span class="section-num">03</span><h2 id="featured-heading">Featured project</h2></div>
+        <article class="featured-project">
+          <div class="featured-media">
+            <!-- ADD PROJECT IMAGE HERE
+            <figure class="media-figure">
+              <img src="./assets/project-featured.jpg" alt="Screenshot or photo describing the project" width="800" height="450" loading="lazy" class="media-img media-img--wide">
+              <figcaption>Figure 1. Caption explaining the visual.</figcaption>
+            </figure>
+            -->
+            <div class="media-placeholder media-placeholder--wide">
+              <span aria-hidden="true">🖼</span>
+              ADD PROJECT IMAGE HERE — chart, screenshot, or poster (assets/project-featured.jpg)
+            </div>
+
+            <h3>Project Title</h3>
+            <p>2–3 sentences on the project, your role, methods, and findings. Link to a paper if you have one.</p>
+            <ul class="tags"><li>Python</li><li>R</li><li>LaTeX</li></ul>
+          </div>
+          <div class="featured-video">
+            <h3 class="sr-only">Project presentation video</h3>
+            <!-- ADD VIDEO HERE — YouTube: Share → Embed, paste iframe below, delete placeholder
+            <div class="media-embed">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Title describing the video content" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            -->
+            <div class="media-placeholder media-placeholder--video">
+              <span aria-hidden="true">▶</span>
+              ADD VIDEO HERE — conference talk, demo, or presentation (YouTube/Vimeo embed)
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="section">
+        <h2 class="section-sub">More projects</h2>
+        <div class="project-cards">
+          <article class="project-card">
+            <!-- ADD PROJECT IMAGE HERE — assets/project-2.jpg -->
+            <div class="media-placeholder media-placeholder--wide" style="min-height:6rem;"><span>🖼</span> Project image</div>
+            <h3>Second Project</h3>
+            <p>Brief description.</p>
+            <a class="arrow-link" href="#">View →</a>
+          </article>
+          <article class="project-card">
+            <div class="media-placeholder media-placeholder--wide" style="min-height:6rem;"><span>🖼</span> Project image</div>
+            <h3>Third Project</h3>
+            <p>Brief description.</p>
+            <a class="arrow-link" href="#">PDF →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section" aria-labelledby="gallery-heading">
+        <div class="section-head"><span class="section-num">04</span><h2 id="gallery-heading">Gallery</h2></div>
+        <p class="section-intro">Field work, conference photos, lab life — optional visual story. Replace placeholders or delete this section.</p>
+        <div class="media-gallery">
+          <!-- ADD GALLERY IMAGES HERE — upload to assets/gallery-1.jpg etc.
+          <img src="./assets/gallery-1.jpg" alt="Describe image 1" width="300" height="300" loading="lazy" class="media-img media-img--square">
+          -->
+          <div class="media-placeholder"><span>🖼</span> Image 1</div>
+          <div class="media-placeholder"><span>🖼</span> Image 2</div>
+          <div class="media-placeholder"><span>🖼</span> Image 3</div>
+          <div class="media-placeholder"><span>🖼</span> Image 4</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="section-head"><span class="section-num">05</span><h2>Contact</h2></div>
+        <p>Open to collaborations and graduate program conversations.</p>
+        <div class="contact-links">
+          <a href="mailto:you@university.edu">you@university.edu</a>
+          <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="wrap"><p>&copy; <span id="year"></span> Your Name · Editorial</p></div></footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

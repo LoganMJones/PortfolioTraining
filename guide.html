@@ -38,7 +38,8 @@
       <nav class="guide-toc" aria-label="Table of contents">
         <h2>On this page</h2>
         <ul>
-          <li><a href="#setup">Setup steps 1–7</a></li>
+          <li><a href="#setup">Setup steps 1–8</a></li>
+          <li><a href="#get-layout">Download one layout (ZIP)</a></li>
           <li><a href="#cheat-sheet">Search cheat sheet</a></li>
           <li><a href="#colors">Color palettes</a></li>
           <li><a href="#contrast">Contrast checking</a></li>
@@ -60,17 +61,54 @@
       <div id="setup">
 
         <section class="guide-step">
-          <h2><span class="step-num">1</span> Copy this template</h2>
+          <h2><span class="step-num">1</span> Preview layouts on the live demo</h2>
+          <p>Don't pick from a list of filenames — <strong>see the real layouts first</strong>.</p>
           <ol>
-            <li>Go to the template repo on GitHub.</li>
-            <li>Click the green <strong>Use this template</strong> button → <strong>Create a new repository</strong>.</li>
-            <li>Name it something like <code>my-portfolio</code>.</li>
-            <li>Click <strong>Create repository</strong>.</li>
+            <li>Open <a href="https://loganmjones.github.io/PortfolioTraining/" target="_blank" rel="noopener noreferrer">loganmjones.github.io/PortfolioTraining</a>.</li>
+            <li>Click any layout card to preview it, or use the black bar to switch between all 10.</li>
+            <li>When you find one you like, click <strong>Download [layout] only</strong> on that page (blue banner) or use the download table in <a href="#get-layout">Step 2</a>.</li>
           </ol>
+          <div class="trainer-tip">
+            <strong>For instructors running the workshop</strong> — you can still <strong>Use this template</strong> on GitHub to get the full repo with all 10 layouts for demos. Students should preview here, then download <em>only</em> their chosen ZIP.
+          </div>
+        </section>
+
+        <section id="get-layout" class="guide-step guide-cheat">
+          <h2><span class="step-num">2</span> Download only the layout you chose</h2>
+          <p>Each ZIP is a complete mini-site: <code>index.html</code>, CSS, JS, and <code>assets/</code>. No other themes, no layout picker, no bloat.</p>
+          <table class="guide-table">
+            <thead>
+              <tr><th>Layout</th><th>Download</th><th>Edit this file</th><th>Colors file</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Document</strong> <em>(starter)</em></td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/document.zip" download>document.zip</a></td><td><code>index.html</code></td><td><code>css/document.css</code></td></tr>
+              <tr><td><strong>Classic</strong> <em>(starter)</em></td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/classic.zip" download>classic.zip</a></td><td><code>index.html</code></td><td><code>css/classic.css</code></td></tr>
+              <tr><td><strong>Minimal</strong> <em>(starter)</em></td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/minimal.zip" download>minimal.zip</a></td><td><code>index.html</code></td><td><code>css/minimal.css</code></td></tr>
+              <tr><td>Terminal</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/terminal.zip" download>terminal.zip</a></td><td><code>index.html</code></td><td><code>css/terminal.css</code></td></tr>
+              <tr><td>Brutalist</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/brutalist.zip" download>brutalist.zip</a></td><td><code>index.html</code></td><td><code>css/brutalist.css</code></td></tr>
+              <tr><td>Deck</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/deck.zip" download>deck.zip</a></td><td><code>index.html</code></td><td><code>css/deck.css</code></td></tr>
+              <tr><td>Editorial</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/editorial.zip" download>editorial.zip</a></td><td><code>index.html</code></td><td><code>css/editorial.css</code></td></tr>
+              <tr><td>Bold</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/bold.zip" download>bold.zip</a></td><td><code>index.html</code></td><td><code>css/bold.css</code></td></tr>
+              <tr><td>Academic</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/academic.zip" download>academic.zip</a></td><td><code>index.html</code></td><td><code>css/academic.css</code></td></tr>
+              <tr><td>Creative</td><td><a href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/creative.zip" download>creative.zip</a></td><td><code>index.html</code></td><td><code>css/creative.css</code></td></tr>
+            </tbody>
+          </table>
+          <p class="section-note"><strong>On Mac:</strong> double-click the ZIP to unzip. <strong>On Windows:</strong> right-click → Extract All. You should see <code>index.html</code>, <code>css/</code>, <code>js/</code>, and <code>assets/</code> folders.</p>
         </section>
 
         <section class="guide-step">
-          <h2><span class="step-num">2</span> Turn on GitHub Pages (free hosting)</h2>
+          <h2><span class="step-num">3</span> Create a GitHub repo &amp; upload your files</h2>
+          <ol>
+            <li>Go to <a href="https://github.com/new" target="_blank" rel="noopener noreferrer">github.com/new</a> and create a repository named <code>my-portfolio</code> (public).</li>
+            <li>On the empty repo page, click <strong>Add file</strong> → <strong>Upload files</strong>.</li>
+            <li>Drag in <strong>everything</strong> from your unzipped folder — <code>index.html</code>, the <code>css</code> folder, <code>js</code> folder, and <code>assets</code> folder.</li>
+            <li>Click <strong>Commit changes</strong>.</li>
+          </ol>
+          <p>Do <strong>not</strong> use <strong>Use this template</strong> unless you want all 10 layouts. The ZIP already has exactly what you need.</p>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">4</span> Turn on GitHub Pages (free hosting)</h2>
           <ol>
             <li>In your new repo, click <strong>Settings</strong> (top tab).</li>
             <li>Click <strong>Pages</strong> in the left sidebar.</li>
@@ -88,32 +126,10 @@
         </section>
 
         <section class="guide-step">
-          <h2><span class="step-num">3</span> Pick a layout</h2>
-          <p>Open your live site URL. You'll see <strong>10 layout options</strong> grouped into simple starters and distinct designs. Click through them using the <strong>black bar at the top</strong>. Pick the one you like best — you'll only customize that one file.</p>
-          <table class="guide-table">
-            <thead>
-              <tr><th>Layout</th><th>File to edit</th><th>Colors file</th><th>Best for</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><strong>Document</strong> <em>(starter)</em></td><td><code>themes/document.html</code></td><td><code>css/document.css</code></td><td>Plain CV page — easiest</td></tr>
-              <tr><td><strong>Classic</strong> <em>(starter)</em></td><td><code>themes/classic.html</code></td><td><code>css/classic.css</code></td><td>Sidebar resume</td></tr>
-              <tr><td><strong>Minimal</strong> <em>(starter)</em></td><td><code>themes/minimal.html</code></td><td><code>css/minimal.css</code></td><td>Clean &amp; simple</td></tr>
-              <tr><td>Terminal</td><td><code>themes/terminal.html</code></td><td><code>css/terminal.css</code></td><td>CS / developer vibe</td></tr>
-              <tr><td>Brutalist</td><td><code>themes/brutalist.html</code></td><td><code>css/brutalist.css</code></td><td>Loud, raw, memorable</td></tr>
-              <tr><td>Deck</td><td><code>themes/deck.html</code></td><td><code>css/deck.css</code></td><td>Presentation-style slides</td></tr>
-              <tr><td>Editorial</td><td><code>themes/editorial.html</code></td><td><code>css/editorial.css</code></td><td>Magazine / hero image</td></tr>
-              <tr><td>Bold</td><td><code>themes/bold.html</code></td><td><code>css/bold.css</code></td><td>Colorful impact</td></tr>
-              <tr><td>Academic</td><td><code>themes/academic.html</code></td><td><code>css/academic.css</code></td><td>Grad school apps</td></tr>
-              <tr><td>Creative</td><td><code>themes/creative.html</code></td><td><code>css/creative.css</code></td><td>Visual &amp; playful</td></tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section class="guide-step">
-          <h2><span class="step-num">4</span> Edit your content on GitHub</h2>
+          <h2><span class="step-num">5</span> Edit your content on GitHub</h2>
           <ol>
             <li>Go to your repo on github.com.</li>
-            <li>Click <code>themes</code> folder → click your chosen file (e.g. <code>editorial.html</code>).</li>
+            <li>Click <code>index.html</code> (your homepage — there is no <code>themes/</code> folder).</li>
             <li>Click the <strong>pencil icon</strong> (✏️ Edit this file) in the top-right.</li>
             <li>Press <strong>Cmd+F</strong> (Mac) or <strong>Ctrl+F</strong> (Windows) and search: <code>EDIT HERE</code></li>
             <li>Change each labeled spot to your real information.</li>
@@ -122,20 +138,20 @@
         </section>
 
         <section class="guide-step">
-          <h2><span class="step-num">5</span> Add your photo</h2>
+          <h2><span class="step-num">6</span> Add your photo</h2>
           <ol>
             <li>In your repo, click the <code>assets</code> folder.</li>
             <li>Click <strong>Add file</strong> → <strong>Upload files</strong>.</li>
             <li>Drag in your photo (name it something simple like <code>photo.jpg</code>).</li>
             <li>Click <strong>Commit changes</strong>.</li>
-            <li>Go back to your theme file and search for <code>ADD YOUR PHOTO HERE</code>.</li>
+            <li>Go back to <code>index.html</code> and search for <code>ADD YOUR PHOTO HERE</code>.</li>
             <li>Follow the instructions in that comment to uncomment the <code>&lt;img&gt;</code> line and update the filename.</li>
           </ol>
           <p>Need a free photo? See the <a href="#photos">Free stock photos</a> dropdown below.</p>
         </section>
 
         <section class="guide-step">
-          <h2><span class="step-num">6</span> Change your colors</h2>
+          <h2><span class="step-num">7</span> Change your colors</h2>
           <ol>
             <li>Use a tool from the <a href="#colors">Color palettes</a> section below to pick colors you like.</li>
             <li>Copy the <strong>hex codes</strong> (they look like <code>#2563eb</code>).</li>
@@ -148,13 +164,13 @@
         </section>
 
         <section class="guide-step">
-          <h2><span class="step-num">7</span> Clean up when done</h2>
+          <h2><span class="step-num">8</span> Clean up when done</h2>
           <ul>
-            <li>Delete the <strong>yellow trainer tip boxes</strong> from your HTML file (search for <code>trainer-tip</code>).</li>
+            <li>Delete the <strong>yellow trainer tip boxes</strong> from <code>index.html</code> (search for <code>trainer-tip</code>).</li>
             <li>Update your links — search for <code>EDIT LINK HERE</code> and replace <code>#</code> with real URLs.</li>
             <li>Hard-refresh your live site: <strong>Cmd+Shift+R</strong> or <strong>Ctrl+Shift+R</strong>.</li>
-            <li>Ready to go live for real? See <a href="#single-theme">Slim down to one layout</a> — remove the other 9 themes and make yours the homepage.</li>
           </ul>
+          <p class="section-note">Downloaded a solo ZIP? You're already done — no need to delete other themes. See <a href="#single-theme">Slim down to one layout</a> only if you copied the <em>full</em> template repo by mistake.</p>
         </section>
 
       </div>
@@ -819,11 +835,11 @@
 
       <section id="single-theme" class="guide-step">
         <h2>Slim down to one layout</h2>
-        <p>During the workshop you get <strong>10 layouts</strong> to compare. Once you've picked one, you can remove everything else so your repo is lean, fast, and less confusing.</p>
+        <p><strong>Most students should skip this section.</strong> If you followed <a href="#get-layout">Step 2</a> and downloaded a solo ZIP, your repo already has one layout — nothing to remove.</p>
+        <p>This section is only for people who used <strong>Use this template</strong> and got all 10 layouts by mistake.</p>
 
         <div class="trainer-tip">
-          <strong>Can I pull just one theme when copying the template?</strong>
-          GitHub's <strong>Use this template</strong> button always copies the full repo — there is no built-in "pick one layout" option. That's intentional for training. Follow the steps below (or ask Copilot) after you've chosen your favorite.
+          <strong>Recommended workflow</strong> — Preview on the <a href="https://loganmjones.github.io/PortfolioTraining/">live demo</a>, then download the ZIP for your chosen layout. Don't copy the full template repo unless you're running the workshop demo.
         </div>
 
         <h3 class="guide-subhead">Before vs. after</h3>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/minimal.css">
+</head>
+<body class="theme-minimal">
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">Your Name</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="site-nav" aria-label="Main">
+        <a href="#statement">Statement</a>
+        <a href="#work">Work</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap narrow">
+
+    <div class="privacy-notice">
+      <strong>🔒 This website is public</strong>
+      Never share passwords, unpublished research, personal phone numbers, or anything confidential. If you wouldn't email it to a stranger, don't put it here.
+    </div>
+
+    <div class="trainer-tip">
+      <strong>👋 Minimal layout</strong> Text-first with optional <strong>inline thumbnails, collapsible video, and PDF link</strong>. Less visual noise — great when your writing carries the page.
+    </div>
+
+    <header class="page-intro">
+      <p class="intro-label">Portfolio / 2026</p>
+      <h1>Your Name</h1>
+      <p class="intro-lead">One precise sentence about who you are and what you do.</p>
+    </header>
+
+    <section id="statement">
+      <h2>Statement</h2>
+      <p>Your professional or artistic statement. 2–3 tight paragraphs. No fluff — every sentence should earn its place.</p>
+      <p>What questions drive you? What have you already done about them?</p>
+    </section>
+
+    <section id="work">
+      <h2>Selected work</h2>
+
+      <article class="work-item">
+        <div class="work-text">
+          <h3>Project Title <span class="work-year">2025</span></h3>
+          <p>Description with outcome. Methods in one line if relevant.</p>
+          <a href="#">Read more →</a>
+        </div>
+        <!-- ADD PROJECT IMAGE HERE — optional small thumb -->
+        <div class="work-thumb media-placeholder media-placeholder--square" aria-label="Optional project thumbnail"><span>🖼</span></div>
+      </article>
+
+      <article class="work-item">
+        <div class="work-text">
+          <h3>Second Project <span class="work-year">2024</span></h3>
+          <p>Brief description.</p>
+          <a href="#">PDF →</a>
+        </div>
+        <div class="work-thumb media-placeholder media-placeholder--square" aria-hidden="true"><span>🖼</span></div>
+      </article>
+
+      <article class="work-item work-item--plain">
+        <div class="work-text">
+          <h3>Teaching / Service <span class="work-year">2024</span></h3>
+          <p>Not every entry needs an image — delete the thumb column if you prefer.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Talks &amp; media</h2>
+      <p class="section-note">Optional. Expand to add a video, or delete this section entirely.</p>
+
+      <details class="media-details">
+        <summary>Watch: presentation or demo (ADD VIDEO HERE)</summary>
+        <div class="media-details-body">
+          <!-- ADD VIDEO HERE
+          <div class="media-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Describe the video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          -->
+          <div class="media-placeholder media-placeholder--video">
+            <span aria-hidden="true">▶</span>
+            Paste a YouTube/Vimeo embed above — see HTML comment
+          </div>
+        </div>
+      </details>
+
+      <!-- ADD PDF HERE -->
+      <p class="file-row"><a class="file-download" href="./assets/cv.pdf">Download CV (PDF)</a></p>
+
+      <!-- ADD AUDIO HERE — optional podcast or interview clip
+      <div class="media-audio">
+        <p class="section-note">Audio clip title</p>
+        <audio controls preload="none" src="./assets/interview.mp3">Your browser does not support audio.</audio>
+      </div>
+      -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <address class="contact-block">
+        <a href="mailto:you@university.edu">you@university.edu</a><br>
+        <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+      </address>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap narrow"><p>&copy; <span id="year"></span> Your Name · Minimal</p></footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

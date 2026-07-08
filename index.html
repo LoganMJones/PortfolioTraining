@@ -25,10 +25,10 @@
       <header class="home-hero">
         <h1>Pick a layout. Make it yours.</h1>
         <p class="home-lead">
-          Ten portfolio designs — from plain CV pages to full-screen slides and terminal windows.
-          Most are intentionally <em>different</em> from each other. Start simple if you want, or go bold.
+          Preview layouts here on the live demo. When you find one you like,
+          <strong>download only that layout</strong> — not the whole repo with all 10 themes.
         </p>
-        <a class="home-cta" href="./guide.html">New here? Read the setup guide first →</a>
+        <a class="home-cta" href="./guide.html#get-layout">How to download &amp; set up your layout →</a>
         <p class="home-resource-note">The guide includes <strong>free color tools, icons, photos &amp; fonts</strong> — all no-account, plug-and-play.</p>
       </header>
 
@@ -39,9 +39,9 @@
 
       <div class="trainer-tip">
         <strong>👋 For workshop participants</strong>
-        Step 1: Click a layout below to preview it.<br>
-        Step 2: Pick your favorite — you'll only customize <em>one</em> page.<br>
-        Step 3: Open the <a href="./guide.html">Setup Guide</a> and search the file for <code>EDIT HERE</code>.
+        Step 1: Click a layout below to <strong>preview</strong> it.<br>
+        Step 2: Click <strong>Download this layout only</strong> on the layout you chose (or on this card).<br>
+        Step 3: Follow the <a href="./guide.html#get-layout">setup guide</a> to upload it to GitHub — search <code>EDIT HERE</code> to customize.
       </div>
 
       <section class="theme-section">
@@ -49,35 +49,50 @@
         <p class="theme-section-desc">Plain, familiar layouts — great if you want something safe and fast. Only customize one.</p>
         <div class="theme-grid">
 
-          <a class="theme-card theme-card--starter" href="./themes/document.html">
-            <div class="theme-preview theme-preview--document">
-              <span>Doc</span>
+          <article class="theme-card theme-card--starter">
+            <a class="theme-card-hit" href="./themes/document.html">
+              <div class="theme-preview theme-preview--document">
+                <span>Doc</span>
+              </div>
+              <h2>Document</h2>
+              <p>Plain single-column CV page — like a simple academic homepage. No sidebar, no hero. Easiest start.</p>
+              <ul class="theme-features"><li>Text-first</li><li>Bullet lists</li><li>PDF link</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/document.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/document.zip" download>Download only ↓</a>
             </div>
-            <h2>Document</h2>
-            <p>Plain single-column CV page — like a simple academic homepage. No sidebar, no hero. Easiest start.</p>
-            <ul class="theme-features"><li>Text-first</li><li>Bullet lists</li><li>PDF link</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card theme-card--starter" href="./themes/classic.html">
-            <div class="theme-preview theme-preview--classic">
-              <span>02</span>
+          <article class="theme-card theme-card--starter">
+            <a class="theme-card-hit" href="./themes/classic.html">
+              <div class="theme-preview theme-preview--classic">
+                <span>02</span>
+              </div>
+              <h2>Classic</h2>
+              <p>Sidebar CV: headshot, PDF download, project thumbnails, publications list.</p>
+              <ul class="theme-features"><li>Sidebar photo</li><li>CV PDF</li><li>Project thumbs</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/classic.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/classic.zip" download>Download only ↓</a>
             </div>
-            <h2>Classic</h2>
-            <p>Sidebar CV: headshot, PDF download, project thumbnails, publications list.</p>
-            <ul class="theme-features"><li>Sidebar photo</li><li>CV PDF</li><li>Project thumbs</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card theme-card--starter" href="./themes/minimal.html">
-            <div class="theme-preview theme-preview--minimal">
-              <span>03</span>
+          <article class="theme-card theme-card--starter">
+            <a class="theme-card-hit" href="./themes/minimal.html">
+              <div class="theme-preview theme-preview--minimal">
+                <span>03</span>
+              </div>
+              <h2>Minimal</h2>
+              <p>Text-first statement. Inline thumbs, collapsible video, optional audio.</p>
+              <ul class="theme-features"><li>Collapsible video</li><li>PDF link</li><li>Audio slot</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/minimal.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/minimal.zip" download>Download only ↓</a>
             </div>
-            <h2>Minimal</h2>
-            <p>Text-first statement. Inline thumbs, collapsible video, optional audio.</p>
-            <ul class="theme-features"><li>Collapsible video</li><li>PDF link</li><li>Audio slot</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
         </div>
       </section>
@@ -87,88 +102,122 @@
         <p class="theme-section-desc">These look and feel very different — pick one that matches your personality or field.</p>
         <div class="theme-grid">
 
-          <a class="theme-card" href="./themes/terminal.html">
-            <div class="theme-preview theme-preview--terminal">
-              <span>&gt;_</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/terminal.html">
+              <div class="theme-preview theme-preview--terminal">
+                <span>&gt;_ </span>
+              </div>
+              <h2>Terminal</h2>
+              <p>CLI window aesthetic — commands, green-on-black, developer vibe. Great for CS &amp; data science.</p>
+              <ul class="theme-features"><li>CLI blocks</li><li>Monospace</li><li>Video slot</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/terminal.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/terminal.zip" download>Download only ↓</a>
             </div>
-            <h2>Terminal</h2>
-            <p>CLI window aesthetic — commands, green-on-black, developer vibe. Great for CS &amp; data science.</p>
-            <ul class="theme-features"><li>CLI blocks</li><li>Monospace</li><li>Video slot</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/brutalist.html">
-            <div class="theme-preview theme-preview--brutalist">
-              <span>!</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/brutalist.html">
+              <div class="theme-preview theme-preview--brutalist">
+                <span>!</span>
+              </div>
+              <h2>Brutalist</h2>
+              <p>Giant type, thick borders, raw energy. Anti-polish on purpose — loud and memorable.</p>
+              <ul class="theme-features"><li>Oversized type</li><li>Hard edges</li><li>PDF block</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/brutalist.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/brutalist.zip" download>Download only ↓</a>
             </div>
-            <h2>Brutalist</h2>
-            <p>Giant type, thick borders, raw energy. Anti-polish on purpose — loud and memorable.</p>
-            <ul class="theme-features"><li>Oversized type</li><li>Hard edges</li><li>PDF block</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/deck.html">
-            <div class="theme-preview theme-preview--deck">
-              <span>▢</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/deck.html">
+              <div class="theme-preview theme-preview--deck">
+                <span>▢</span>
+              </div>
+              <h2>Deck</h2>
+              <p>Full-screen scroll-snap slides — like a presentation. One idea per screen, slide numbers.</p>
+              <ul class="theme-features"><li>Full-screen slides</li><li>Scroll-snap</li><li>Video + image</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/deck.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/deck.zip" download>Download only ↓</a>
             </div>
-            <h2>Deck</h2>
-            <p>Full-screen scroll-snap slides — like a presentation. One idea per screen, slide numbers.</p>
-            <ul class="theme-features"><li>Full-screen slides</li><li>Scroll-snap</li><li>Video + image</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/editorial.html">
-            <div class="theme-preview theme-preview--editorial">
-              <span>04</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/editorial.html">
+              <div class="theme-preview theme-preview--editorial">
+                <span>04</span>
+              </div>
+              <h2>Editorial</h2>
+              <p>Magazine-style: full-width hero image, featured project + video, photo gallery.</p>
+              <ul class="theme-features"><li>Hero image</li><li>Video embed</li><li>Gallery</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/editorial.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/editorial.zip" download>Download only ↓</a>
             </div>
-            <h2>Editorial</h2>
-            <p>Magazine-style: full-width hero image, featured project + video, photo gallery.</p>
-            <ul class="theme-features"><li>Hero image</li><li>Video embed</li><li>Gallery</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/bold.html">
-            <div class="theme-preview theme-preview--bold">
-              <span>05</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/bold.html">
+              <div class="theme-preview theme-preview--bold">
+                <span>05</span>
+              </div>
+              <h2>Bold</h2>
+              <p>Split-screen hero, impact stats, image-forward cards, video highlight.</p>
+              <ul class="theme-features"><li>Split hero</li><li>Stats row</li><li>Video</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/bold.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/bold.zip" download>Download only ↓</a>
             </div>
-            <h2>Bold</h2>
-            <p>Split-screen hero, impact stats, image-forward cards, video highlight.</p>
-            <ul class="theme-features"><li>Split hero</li><li>Stats row</li><li>Video</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/academic.html">
-            <div class="theme-preview theme-preview--academic">
-              <span>06</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/academic.html">
+              <div class="theme-preview theme-preview--academic">
+                <span>06</span>
+              </div>
+              <h2>Academic</h2>
+              <p>Publications, research poster figure, talk video, ORCID, formal headshot.</p>
+              <ul class="theme-features"><li>Poster figure</li><li>Talk video</li><li>PDFs</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/academic.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/academic.zip" download>Download only ↓</a>
             </div>
-            <h2>Academic</h2>
-            <p>Publications, research poster figure, talk video, ORCID, formal headshot.</p>
-            <ul class="theme-features"><li>Poster figure</li><li>Talk video</li><li>PDFs</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
-          <a class="theme-card" href="./themes/creative.html">
-            <div class="theme-preview theme-preview--creative">
-              <span>07</span>
+          <article class="theme-card">
+            <a class="theme-card-hit" href="./themes/creative.html">
+              <div class="theme-preview theme-preview--creative">
+                <span>07</span>
+              </div>
+              <h2>Creative</h2>
+              <p>Visual mosaic, 6-image gallery, mixed image + video row, case-study tiles.</p>
+              <ul class="theme-features"><li>Photo gallery</li><li>Mosaic grid</li><li>Video reel</li></ul>
+            </a>
+            <div class="theme-card-actions">
+              <a class="theme-card-link" href="./themes/creative.html">Preview →</a>
+              <a class="theme-card-download" href="https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/creative.zip" download>Download only ↓</a>
             </div>
-            <h2>Creative</h2>
-            <p>Visual mosaic, 6-image gallery, mixed image + video row, case-study tiles.</p>
-            <ul class="theme-features"><li>Photo gallery</li><li>Mosaic grid</li><li>Video reel</li></ul>
-            <span class="theme-card-link">Preview →</span>
-          </a>
+          </article>
 
         </div>
       </section>
 
       <section class="home-steps">
-        <h2>How customization works</h2>
+        <h2>How it works</h2>
         <ol>
-          <li><strong>Pick one layout</strong> using the cards above (or the black bar on each page).</li>
-          <li><strong>Edit on GitHub</strong> — click the pencil icon on your chosen <code>themes/____.html</code> file.</li>
-          <li><strong>Search for <code>ADD</code></strong> — images, video, PDF, gallery, and audio slots are labeled.</li>
-          <li><strong>Read the <a href="./guide.html#privacy">privacy section</a></strong> before publishing personal info.</li>
-          <li><strong>Delete yellow &amp; red boxes</strong> when you're done — training helpers only.</li>
-          <li>When you're finished: <a href="./guide.html#single-theme">slim down to one layout</a> and delete the rest.</li>
+          <li><strong>Preview</strong> layouts on this site — click any card or use the black bar on each page.</li>
+          <li><strong>Download</strong> only the ZIP for the layout you chose (not the whole GitHub repo).</li>
+          <li><strong>Upload</strong> the unzipped files to a new GitHub repo — see the <a href="./guide.html#get-layout">setup guide</a>.</li>
+          <li><strong>Edit</strong> <code>index.html</code> on GitHub — search for <code>EDIT HERE</code>.</li>
+          <li><strong>Delete</strong> yellow training boxes when you're done.</li>
         </ol>
       </section>
 

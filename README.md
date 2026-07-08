@@ -8,9 +8,13 @@ Ten portfolio designs for graduate school and professional development — from 
 
 ## Start here
 
-1. **[Setup Guide](guide.html)** — step-by-step for non-technical users
-2. **[Pick a layout](index.html)** — preview all 10 themes
-3. **Customize one** — search your file for `EDIT HERE`
+1. **[Preview layouts](index.html)** on the live demo — see all 10 in your browser
+2. **[Download your layout](guide.html#get-layout)** — one ZIP per theme, no bloat
+3. **Upload to GitHub** — follow the setup guide (no Terminal needed)
+4. **Edit `index.html`** — search for `EDIT HERE`
+
+> **Students:** preview on the demo site, then download **only** the ZIP for your chosen layout.  
+> **Instructors:** you can still **Use this template** on GitHub to demo all 10 layouts in one repo.
 
 ---
 
@@ -36,9 +40,9 @@ Ten portfolio designs for graduate school and professional development — from 
 | **Academic** | `themes/academic.html` | Formal serif, publications, poster |
 | **Creative** | `themes/creative.html` | Dark mosaic grid, playful |
 
-Every layout shares a **black bar at the top** so you can switch between them like separate pages.
+Every layout shares a **black bar at the top** on the demo site so you can compare them like separate pages.
 
-After you pick one, follow the **[slim-down guide](guide.html#single-theme)** to remove the other layouts and make yours the homepage.
+**Download one layout:** [solo/zips/](solo/zips/) — each ZIP is a complete mini-site (`index.html` + CSS + JS). See the [setup guide](guide.html#get-layout).
 
 ---
 
