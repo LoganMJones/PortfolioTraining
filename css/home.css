@@ -2,7 +2,7 @@
 :root {
   --home-bg: #f8fafc;
   --home-text: #0f172a;
-  --home-muted: #64748b;
+  --home-muted: #475569;
   --home-accent: #2563eb;
 }
 
@@ -129,8 +129,8 @@ a { color: var(--home-accent); }
   font-size: 0.6875rem;
   font-weight: 600;
   padding: 0.2rem 0.5rem;
-  background: #f1f5f9;
-  color: #64748b;
+  background: #e2e8f0;
+  color: #334155;
   border-radius: 0.25rem;
 }
 

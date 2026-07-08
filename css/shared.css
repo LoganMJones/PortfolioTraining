@@ -28,7 +28,7 @@
   padding: 0.5rem 0;
 }
 
-.theme-switcher-label { font-weight: 600; color: #a3a3a3; margin-right: 0.25rem; }
+.theme-switcher-label { font-weight: 600; color: #d4d4d4; margin-right: 0.25rem; }
 
 .theme-switcher a {
   color: #d4d4d4;
@@ -40,7 +40,7 @@
 
 .theme-switcher a:hover { background: #333; color: #fff; }
 .theme-switcher a[aria-current="page"] { background: #fff; color: #1e1e1e; font-weight: 600; }
-.theme-switcher-guide { margin-left: auto; color: #93c5fd !important; font-weight: 600; }
+.theme-switcher-guide { margin-left: auto; color: #bfdbfe !important; font-weight: 600; }
 
 @media (max-width: 40rem) {
   .theme-switcher-guide { margin-left: 0; width: 100%; padding-top: 0.25rem; border-top: 1px solid #333; }
@@ -103,9 +103,9 @@
     rgba(0, 0, 0, 0.04) 8px,
     rgba(0, 0, 0, 0.04) 16px
   );
-  border: 2px dashed #a3a3a3;
+  border: 2px dashed #78716c;
   border-radius: 0.5rem;
-  color: #737373;
+  color: #44403c;
   font-size: 0.75rem;
   font-weight: 600;
   text-align: center;
@@ -147,7 +147,7 @@ figure.media-figure img {
 
 figcaption {
   font-size: 0.8125rem;
-  color: #737373;
+  color: #44403c;
   margin-top: 0.5rem;
   line-height: 1.45;
 }
@@ -230,7 +230,7 @@ figcaption {
   font-size: 1.25rem;
   font-style: italic;
   line-height: 1.45;
-  opacity: 0.9;
+  color: var(--text, #0a0a0a);
 }
 
 /* ── Stats row ── */
@@ -259,7 +259,7 @@ figcaption {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  opacity: 0.7;
+  color: #44403c;
 }
 
 /* Screen-reader only utility */
