@@ -1,0 +1,51 @@
+/* styles.css — basic site styles for a clean, professional resume + portfolio */
+:root{
+  --bg:#ffffff;
+  --text:#111827; /* gray-900 */
+  --muted:#6b7280; /* gray-500 */
+  --accent:#0ea5a4; /* teal-500 */
+  --container-max:900px;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.5;margin:0;font-size:16px}
+.container{max-width:var(--container-max);margin:0 auto;padding:1rem}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;width:auto;height:auto;margin:0.5rem 0;padding:.25rem .5rem;background:var(--accent);color:#fff;border-radius:4px}
+.site-header{border-bottom:1px solid #e6e6e6}
+.site-title{margin:0;padding:1rem 0;font-size:1.25rem}
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.site-nav a{color:var(--muted);text-decoration:none}
+.site-nav a:focus,.site-nav a:hover{color:var(--text);text-decoration:underline}
+.main-heading{display:flex;justify-content:space-between;align-items:center}
+.resume{padding:1.25rem 0}
+.resume header{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+.resume .contact{margin:0;color:var(--muted)}
+.resume .download a{background:var(--accent);color:#fff;padding:.35rem .6rem;border-radius:4px;text-decoration:none}
+.resume h2{font-size:1.05rem;margin-top:1rem;border-bottom:1px solid #f3f4f6;padding-bottom:.25rem}
+/* two-column layout for larger screens */
+@media(min-width:760px){
+  .resume{display:grid;grid-template-columns:260px 1fr;gap:1.5rem}
+  .resume header{grid-column:1/-1}
+  .skills, .education{background:#fafafa;padding:.5rem;border-radius:6px}
+}
+.item h3{margin:.15rem 0}
+.meta{color:var(--muted);font-size:.95rem;margin:0 0 .5rem}
+.resume-footer{grid-column:1/-1;margin-top:1rem;color:var(--muted);font-size:.95rem}
+.site-footer{border-top:1px solid #e6e6e6;padding:1rem 0;margin-top:2rem}
+/* Images and figures */
+figure{margin:0}
+img{max-width:100%;height:auto}
+/* Project & blog list */
+.card{border:1px solid #eaeaea;padding:1rem;border-radius:8px;background:#fff}
+.card h3{margin:.25rem 0}
+.card p{color:var(--muted);margin:0.35rem 0}
+.card .tags{margin-top:.5rem;display:flex;gap:.35rem;flex-wrap:wrap}
+.tag{background:#f3f4f6;color:var(--muted);padding:.15rem .4rem;border-radius:999px;font-size:.85rem}
+/* Focus styles for accessibility */
+a:focus,button:focus{outline:3px solid rgba(14,165,164,0.18);outline-offset:2px}
+/* Utility */
+.flex{display:flex}
+.align-center{align-items:center}
+.gap-sm{gap:.5rem}
