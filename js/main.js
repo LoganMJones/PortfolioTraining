@@ -4,9 +4,8 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* Mobile menu */
   var menuBtn = document.querySelector(".menu-btn");
-  var nav = document.querySelector(".nav");
+  var nav = document.querySelector(".nav") || document.querySelector(".site-nav");
 
   if (menuBtn && nav) {
     menuBtn.addEventListener("click", function () {
@@ -24,9 +23,8 @@
     });
   }
 
-  /* Active nav link */
   var sections = document.querySelectorAll("section[id]");
-  var navLinks = document.querySelectorAll(".nav a");
+  var navLinks = nav ? nav.querySelectorAll("a[href^='#']") : [];
 
   if (sections.length && navLinks.length) {
     var navObserver = new IntersectionObserver(
@@ -45,7 +43,6 @@
     sections.forEach(function (s) { navObserver.observe(s); });
   }
 
-  /* Scroll reveal */
   var reveals = document.querySelectorAll(".reveal");
   if (reveals.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var revealObserver = new IntersectionObserver(

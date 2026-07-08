@@ -1,0 +1,121 @@
+/* Setup guide page */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.65;
+}
+
+.guide-wrap {
+  width: min(100% - 2.5rem, 42rem);
+  margin-inline: auto;
+  padding-block: 2.5rem 4rem;
+}
+
+.guide h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+}
+
+.guide-lead {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin: 0 0 2.5rem;
+}
+
+.guide-step {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.guide-step h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.125rem;
+  margin: 0 0 1rem;
+}
+
+.step-num {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.guide-step ol,
+.guide-step ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.guide-step li + li { margin-top: 0.5rem; }
+
+.guide-step code {
+  background: #f1f5f9;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.guide-table th,
+.guide-table td {
+  text-align: left;
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.guide-table th {
+  background: #f8fafc;
+  font-weight: 600;
+}
+
+.cheat-list {
+  margin: 1rem 0 0;
+}
+
+.cheat-list dt {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-top: 0.75rem;
+}
+
+.cheat-list dd {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.9375rem;
+}
+
+.guide-cheat { background: #eff6ff; border-color: #bfdbfe; }
+
+.guide-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.guide-footer a { color: #2563eb; font-weight: 600; }
+
+.guide a { color: #2563eb; }

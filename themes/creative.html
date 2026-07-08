@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/creative.css">
+</head>
+<body class="has-theme-switcher">
+
+  <nav class="theme-switcher" aria-label="Switch layout">
+    <div class="theme-switcher-inner">
+      <span class="theme-switcher-label">Layouts:</span>
+      <a href="../index.html">All</a>
+      <a href="editorial.html">Editorial</a>
+      <a href="classic.html">Classic</a>
+      <a href="minimal.html">Minimal</a>
+      <a href="bold.html">Bold</a>
+      <a href="academic.html">Academic</a>
+      <a href="creative.html" aria-current="page">Creative</a>
+      <a href="../guide.html" class="theme-switcher-guide">📖 Guide</a>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">Your Name</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <div class="trainer-tip" style="margin-top:1rem;">
+      <strong>👋 Tip</strong> Search <code>EDIT HERE</code>. Colors → <code>css/creative.css</code> (--c1, --c2, --c3)
+    </div>
+
+    <div class="mosaic">
+      <div class="tile mosaic-hero">
+        <!-- EDIT HERE — NAME -->
+        <h1>Your Name</h1>
+        <!-- EDIT HERE — TAGLINE -->
+        <p class="tagline">One sentence about who you are and what you create.</p>
+        <!-- ADD YOUR PHOTO HERE
+             <img src="../assets/photo.jpg" alt="Photo of Your Name"> -->
+        <div class="photo-placeholder" style="max-width:200px;aspect-ratio:1;margin-top:1rem;border-radius:1rem;">
+          <span>📷</span> ADD YOUR PHOTO HERE
+        </div>
+      </div>
+      <div class="tile tile-accent">
+        <h2>Available for</h2>
+        <p>Research collaborations · Grad applications · Creative projects</p>
+      </div>
+      <div class="tile tile-green">
+        <h2>Based in</h2>
+        <p>City, State</p>
+      </div>
+    </div>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="tile">
+        <!-- EDIT HERE — ABOUT -->
+        <p>Write 2–3 paragraphs about your background, interests, and goals. This layout shines when your personality comes through.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Education &amp; Experience</h2>
+      <div class="grid-2">
+        <div class="tile">
+          <h3>MS in [Field] · 2027</h3>
+          <p>University Name · GPA 3.9</p>
+        </div>
+        <div class="tile">
+          <h3>BS in [Field] · 2023</h3>
+          <p>University Name · Honors</p>
+        </div>
+        <div class="tile">
+          <h3>Research Intern · 2025</h3>
+          <p>Organization Name</p>
+          <ul><li>Action-oriented bullet with measurable outcome.</li></ul>
+        </div>
+        <div class="tile">
+          <h3>Teaching Assistant · 2024</h3>
+          <p>University Name</p>
+          <ul><li>Led sections for 30 students.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>Project Title</h3>
+          <p>Short description and outcome.</p>
+          <ul class="tags"><li>Python</li><li>R</li></ul>
+          <a href="#">View →</a>
+        </div>
+        <div class="tile">
+          <h3>Another Project</h3>
+          <p>Brief description.</p>
+          <ul class="tags"><li>Research</li></ul>
+          <a href="#">View →</a>
+        </div>
+        <div class="tile">
+          <h3>Thesis / Poster</h3>
+          <p>Capstone summary.</p>
+          <a href="#">PDF →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-tile">
+        <h2>Say hello</h2>
+        <p>Open to collaborations and conversations.</p>
+        <div class="contact-links">
+          <a href="mailto:you@university.edu">Email</a>
+          <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name · Creative layout</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

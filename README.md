@@ -1,115 +1,120 @@
-# Portfolio Template
+# Portfolio Template — 6 Layouts
 
-A modern, minimal portfolio for graduate school and professional development. No build tools, no VS Code required — edit on GitHub, host free on GitHub Pages.
+Six ready-made portfolio designs for graduate school and professional development. **No coding tools required** — edit everything on github.com in your browser.
+
+**Live demo:** [loganmjones.github.io/PortfolioTraining](https://loganmjones.github.io/PortfolioTraining/)
 
 ---
 
-## Get your site live (no VS Code needed)
+## Start here
 
-### Step 1 — Copy the template
+1. **[Setup Guide](guide.html)** — step-by-step for non-technical users
+2. **[Pick a layout](index.html)** — preview all 6 themes
+3. **Customize one** — search your file for `EDIT HERE`
 
-On GitHub, click **Use this template** → create a new repo (e.g. `yourname-portfolio`).
+---
 
-### Step 2 — Turn on GitHub Pages
+## The 6 layouts
 
-1. Open your repo on **github.com**
-2. Go to **Settings** → **Pages**
-3. Under **Build and deployment** → **Source**: choose **Deploy from a branch**
-4. Branch: **main**, folder: **/ (root)**
-5. Click **Save**
-6. Wait 1–2 minutes
+| Layout | File | Style |
+|--------|------|-------|
+| **Editorial** | `themes/editorial.html` | Dark hero, bold type, bento grid |
+| **Classic** | `themes/classic.html` | Sidebar + photo, resume-style |
+| **Minimal** | `themes/minimal.html` | Black & white, Swiss simplicity |
+| **Bold** | `themes/bold.html` | Gradients, colorful cards |
+| **Academic** | `themes/academic.html` | Formal serif, great for grad apps |
+| **Creative** | `themes/creative.html` | Dark mosaic grid, playful |
 
-Your site URL will be:
+Every layout shares a **black bar at the top** so you can switch between them like separate pages.
+
+---
+
+## Quick customization
+
+### On GitHub (no VS Code, no Terminal)
+
+1. Open your repo → click `themes/your-layout.html` → click the **pencil icon**
+2. Press **Cmd+F** (Mac) or **Ctrl+F** (Windows)
+3. Search these labels:
+
+| Search for | What to change |
+|------------|----------------|
+| `EDIT HERE — NAME` | Your full name |
+| `EDIT HERE — TAGLINE` | One-sentence description |
+| `EDIT HERE — ABOUT` | Your bio |
+| `EDIT HERE — EMAIL` | Your email |
+| `ADD YOUR PHOTO HERE` | Instructions to add a headshot |
+| `EDIT LINK HERE` | LinkedIn, GitHub, project URLs |
+
+4. For colors: edit `css/[layout].css` — only change the hex codes in the **CHANGE YOUR COLORS HERE** section at the top
+5. Click **Commit changes** at the bottom
+
+### Delete when done
+
+Search for `trainer-tip` and delete those yellow boxes — they're training helpers, not part of your final site.
+
+---
+
+## Add a photo
+
+1. In your repo, go to the `assets` folder
+2. **Add file** → **Upload files** → drag in `photo.jpg`
+3. In your theme file, find `ADD YOUR PHOTO HERE` and follow the comment instructions
+
+---
+
+## GitHub Pages setup
+
+1. Repo → **Settings** → **Pages**
+2. Source: **Deploy from a branch** → `main` → `/ (root)`
+3. Your site URL: `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
+
+**Don't** preview by clicking `index.html` in the repo — that shows unstyled HTML. Use your Pages URL.
+
+---
+
+## File structure
 
 ```
-https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-```
-
-> If you name the repo `yourusername.github.io`, the URL is just `https://yourusername.github.io`
-
-### Step 3 — Edit your content on GitHub
-
-You do **not** need VS Code. Edit files directly in the browser:
-
-1. Open your repo on github.com
-2. Click `index.html` → click the **pencil icon** (Edit)
-3. Replace placeholder text with your info
-4. Scroll down → **Commit changes**
-
-Do the same for `css/style.css` if you want to change colors.
-
-### Step 4 — Check your live site
-
-**Important:** Do not preview by clicking `index.html` inside the GitHub repo — that shows raw unstyled HTML.
-
-Always open your **GitHub Pages URL** (from Settings → Pages). That's your real site.
-
----
-
-## What to customize
-
-| File | What to change |
-|------|----------------|
-| `index.html` | Your name, bio, education, experience, projects, contact links |
-| `css/style.css` | `--accent` at the top for your brand color |
-| `assets/` | Add your photo or CV (optional) |
-
----
-
-## Project structure
-
-```
-├── index.html       ← your content (start here)
-├── css/style.css    ← look and feel
-├── js/main.js       ← menu + scroll animations
-├── assets/          ← photos, CV
-└── .nojekyll        ← required for GitHub Pages
+├── index.html              ← layout picker (homepage)
+├── guide.html              ← detailed setup guide
+├── themes/
+│   ├── editorial.html
+│   ├── classic.html
+│   ├── minimal.html
+│   ├── bold.html
+│   ├── academic.html
+│   └── creative.html
+├── css/
+│   ├── shared.css          ← theme switcher (don't edit)
+│   ├── editorial.css       ← colors for Editorial
+│   ├── classic.css
+│   └── ...
+├── js/main.js
+└── assets/                 ← put photos here
 ```
 
 ---
 
-## Using GitHub Copilot (in the browser)
+## Workshop outline (90 min)
 
-1. Open your repo on github.com
-2. Click the **Copilot** icon in the top bar (or use Copilot Chat if available)
-3. Try prompts like:
-
-- "Rewrite the About section for a PhD application in psychology"
-- "Change the accent color in style.css to Northwestern purple"
-- "Add a Publications section matching the existing design"
-
----
-
-## Troubleshooting
-
-| Problem | Fix |
-|---------|-----|
-| Site looks like plain HTML | You're viewing the file on GitHub, not the Pages URL. Go to Settings → Pages for the correct link. |
-| CSS not loading | Make sure `css/style.css` exists in your repo (not just on your computer). Check the file is committed and pushed. |
-| Changes not showing | Hard refresh: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows). Wait 2 min for Pages to rebuild. |
-| 404 error | Pages may still be deploying. Check Settings → Pages shows a green checkmark. |
+| Time | Activity |
+|------|----------|
+| 10 min | Why portfolios matter; demo the 6 layouts |
+| 15 min | Copy template, enable GitHub Pages |
+| 10 min | Walk through [guide.html](guide.html) together |
+| 30 min | Students pick a layout, search `EDIT HERE`, fill in content |
+| 15 min | Add photos, change accent color |
+| 10 min | Share live URLs, delete trainer-tip boxes |
 
 ---
 
-## Design features
+## GitHub Copilot prompts
 
-- Full-screen dark hero with grid texture
-- Editorial numbered sections (01, 02, 03…)
-- Bento-style project grid
-- Scroll-reveal animations
-- Mobile-friendly navigation
-- Accessible (skip link, focus styles, semantic HTML)
+- "Rewrite my about section for a PhD application in cognitive science"
+- "Change the accent color in css/academic.css to Northwestern purple"
+- "What does ADD YOUR PHOTO HERE mean in this file?"
 
 ---
 
-## Workshop outline (60–90 min)
-
-1. Copy template & enable GitHub Pages (15 min)
-2. Edit `index.html` on github.com with your content (30 min)
-3. Customize accent color in `css/style.css` (10 min)
-4. Use Copilot to refine a section (15 min)
-5. Share live URLs & troubleshoot (10 min)
-
----
-
-MIT License — free to use and share with your cohort.
+MIT License · Kellogg REU Portfolio Training

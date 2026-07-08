@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Guide — Portfolio Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/guide.css">
+</head>
+<body>
+
+  <nav class="theme-switcher" aria-label="Site navigation">
+    <div class="theme-switcher-inner">
+      <span class="theme-switcher-label">Portfolio Training</span>
+      <a href="./index.html">All Layouts</a>
+      <a href="./themes/editorial.html">Editorial</a>
+      <a href="./themes/classic.html">Classic</a>
+      <a href="./themes/minimal.html">Minimal</a>
+      <a href="./themes/bold.html">Bold</a>
+      <a href="./themes/academic.html">Academic</a>
+      <a href="./themes/creative.html">Creative</a>
+    </div>
+  </nav>
+
+  <main class="guide">
+    <div class="guide-wrap">
+
+      <h1>Setup Guide</h1>
+      <p class="guide-lead">No coding experience needed. Everything happens on <strong>github.com</strong> in your browser.</p>
+
+      <!-- Step 1 -->
+      <section class="guide-step">
+        <h2><span class="step-num">1</span> Copy this template</h2>
+        <ol>
+          <li>Go to the template repo on GitHub.</li>
+          <li>Click the green <strong>Use this template</strong> button → <strong>Create a new repository</strong>.</li>
+          <li>Name it something like <code>my-portfolio</code>.</li>
+          <li>Click <strong>Create repository</strong>.</li>
+        </ol>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="guide-step">
+        <h2><span class="step-num">2</span> Turn on GitHub Pages (free hosting)</h2>
+        <ol>
+          <li>In your new repo, click <strong>Settings</strong> (top tab).</li>
+          <li>Click <strong>Pages</strong> in the left sidebar.</li>
+          <li>Under <strong>Build and deployment</strong> → <strong>Source</strong>: pick <strong>Deploy from a branch</strong>.</li>
+          <li>Branch: <strong>main</strong> · Folder: <strong>/ (root)</strong> → click <strong>Save</strong>.</li>
+          <li>Wait 1–2 minutes. Your URL appears at the top of the Pages settings page:<br>
+            <code>https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</code>
+          </li>
+        </ol>
+        <div class="trainer-tip">
+          <strong>⚠️ Important</strong>
+          Do NOT preview your site by clicking <code>index.html</code> inside the repo — that shows unstyled HTML.
+          Always use your <strong>GitHub Pages URL</strong> from Settings → Pages.
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="guide-step">
+        <h2><span class="step-num">3</span> Pick a layout</h2>
+        <p>Open your live site URL. You'll see 6 layout options. Click through them using the <strong>black bar at the top</strong>. Pick the one you like best — you'll only customize that one file.</p>
+        <table class="guide-table">
+          <thead>
+            <tr><th>Layout</th><th>File to edit</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Editorial</td><td><code>themes/editorial.html</code></td><td>Modern, bold, creative fields</td></tr>
+            <tr><td>Classic</td><td><code>themes/classic.html</code></td><td>Traditional resume look</td></tr>
+            <tr><td>Minimal</td><td><code>themes/minimal.html</code></td><td>Clean and simple</td></tr>
+            <tr><td>Bold</td><td><code>themes/bold.html</code></td><td>Eye-catching, colorful</td></tr>
+            <tr><td>Academic</td><td><code>themes/academic.html</code></td><td>Grad school applications</td></tr>
+            <tr><td>Creative</td><td><code>themes/creative.html</code></td><td>Design-forward portfolios</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Step 4 -->
+      <section class="guide-step">
+        <h2><span class="step-num">4</span> Edit your content on GitHub</h2>
+        <ol>
+          <li>Go to your repo on github.com.</li>
+          <li>Click <code>themes</code> folder → click your chosen file (e.g. <code>editorial.html</code>).</li>
+          <li>Click the <strong>pencil icon</strong> (✏️ Edit this file) in the top-right.</li>
+          <li>Press <strong>Cmd+F</strong> (Mac) or <strong>Ctrl+F</strong> (Windows) and search: <code>EDIT HERE</code></li>
+          <li>Change each labeled spot to your real information.</li>
+          <li>Scroll to the bottom → click <strong>Commit changes</strong>.</li>
+        </ol>
+      </section>
+
+      <!-- Step 5 -->
+      <section class="guide-step">
+        <h2><span class="step-num">5</span> Add your photo</h2>
+        <ol>
+          <li>In your repo, click the <code>assets</code> folder.</li>
+          <li>Click <strong>Add file</strong> → <strong>Upload files</strong>.</li>
+          <li>Drag in your photo (name it something simple like <code>photo.jpg</code>).</li>
+          <li>Click <strong>Commit changes</strong>.</li>
+          <li>Go back to your theme file and search for <code>ADD YOUR PHOTO HERE</code>.</li>
+          <li>Follow the instructions in that comment to uncomment the <code>&lt;img&gt;</code> line and update the filename.</li>
+        </ol>
+      </section>
+
+      <!-- Step 6 -->
+      <section class="guide-step">
+        <h2><span class="step-num">6</span> Change your colors</h2>
+        <ol>
+          <li>Click the <code>css</code> folder in your repo.</li>
+          <li>Click the file matching your layout (e.g. <code>editorial.css</code> for Editorial layout).</li>
+          <li>Click the pencil icon to edit.</li>
+          <li>At the very top you'll see a section labeled <strong>CHANGE YOUR COLORS HERE</strong>.</li>
+          <li>Only edit the hex color codes (like <code>#2563eb</code>). Don't change anything else unless you know CSS.</li>
+          <li>Commit changes.</li>
+        </ol>
+        <p>Need a color? Google <em>"color picker"</em> or use <a href="https://htmlcolorcodes.com/" rel="noopener noreferrer">htmlcolorcodes.com</a>.</p>
+      </section>
+
+      <!-- Step 7 -->
+      <section class="guide-step">
+        <h2><span class="step-num">7</span> Clean up when done</h2>
+        <ul>
+          <li>Delete the <strong>yellow trainer tip boxes</strong> from your HTML file (search for <code>trainer-tip</code>).</li>
+          <li>Update your links — search for <code>EDIT LINK HERE</code> and replace <code>#</code> with real URLs.</li>
+          <li>Hard-refresh your live site: <strong>Cmd+Shift+R</strong> or <strong>Ctrl+Shift+R</strong>.</li>
+        </ul>
+      </section>
+
+      <!-- Cheat sheet -->
+      <section class="guide-step guide-cheat">
+        <h2>Search cheat sheet</h2>
+        <p>Use Cmd+F / Ctrl+F in your theme file to find these:</p>
+        <dl class="cheat-list">
+          <dt><code>EDIT HERE — NAME</code></dt>
+          <dd>Your full name</dd>
+          <dt><code>EDIT HERE — TAGLINE</code></dt>
+          <dd>One-sentence description of you</dd>
+          <dt><code>EDIT HERE — ABOUT</code></dt>
+          <dd>Your bio paragraphs</dd>
+          <dt><code>EDIT HERE — EMAIL</code></dt>
+          <dd>Your email address</dd>
+          <dt><code>ADD YOUR PHOTO HERE</code></dt>
+          <dd>Where to put your headshot</dd>
+          <dt><code>EDIT LINK HERE</code></dt>
+          <dd>LinkedIn, GitHub, project URLs</dd>
+        </dl>
+      </section>
+
+      <!-- Copilot -->
+      <section class="guide-step">
+        <h2>Using GitHub Copilot</h2>
+        <p>Copilot can rewrite your bio, suggest project descriptions, or help fix links. Open your file for editing on GitHub, then use Copilot Chat and try:</p>
+        <ul>
+          <li><em>"Rewrite the about section for a PhD application in neuroscience"</em></li>
+          <li><em>"Make this experience bullet more professional"</em></li>
+          <li><em>"What does EDIT HERE — EMAIL mean in this file?"</em></li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="guide-footer">
+    <p><a href="./index.html">← Back to all layouts</a></p>
+  </footer>
+
+</body>
+</html>

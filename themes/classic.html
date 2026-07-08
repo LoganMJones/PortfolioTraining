@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/classic.css">
+</head>
+<body class="has-theme-switcher">
+
+  <nav class="theme-switcher" aria-label="Switch layout">
+    <div class="theme-switcher-inner">
+      <span class="theme-switcher-label">Layouts:</span>
+      <a href="../index.html">All</a>
+      <a href="editorial.html">Editorial</a>
+      <a href="classic.html" aria-current="page">Classic</a>
+      <a href="minimal.html">Minimal</a>
+      <a href="bold.html">Bold</a>
+      <a href="academic.html">Academic</a>
+      <a href="creative.html">Creative</a>
+      <a href="../guide.html" class="theme-switcher-guide">📖 Guide</a>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">Your Name</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="trainer-tip" style="margin-bottom:1rem;font-size:0.8125rem;">
+        <strong>👋 Tip</strong> Search for <code>EDIT HERE</code>. Colors → <code>css/classic.css</code>
+      </div>
+
+      <!-- ADD YOUR PHOTO HERE — upload to assets/photo.jpg, then replace placeholder with:
+           <img class="sidebar-photo" src="../assets/photo.jpg" alt="Photo of Your Name"> -->
+      <div class="photo-placeholder" style="aspect-ratio:1;">
+        <span>📷</span> ADD YOUR PHOTO HERE
+      </div>
+
+      <!-- EDIT HERE — NAME -->
+      <h1>Your Name</h1>
+      <!-- EDIT HERE — TAGLINE -->
+      <p class="role">Graduate Student &amp; Researcher</p>
+      <ul class="sidebar-contact">
+        <!-- EDIT HERE — EMAIL -->
+        <li><a href="mailto:you@university.edu">you@university.edu</a></li>
+        <!-- EDIT LINK HERE -->
+        <li><a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a></li>
+        <!-- EDIT LINK HERE -->
+        <li><a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </aside>
+
+    <main class="content" id="main">
+      <section id="about" class="section">
+        <h2>About</h2>
+        <!-- EDIT HERE — ABOUT -->
+        <p>Write 2–3 paragraphs about your background, research interests, and career goals. Be specific and clear.</p>
+        <p>What motivates your work? What do you hope to do next?</p>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <article class="entry">
+          <p class="entry-meta">Expected 2027</p>
+          <h3>Master of Science in [Field]</h3>
+          <p class="entry-org">University Name</p>
+          <p>GPA 3.9 · Coursework: Statistics, Machine Learning, Research Methods</p>
+        </article>
+        <article class="entry">
+          <p class="entry-meta">2023</p>
+          <h3>Bachelor of Science in [Field]</h3>
+          <p class="entry-org">University Name</p>
+          <p>Honors, Dean's List, relevant awards.</p>
+        </article>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <article class="entry">
+          <p class="entry-meta">Summer 2025</p>
+          <h3>Research Intern</h3>
+          <p class="entry-org">Organization or Lab Name</p>
+          <ul>
+            <li>Describe your work with action verbs and measurable outcomes.</li>
+            <li>Example: Analyzed 500+ responses in R; presented findings to faculty.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <p class="entry-meta">2024 – Present</p>
+          <h3>Teaching Assistant</h3>
+          <p class="entry-org">Department, University Name</p>
+          <ul>
+            <li>Led discussion sections for 30 students in [Course Name].</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Project Title</h3>
+            <p>One or two sentences on the project and outcome.</p>
+            <ul class="tags"><li>Python</li><li>R</li></ul>
+          </article>
+          <article class="project-card">
+            <h3>Another Project</h3>
+            <p>Brief description with link to paper or poster if available.</p>
+            <ul class="tags"><li>Stata</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Open to research collaborations and graduate program conversations.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name · Classic layout</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

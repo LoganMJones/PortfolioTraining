@@ -1,7 +1,14 @@
 /* ==========================================================================
-   Portfolio — cutting-edge minimal
-   Change --accent to your brand color. Everything else scales from there.
-   ========================================================================== */
+   EDITORIAL THEME — colors & fonts
+   ══════════════════════════════════════════════════════════════════════════
+   🎨 CHANGE YOUR COLORS HERE — only edit the 4 lines below!
+      Use https://htmlcolorcodes.com to pick colors.
+
+   --accent:       main brand color (buttons, highlights, links)
+   --bg-dark:      hero & dark section background
+   --bg:           light section background
+   --text:         main text color on light backgrounds
+   ══════════════════════════════════════════════════════════════════════════ */
 
 :root {
   --bg: #fafafa;
@@ -13,8 +20,8 @@
   --text-muted-dark: #a3a3a3;
   --border: #e5e5e5;
   --border-dark: #262626;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
+  --accent: #2563eb;        /* ← YOUR MAIN COLOR */
+  --accent-hover: #1d4ed8;  /* ← slightly darker shade */
 
   --font-display: "Syne", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -22,14 +29,15 @@
   --wrap: min(100% - 3rem, 72rem);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --header-h: 4.5rem;
+  --page-top: calc(var(--theme-switcher-height) + var(--header-h));
 }
-
-*, *::before, *::after { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header-h);
+  scroll-padding-top: var(--page-top);
 }
+
+*, *::before, *::after { box-sizing: border-box; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -99,6 +107,7 @@ ul li + li { margin-top: 0.35rem; }
 .header {
   position: fixed;
   inset: 0 0 auto;
+  top: var(--theme-switcher-height);
   z-index: 100;
   height: var(--header-h);
   background: rgba(250, 250, 250, 0.8);
@@ -204,7 +213,7 @@ ul li + li { margin-top: 0.35rem; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: var(--header-h);
+  padding-top: var(--page-top);
   background: var(--bg-dark);
   color: var(--text-on-dark);
   overflow: hidden;
