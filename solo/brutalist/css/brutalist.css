@@ -63,3 +63,12 @@ a { color: var(--brut-ink); }
 .brut-footer p { margin: 0; }
 
 .privacy-notice a { color: #991b1b; font-weight: 900; }
+
+@media (max-width: 700px) {
+  .brut-hero { padding: 2rem 1.25rem 1.5rem; }
+  .brut-section { padding: 2rem 1.25rem; }
+  .brut-name { font-size: clamp(2.75rem, 16vw, 5rem); overflow-wrap: anywhere; }
+  .brut-link { box-shadow: 4px 4px 0 var(--brut-accent); font-size: 1rem; padding: 0.875rem 1.15rem; }
+  .file-download { box-shadow: 4px 4px 0 var(--brut-ink); }
+  .brut-card:last-child { border-bottom: none; }
+}

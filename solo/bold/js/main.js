@@ -10,18 +10,28 @@
     || document.querySelector(".mobile-nav");
 
   if (menuBtn && nav) {
-    menuBtn.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
+    function setMenuOpen(open) {
+      nav.classList.toggle("is-open", open);
       menuBtn.setAttribute("aria-expanded", String(open));
       menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+
+    menuBtn.addEventListener("click", function () {
+      setMenuOpen(!nav.classList.contains("is-open"));
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        nav.classList.remove("is-open");
-        menuBtn.setAttribute("aria-expanded", "false");
-        menuBtn.setAttribute("aria-label", "Open menu");
+        setMenuOpen(false);
       });
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("is-open")) {
+        setMenuOpen(false);
+        menuBtn.focus();
+      }
     });
   }
 
@@ -35,7 +45,11 @@
           if (entry.isIntersecting) {
             var id = entry.target.id;
             navLinks.forEach(function (link) {
-              link.setAttribute("aria-current", link.getAttribute("href") === "#" + id ? "true" : "false");
+              if (link.getAttribute("href") === "#" + id) {
+                link.setAttribute("aria-current", "true");
+              } else {
+                link.removeAttribute("aria-current");
+              }
             });
           }
         });
@@ -73,7 +87,11 @@
           if (entry.isIntersecting) {
             var id = entry.target.id;
             deckDots.forEach(function (dot) {
-              dot.setAttribute("aria-current", dot.getAttribute("href") === "#" + id ? "true" : "false");
+              if (dot.getAttribute("href") === "#" + id) {
+                dot.setAttribute("aria-current", "true");
+              } else {
+                dot.removeAttribute("aria-current");
+              }
             });
           }
         });

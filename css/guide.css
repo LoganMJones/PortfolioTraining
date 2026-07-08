@@ -216,11 +216,33 @@ body {
   text-align: left;
   padding: 0.625rem 0.75rem;
   border-bottom: 1px solid #e2e8f0;
+  word-break: break-word;
 }
 
 .guide-table th {
   background: #f8fafc;
   font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .guide-step,
+  .guide-wrap {
+    overflow-x: clip;
+  }
+  .guide-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.8125rem;
+  }
+  .guide-table thead,
+  .guide-table tbody,
+  .guide-table tr {
+    display: table;
+    width: 100%;
+    min-width: 28rem;
+    table-layout: auto;
+  }
 }
 
 .cheat-list { margin: 1rem 0 0; }

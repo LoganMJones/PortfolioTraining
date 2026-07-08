@@ -34,3 +34,9 @@ section li strong { color: var(--text); }
 .doc-footer p { margin: 0; }
 
 .privacy-notice a { color: #991b1b; font-weight: 600; }
+
+@media (max-width: 30rem) {
+  .doc-page { padding: 1.5rem 0 2.5rem; }
+  .doc-top h1 { font-size: clamp(1.5rem, 7vw, 1.75rem); overflow-wrap: anywhere; }
+  section li { overflow-wrap: anywhere; }
+}
