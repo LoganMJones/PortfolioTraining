@@ -44,6 +44,8 @@
           <li><a href="#photos">Free photos</a></li>
           <li><a href="#fonts">Free fonts</a></li>
           <li><a href="#plug-in">Plug assets into your site</a></li>
+          <li><a href="#privacy">Privacy &amp; safety</a></li>
+          <li><a href="#rich-media">Images, video, PDF &amp; audio</a></li>
           <li><a href="#copilot">GitHub Copilot</a></li>
         </ul>
       </nav>
@@ -625,6 +627,122 @@
           </div>
         </details>
 
+      </section>
+
+      <!-- PRIVACY -->
+      <section id="privacy" class="guide-step" style="background:#fef2f2;border-color:#fca5a5;">
+        <h2>🔒 Privacy &amp; safety — read this first</h2>
+        <p><strong>Your GitHub Pages site is public.</strong> Search engines can index it. Anyone with the URL can view it. Treat it like a billboard, not a private folder.</p>
+        <h3 style="font-size:1rem;margin:1.25rem 0 0.5rem;">Never post:</h3>
+        <ul>
+          <li>Passwords, API keys, or login credentials</li>
+          <li>Social Security numbers, bank details, or government IDs</li>
+          <li>Your home address or personal phone number (use a university email instead)</li>
+          <li>Unpublished research data with identifiable participants (IRB restrictions apply)</li>
+          <li>Manuscripts under blind review that could identify you or co-authors</li>
+          <li>Lab-confidential or proprietary information</li>
+          <li>Anything you wouldn't hand to a stranger at a conference</li>
+        </ul>
+        <h3 style="font-size:1rem;margin:1.25rem 0 0.5rem;">Generally safe to post:</h3>
+        <ul>
+          <li>Published papers, preprints, and public conference posters</li>
+          <li>Professional headshots and public project screenshots</li>
+          <li>University email, LinkedIn, GitHub, and ORCID</li>
+          <li>Aggregated or anonymized results</li>
+          <li>Your CV — but review it first; CVs sometimes include more detail than you want public</li>
+        </ul>
+        <p>Every theme includes a red <strong>privacy notice</strong> box. Delete it only after you've reviewed your content — not before.</p>
+      </section>
+
+      <!-- RICH MEDIA -->
+      <section class="resource-library" aria-labelledby="rich-media-heading">
+        <h2 id="rich-media-heading">Images, video, PDF &amp; audio</h2>
+        <p class="resource-intro">Each layout supports different media. Search your theme file for <code>ADD</code> to find every slot. All patterns below are <strong>performant</strong> (lazy-loaded images, no autoplay video) and <strong>accessible</strong> (alt text, captions, iframe titles).</p>
+
+        <details class="resource-dropdown" open>
+          <summary><span class="dropdown-icon" aria-hidden="true">🖼</span> Images (photos, screenshots, posters)</summary>
+          <div class="dropdown-body">
+            <div class="workflow-box">
+              <strong>How to add any image</strong>
+              <ol>
+                <li>Upload the file to your <code>assets/</code> folder on GitHub (e.g. <code>photo.jpg</code>).</li>
+                <li>Find <code>ADD YOUR PHOTO HERE</code> or <code>ADD PROJECT IMAGE HERE</code> in your theme HTML.</li>
+                <li>Delete the placeholder <code>&lt;div&gt;</code> and uncomment the <code>&lt;img&gt;</code> line in the comment above it.</li>
+                <li>Always write descriptive <strong>alt text</strong> — e.g. <code>alt="Research poster on cognitive bias at APS 2025"</code>, not <code>alt="image"</code>.</li>
+                <li>Add <code>loading="lazy"</code> for images below the fold (already in template examples).</li>
+              </ol>
+            </div>
+            <p><strong>Tip:</strong> Compress large photos at <a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer">squoosh.app</a> (free, no account) before uploading — keeps your site fast.</p>
+          </div>
+        </details>
+
+        <details class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">▶</span> Video (YouTube, Vimeo)</summary>
+          <div class="dropdown-body">
+            <div class="workflow-box">
+              <strong>How to embed a video</strong>
+              <ol>
+                <li>Upload your talk to YouTube or Vimeo (unlisted is OK — still don't share sensitive content).</li>
+                <li>Click <strong>Share → Embed</strong> and copy the <code>&lt;iframe&gt;</code> code.</li>
+                <li>In your theme HTML, find <code>ADD VIDEO HERE</code>.</li>
+                <li>Paste the iframe inside a <code>&lt;div class="media-embed"&gt;</code> (see HTML comment in template).</li>
+                <li>Set a descriptive <code>title="..."</code> on the iframe — required for screen readers.</li>
+                <li>Delete the placeholder div. Never use autoplay.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+        <details class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">📄</span> PDFs (CV, papers, slides)</summary>
+          <div class="dropdown-body">
+            <div class="workflow-box">
+              <strong>How to link a PDF</strong>
+              <ol>
+                <li>Upload <code>cv.pdf</code> (or similar) to <code>assets/</code>.</li>
+                <li>Find <code>ADD PDF HERE</code> or a <code>file-download</code> link in your HTML.</li>
+                <li>Update the <code>href</code> to <code>../assets/cv.pdf</code>.</li>
+                <li>Only upload PDFs you're allowed to share publicly.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+        <details class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">🎧</span> Audio (podcast clips, interviews)</summary>
+          <div class="dropdown-body">
+            <div class="workflow-box">
+              <strong>How to add audio (Minimal &amp; Creative layouts)</strong>
+              <ol>
+                <li>Upload <code>.mp3</code> to <code>assets/</code>.</li>
+                <li>Uncomment the <code>&lt;audio controls preload="none"&gt;</code> block in your HTML.</li>
+                <li>Set <code>src="../assets/yourfile.mp3"</code>.</li>
+                <li>Native browser player — no account, accessible, performant. No autoplay.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+        <details class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">🗂️</span> Which layout supports what?</summary>
+          <div class="dropdown-body">
+            <table class="guide-table">
+              <thead><tr><th>Media type</th><th>Best layouts</th></tr></thead>
+              <tbody>
+                <tr><td>Hero / banner image</td><td>Editorial, Bold, Creative</td></tr>
+                <tr><td>Headshot</td><td>All layouts</td></tr>
+                <tr><td>Project thumbnails</td><td>Classic, Bold, Creative, Editorial</td></tr>
+                <tr><td>Photo gallery (multi-image)</td><td>Editorial, Creative</td></tr>
+                <tr><td>Video embed</td><td>Editorial, Bold, Academic, Minimal, Creative</td></tr>
+                <tr><td>PDF download</td><td>All layouts</td></tr>
+                <tr><td>Research poster figure</td><td>Academic, Editorial</td></tr>
+                <tr><td>Audio clip</td><td>Minimal, Creative</td></tr>
+                <tr><td>Publications list</td><td>Academic, Classic</td></tr>
+                <tr><td>Impact stats</td><td>Bold</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
       </section>
 
       <section id="copilot" class="guide-step">

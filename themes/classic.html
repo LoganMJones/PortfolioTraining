@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Your Name | CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="../css/classic.css">
 </head>
-<body class="has-theme-switcher">
+<body class="has-theme-switcher theme-classic">
 
   <nav class="theme-switcher" aria-label="Switch layout">
     <div class="theme-switcher-inner">
@@ -26,117 +26,120 @@
     </div>
   </nav>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#">Your Name</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
-      <nav id="nav" class="site-nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="layout">
-    <aside class="sidebar">
-      <div class="trainer-tip" style="margin-bottom:1rem;font-size:0.8125rem;">
-        <strong>👋 Tip</strong> Search for <code>EDIT HERE</code>. Colors → <code>css/classic.css</code>
+    <aside class="sidebar" aria-label="Profile">
+      <div class="privacy-notice">
+        <strong>🔒 Public site</strong>
+        Do not post private info, unpublished data, or home addresses. Anyone can view this page.
       </div>
 
-      <!-- ADD YOUR PHOTO HERE — upload to assets/photo.jpg, then replace placeholder with:
-           <img class="sidebar-photo" src="../assets/photo.jpg" alt="Photo of Your Name"> -->
-      <div class="photo-placeholder" style="aspect-ratio:1;">
-        <span>📷</span> ADD YOUR PHOTO HERE
-      </div>
+      <!-- ADD YOUR PHOTO HERE -->
+      <figure class="sidebar-photo-wrap">
+        <div class="media-placeholder media-placeholder--square" role="img" aria-label="Headshot placeholder">
+          <span aria-hidden="true">📷</span> ADD YOUR PHOTO HERE
+        </div>
+        <!-- <img src="../assets/photo.jpg" alt="Professional headshot of Your Name" width="400" height="400" loading="eager" class="sidebar-photo"> -->
+      </figure>
 
-      <!-- EDIT HERE — NAME -->
       <h1>Your Name</h1>
-      <!-- EDIT HERE — TAGLINE -->
-      <p class="role">Graduate Student &amp; Researcher</p>
+      <p class="role">Graduate Student · [Field]</p>
+
       <ul class="sidebar-contact">
-        <!-- EDIT HERE — EMAIL -->
         <li><a href="mailto:you@university.edu">you@university.edu</a></li>
-        <!-- EDIT LINK HERE -->
         <li><a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a></li>
-        <!-- EDIT LINK HERE -->
         <li><a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a></li>
       </ul>
+
+      <!-- ADD PDF HERE — upload assets/cv.pdf -->
+      <a class="file-download sidebar-cv" href="../assets/cv.pdf">Download CV (PDF)</a>
+
+      <nav class="sidebar-nav" aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+      </nav>
     </aside>
 
-    <main class="content" id="main">
-      <section id="about" class="section">
-        <h2>About</h2>
-        <!-- EDIT HERE — ABOUT -->
-        <p>Write 2–3 paragraphs about your background, research interests, and career goals. Be specific and clear.</p>
-        <p>What motivates your work? What do you hope to do next?</p>
-      </section>
+    <div class="main-col">
+      <header class="mobile-header">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
+        <span class="mobile-brand">Your Name</span>
+      </header>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+      </nav>
 
-      <section id="education" class="section">
-        <h2>Education</h2>
-        <article class="entry">
-          <p class="entry-meta">Expected 2027</p>
-          <h3>Master of Science in [Field]</h3>
-          <p class="entry-org">University Name</p>
-          <p>GPA 3.9 · Coursework: Statistics, Machine Learning, Research Methods</p>
-        </article>
-        <article class="entry">
-          <p class="entry-meta">2023</p>
-          <h3>Bachelor of Science in [Field]</h3>
-          <p class="entry-org">University Name</p>
-          <p>Honors, Dean's List, relevant awards.</p>
-        </article>
-      </section>
-
-      <section id="experience" class="section">
-        <h2>Experience</h2>
-        <article class="entry">
-          <p class="entry-meta">Summer 2025</p>
-          <h3>Research Intern</h3>
-          <p class="entry-org">Organization or Lab Name</p>
-          <ul>
-            <li>Describe your work with action verbs and measurable outcomes.</li>
-            <li>Example: Analyzed 500+ responses in R; presented findings to faculty.</li>
-          </ul>
-        </article>
-        <article class="entry">
-          <p class="entry-meta">2024 – Present</p>
-          <h3>Teaching Assistant</h3>
-          <p class="entry-org">Department, University Name</p>
-          <ul>
-            <li>Led discussion sections for 30 students in [Course Name].</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-list">
-          <article class="project-card">
-            <h3>Project Title</h3>
-            <p>One or two sentences on the project and outcome.</p>
-            <ul class="tags"><li>Python</li><li>R</li></ul>
-          </article>
-          <article class="project-card">
-            <h3>Another Project</h3>
-            <p>Brief description with link to paper or poster if available.</p>
-            <ul class="tags"><li>Stata</li></ul>
-          </article>
+      <main id="main" class="content">
+        <div class="trainer-tip">
+          <strong>👋 Classic layout</strong> Sidebar CV style with <strong>photo, PDF download, project thumbnails, and publications</strong>. Search <code>ADD</code> for media slots.
         </div>
-      </section>
 
-      <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Open to research collaborations and graduate program conversations.</p>
-      </section>
-    </main>
+        <section id="about">
+          <h2>Profile</h2>
+          <p>Professional summary — 2–3 sentences on your background, strengths, and goals. Written for recruiters and admissions committees.</p>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <article class="entry">
+            <div class="entry-head"><h3>Research Intern</h3><time datetime="2025">2025</time></div>
+            <p class="entry-org">Organization Name</p>
+            <ul><li>Quantified achievement with action verbs.</li></ul>
+          </article>
+          <article class="entry">
+            <div class="entry-head"><h3>MS in [Field]</h3><time datetime="2027">2027</time></div>
+            <p class="entry-org">University Name</p>
+          </article>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <article class="project-row">
+              <!-- ADD PROJECT IMAGE HERE — assets/project-1.jpg -->
+              <div class="project-thumb media-placeholder media-placeholder--square"><span>🖼</span></div>
+              <div>
+                <h3>Project Title</h3>
+                <p>Description with outcome. Optional link to demo or repo.</p>
+                <a href="#">View project →</a>
+              </div>
+            </article>
+            <article class="project-row">
+              <div class="project-thumb media-placeholder media-placeholder--square"><span>🖼</span></div>
+              <div>
+                <h3>Second Project</h3>
+                <p>Brief description.</p>
+                <a href="#">GitHub →</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="publications">
+          <h2>Publications &amp; documents</h2>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Paper or poster title (Year)</span>
+              <!-- ADD PDF HERE — assets/paper.pdf -->
+              <a class="file-download" href="../assets/paper.pdf">PDF</a>
+            </li>
+            <li>
+              <span class="pub-title">Conference presentation (Year)</span>
+              <a class="file-download" href="#">Slides</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer"><p>&copy; <span id="year"></span> Your Name · Classic</p></footer>
+    </div>
   </div>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name · Classic layout</p>
-  </footer>
   <script src="../js/main.js"></script>
 </body>
 </html>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
+  <title>Your Name — Creative Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="../css/creative.css">
 </head>
-<body class="has-theme-switcher">
+<body class="has-theme-switcher theme-creative">
 
   <nav class="theme-switcher" aria-label="Switch layout">
     <div class="theme-switcher-inner">
@@ -26,14 +26,17 @@
     </div>
   </nav>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#">Your Name</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
       <nav id="nav" class="site-nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <a href="#mosaic">Intro</a>
+        <a href="#gallery">Gallery</a>
         <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -41,91 +44,108 @@
 
   <main id="main" class="wrap">
 
-    <div class="trainer-tip" style="margin-top:1rem;">
-      <strong>👋 Tip</strong> Search <code>EDIT HERE</code>. Colors → <code>css/creative.css</code> (--c1, --c2, --c3)
+    <div class="privacy-notice">
+      <strong>🔒 Public portfolio</strong>
+      Only share work you're allowed to show publicly. No client-confidential designs, private commissions, or personal info you wouldn't put on a public Instagram.
     </div>
 
-    <div class="mosaic">
-      <div class="tile mosaic-hero">
-        <!-- EDIT HERE — NAME -->
+    <div class="trainer-tip">
+      <strong>👋 Creative layout</strong> Visual-first: <strong>mosaic intro, photo gallery, image-led projects, mixed image + video row</strong>. Delete any section you don't need.
+    </div>
+
+    <!-- Mosaic intro -->
+    <section id="mosaic" class="mosaic" aria-label="Introduction">
+      <div class="tile tile-hero">
         <h1>Your Name</h1>
-        <!-- EDIT HERE — TAGLINE -->
-        <p class="tagline">One sentence about who you are and what you create.</p>
-        <!-- ADD YOUR PHOTO HERE
-             <img src="../assets/photo.jpg" alt="Photo of Your Name"> -->
-        <div class="photo-placeholder" style="max-width:200px;aspect-ratio:1;margin-top:1rem;border-radius:1rem;">
-          <span>📷</span> ADD YOUR PHOTO HERE
-        </div>
+        <p>Designer · researcher · maker — one line that captures your vibe.</p>
+      </div>
+      <div class="tile tile-photo">
+        <!-- ADD YOUR PHOTO HERE -->
+        <div class="media-placeholder media-placeholder--square" style="height:100%;min-height:12rem;"><span>📷</span> Photo</div>
       </div>
       <div class="tile tile-accent">
-        <h2>Available for</h2>
-        <p>Research collaborations · Grad applications · Creative projects</p>
+        <h2>Currently</h2>
+        <p>MS candidate at University Name. Building X. Applying to Y.</p>
       </div>
-      <div class="tile tile-green">
-        <h2>Based in</h2>
-        <p>City, State</p>
-      </div>
-    </div>
-
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="tile">
-        <!-- EDIT HERE — ABOUT -->
-        <p>Write 2–3 paragraphs about your background, interests, and goals. This layout shines when your personality comes through.</p>
+      <div class="tile tile-image">
+        <!-- ADD HERO IMAGE HERE — assets/hero.jpg -->
+        <div class="media-placeholder media-placeholder--wide" style="height:100%;min-height:10rem;"><span>🖼</span> Hero visual</div>
       </div>
     </section>
 
-    <section id="work" class="section">
-      <h2>Education &amp; Experience</h2>
-      <div class="grid-2">
-        <div class="tile">
-          <h3>MS in [Field] · 2027</h3>
-          <p>University Name · GPA 3.9</p>
-        </div>
-        <div class="tile">
-          <h3>BS in [Field] · 2023</h3>
-          <p>University Name · Honors</p>
-        </div>
-        <div class="tile">
-          <h3>Research Intern · 2025</h3>
-          <p>Organization Name</p>
-          <ul><li>Action-oriented bullet with measurable outcome.</li></ul>
-        </div>
-        <div class="tile">
-          <h3>Teaching Assistant · 2024</h3>
-          <p>University Name</p>
-          <ul><li>Led sections for 30 students.</li></ul>
-        </div>
+    <!-- Photo gallery -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p class="section-note">Process shots, field work, exhibitions — tell a visual story. Replace or remove placeholders.</p>
+      <div class="media-gallery gallery-large">
+        <!-- ADD GALLERY IMAGES HERE — assets/gallery-1.jpg through gallery-6.jpg -->
+        <div class="media-placeholder"><span>🖼</span> 1</div>
+        <div class="media-placeholder"><span>🖼</span> 2</div>
+        <div class="media-placeholder"><span>🖼</span> 3</div>
+        <div class="media-placeholder"><span>🖼</span> 4</div>
+        <div class="media-placeholder"><span>🖼</span> 5</div>
+        <div class="media-placeholder"><span>🖼</span> 6</div>
       </div>
     </section>
 
+    <!-- Image-led projects -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <div class="grid-3">
-        <div class="tile">
-          <h3>Project Title</h3>
-          <p>Short description and outcome.</p>
-          <ul class="tags"><li>Python</li><li>R</li></ul>
-          <a href="#">View →</a>
-        </div>
-        <div class="tile">
-          <h3>Another Project</h3>
-          <p>Brief description.</p>
-          <ul class="tags"><li>Research</li></ul>
-          <a href="#">View →</a>
-        </div>
-        <div class="tile">
-          <h3>Thesis / Poster</h3>
-          <p>Capstone summary.</p>
-          <a href="#">PDF →</a>
+      <div class="project-mosaic">
+        <article class="project-tile project-tile--large">
+          <div class="media-placeholder media-placeholder--wide" style="min-height:14rem;"><span>🖼</span> ADD PROJECT IMAGE</div>
+          <div class="project-tile-text">
+            <h3>Flagship Project</h3>
+            <p>Your best work gets the biggest tile. Description + link.</p>
+            <a href="#">View case study →</a>
+          </div>
+        </article>
+        <article class="project-tile">
+          <div class="media-placeholder media-placeholder--square" style="min-height:10rem;"><span>🖼</span></div>
+          <h3>Project Two</h3>
+          <p>Short description.</p>
+        </article>
+        <article class="project-tile">
+          <div class="media-placeholder media-placeholder--square" style="min-height:10rem;"><span>🖼</span></div>
+          <h3>Project Three</h3>
+          <p>Short description.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mixed media row -->
+    <section id="media" class="section">
+      <h2>Mixed media</h2>
+      <div class="media-row">
+        <figure class="media-figure">
+          <div class="media-placeholder media-placeholder--wide"><span>🖼</span> Image — process or detail shot</div>
+          <figcaption>Caption for the image (required for accessibility).</figcaption>
+        </figure>
+        <div class="media-row-video">
+          <h3 class="sr-only">Video reel</h3>
+          <!-- ADD VIDEO HERE
+          <div class="media-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Describe the video reel" loading="lazy" allowfullscreen></iframe>
+          </div>
+          -->
+          <div class="media-placeholder media-placeholder--video">
+            <span aria-hidden="true">▶</span>
+            ADD VIDEO — reel, timelapse, or demo
+          </div>
         </div>
       </div>
+
+      <!-- ADD AUDIO HERE — optional
+      <div class="media-audio">
+        <p>Podcast or interview clip</p>
+        <audio controls preload="none" src="../assets/clip.mp3">Audio not supported.</audio>
+      </div>
+      -->
     </section>
 
     <section id="contact" class="section">
       <div class="contact-tile">
         <h2>Say hello</h2>
-        <p>Open to collaborations and conversations.</p>
         <div class="contact-links">
           <a href="mailto:you@university.edu">Email</a>
           <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
@@ -136,9 +156,7 @@
 
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name · Creative layout</p>
-  </footer>
+  <footer class="site-footer"><p>&copy; <span id="year"></span> Your Name · Creative</p></footer>
   <script src="../js/main.js"></script>
 </body>
 </html>

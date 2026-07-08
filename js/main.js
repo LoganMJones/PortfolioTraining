@@ -5,7 +5,9 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   var menuBtn = document.querySelector(".menu-btn");
-  var nav = document.querySelector(".nav") || document.querySelector(".site-nav");
+  var nav = document.querySelector(".nav")
+    || document.querySelector(".site-nav")
+    || document.querySelector(".mobile-nav");
 
   if (menuBtn && nav) {
     menuBtn.addEventListener("click", function () {

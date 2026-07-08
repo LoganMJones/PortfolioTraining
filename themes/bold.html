@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Your Name</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="../css/bold.css">
 </head>
-<body class="has-theme-switcher">
+<body class="has-theme-switcher theme-bold">
 
   <nav class="theme-switcher" aria-label="Switch layout">
     <div class="theme-switcher-inner">
@@ -26,119 +26,118 @@
     </div>
   </nav>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#">Your Name</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
       <nav id="nav" class="site-nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
+        <a href="#impact">Impact</a>
         <a href="#projects">Projects</a>
+        <a href="#highlight">Highlight</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap">
-        <div class="trainer-tip" style="margin-bottom:1.5rem;">
-          <strong>👋 Tip</strong> Search <code>EDIT HERE</code>. Colors → <code>css/bold.css</code> (--accent-1, --accent-2, --accent-3)
+
+    <!-- Split hero: text | image -->
+    <section class="split-hero">
+      <div class="split-hero-text">
+        <div class="privacy-notice">
+          <strong>🔒 Public portfolio</strong>
+          Don't post sensitive or unpublished data. This site is indexed and visible worldwide.
         </div>
-        <!-- EDIT HERE — NAME -->
         <h1>Your Name</h1>
-        <!-- EDIT HERE — TAGLINE -->
-        <p class="tagline">One sentence about your field, interests, and what you're building toward.</p>
-        <!-- ADD YOUR PHOTO HERE
-             <div class="hero-photo-wrap"><img src="../assets/photo.jpg" alt="Photo of Your Name"></div> -->
-        <div class="hero-photo-wrap photo-placeholder" style="width:160px;height:160px;border-radius:1rem;">
-          <span>📷</span> PHOTO
+        <p class="hero-tagline">A bold one-liner about your impact, field, or mission.</p>
+        <a class="btn-cta" href="#projects">See my work</a>
+      </div>
+      <div class="split-hero-visual">
+        <!-- ADD HERO IMAGE HERE — assets/hero.jpg -->
+        <div class="media-placeholder media-placeholder--portrait" role="img" aria-label="Hero image placeholder">
+          <span aria-hidden="true">🖼</span>
+          ADD HERO IMAGE HERE — portrait or action shot
         </div>
       </div>
     </section>
 
     <div class="wrap">
-      <section id="about" class="section">
-        <h2>About</h2>
-        <!-- EDIT HERE — ABOUT -->
-        <p>Write 2–3 paragraphs about your background, research interests, and career goals.</p>
-      </section>
+      <div class="trainer-tip">
+        <strong>👋 Bold layout</strong> Split hero, <strong>impact stats, image-forward project cards, and video highlight</strong>. Search <code>ADD</code> for all media slots.
+      </div>
 
-      <section id="education" class="section">
-        <h2>Education</h2>
-        <article class="entry">
-          <p class="entry-meta">Expected 2027</p>
-          <h3>Master of Science in [Field]</h3>
-          <p>University Name · GPA 3.9</p>
-        </article>
-        <article class="entry">
-          <p class="entry-meta">2023</p>
-          <h3>Bachelor of Science in [Field]</h3>
-          <p>University Name · Honors, Dean's List</p>
-        </article>
-      </section>
-
-      <section id="experience" class="section">
-        <h2>Experience</h2>
-        <article class="entry">
-          <p class="entry-meta">Summer 2025</p>
-          <h3>Research Intern — Organization Name</h3>
-          <ul><li>Describe work with action verbs and measurable outcomes.</li></ul>
-        </article>
-        <article class="entry">
-          <p class="entry-meta">2024 – Present</p>
-          <h3>Teaching Assistant — University Name</h3>
-          <ul><li>Led discussion sections for 30 students.</li></ul>
-        </article>
+      <section id="impact" class="section">
+        <h2>Impact at a glance</h2>
+        <div class="stat-row">
+          <div class="stat-item"><span class="stat-value">3+</span><span class="stat-label">Years research</span></div>
+          <div class="stat-item"><span class="stat-value">2</span><span class="stat-label">Publications</span></div>
+          <div class="stat-item"><span class="stat-value">500+</span><span class="stat-label">Samples analyzed</span></div>
+          <div class="stat-item"><span class="stat-value">3.9</span><span class="stat-label">GPA</span></div>
+        </div>
+        <p>Edit these numbers in the HTML — or delete the whole stats section if it doesn't fit your field.</p>
       </section>
 
       <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Project Title</h3>
-            <p>One or two sentences on the project and outcome.</p>
-            <a href="#">View →</a>
+        <div class="card-grid">
+          <article class="visual-card">
+            <!-- ADD PROJECT IMAGE HERE -->
+            <div class="visual-card-img media-placeholder media-placeholder--wide"><span>🖼</span> Project cover image</div>
+            <div class="visual-card-body">
+              <h3>Project Title</h3>
+              <p>Outcome-focused description in 1–2 sentences.</p>
+              <a href="#">Explore →</a>
+            </div>
           </article>
-          <article class="card">
-            <h3>Another Project</h3>
-            <p>Brief description.</p>
-            <a href="#">View →</a>
+          <article class="visual-card">
+            <div class="visual-card-img media-placeholder media-placeholder--wide"><span>🖼</span> Project cover image</div>
+            <div class="visual-card-body">
+              <h3>Second Project</h3>
+              <p>Brief description.</p>
+              <a href="#">GitHub →</a>
+            </div>
           </article>
-          <article class="card">
-            <h3>Thesis / Poster</h3>
-            <p>Capstone or conference summary.</p>
-            <a href="#">PDF →</a>
+          <article class="visual-card visual-card--wide">
+            <div class="visual-card-img media-placeholder media-placeholder--wide"><span>🖼</span> Wide project banner</div>
+            <div class="visual-card-body">
+              <h3>Flagship Research</h3>
+              <p>Larger card for your most important work. Great for a poster or dashboard screenshot.</p>
+              <a href="#">Read the paper →</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul class="tags">
-          <li>Python</li><li>R</li><li>Statistical modeling</li>
-          <li>Academic writing</li><li>Git</li><li>Public speaking</li>
-        </ul>
+      <section id="highlight" class="section highlight-section">
+        <h2>Video highlight</h2>
+        <p>Pitch, demo, or conference clip — optional but high-impact.</p>
+        <!-- ADD VIDEO HERE
+        <div class="media-embed">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Describe video content" loading="lazy" allowfullscreen></iframe>
+        </div>
+        -->
+        <div class="media-placeholder media-placeholder--video">
+          <span aria-hidden="true">▶</span>
+          ADD VIDEO HERE — YouTube or Vimeo embed
+        </div>
       </section>
 
       <section id="contact" class="section">
-        <div class="contact-box">
-          <h2>Let's connect</h2>
-          <p>Open to collaborations and graduate program conversations.</p>
+        <div class="contact-banner">
+          <h2>Let's build something.</h2>
           <div class="contact-links">
             <a href="mailto:you@university.edu">Email</a>
             <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+            <a class="file-download" href="../assets/cv.pdf">CV</a>
           </div>
         </div>
       </section>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name · Bold layout</p>
-  </footer>
+  <footer class="site-footer"><p>&copy; <span id="year"></span> Your Name · Bold</p></footer>
   <script src="../js/main.js"></script>
 </body>
 </html>

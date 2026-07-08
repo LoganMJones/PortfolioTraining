@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — CV</title>
+  <title>Your Name — Research Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="../css/academic.css">
 </head>
-<body class="has-theme-switcher">
+<body class="has-theme-switcher theme-academic">
 
   <nav class="theme-switcher" aria-label="Switch layout">
     <div class="theme-switcher-inner">
@@ -26,16 +26,17 @@
     </div>
   </nav>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="#">Your Name</a>
+      <a class="brand" href="#">Your Name, MS Candidate</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
       <nav id="nav" class="site-nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#poster">Poster</a>
+        <a href="#talk">Talk</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -43,95 +44,103 @@
 
   <main id="main" class="wrap">
 
+    <div class="privacy-notice">
+      <strong>🔒 Research ethics &amp; privacy</strong>
+      Do not publish identifiable participant data, draft manuscripts under review, or lab-confidential results. Preprints and published work only. This site is fully public.
+    </div>
+
     <div class="trainer-tip">
-      <strong>👋 Tip</strong> Search <code>EDIT HERE</code>. Colors → <code>css/academic.css</code>. Best for grad school apps.
+      <strong>👋 Academic layout</strong> Built for grad apps: <strong>publications, research poster figure, talk video, formal photo, PDFs</strong>. Search <code>ADD</code> for every slot.
     </div>
 
     <header class="doc-header">
-      <div>
-        <!-- EDIT HERE — NAME -->
+      <div class="doc-identity">
         <h1>Your Name</h1>
-        <!-- EDIT HERE — TAGLINE -->
-        <p style="color:var(--text-muted);margin:0;">Graduate Student · [Your Field]</p>
+        <p class="doc-subtitle">Graduate Student · Department of [Field] · University Name</p>
         <ul class="contact-line">
-          <!-- EDIT HERE — EMAIL -->
           <li><a href="mailto:you@university.edu">you@university.edu</a></li>
-          <li>City, State</li>
-          <li><a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></li>
+          <li><a href="https://orcid.org/0000-0000-0000-0000" rel="noopener noreferrer">ORCID: 0000-0000-0000-0000</a> (optional)</li>
         </ul>
+        <a class="file-download" href="../assets/cv.pdf">Curriculum Vitae (PDF)</a>
       </div>
-      <!-- ADD YOUR PHOTO HERE
-           <img src="../assets/photo.jpg" alt="Photo of Your Name"> -->
-      <div class="photo-placeholder" style="width:120px;height:150px;">
-        <span>📷</span> PHOTO
-      </div>
+      <!-- ADD YOUR PHOTO HERE — formal headshot -->
+      <figure class="doc-photo">
+        <div class="media-placeholder media-placeholder--portrait" role="img" aria-label="Formal headshot placeholder">
+          <span aria-hidden="true">📷</span> ADD PHOTO HERE
+        </div>
+        <!-- <img src="../assets/photo.jpg" alt="Formal headshot of Your Name" width="240" height="320" loading="eager"> -->
+      </figure>
     </header>
 
-    <section id="about" class="section">
-      <h2>Research Interests</h2>
-      <!-- EDIT HERE — ABOUT -->
-      <p>Write 2–3 paragraphs about your background, research interests, and career goals. Be formal and specific — this layout is designed for academic audiences.</p>
+    <section id="research">
+      <h2>Research interests</h2>
+      <p>Formal statement of research interests for admissions committees — specific questions, methods, and how your prior work connects to future goals.</p>
     </section>
 
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <article class="entry">
-        <div class="entry-header"><h3>Master of Science in [Field]</h3><span class="entry-date">Expected 2027</span></div>
-        <p class="entry-org">University Name</p>
-        <p>GPA: 3.9/4.0. Relevant coursework: Statistics, Machine Learning, Research Methods.</p>
-      </article>
-      <article class="entry">
-        <div class="entry-header"><h3>Bachelor of Science in [Field]</h3><span class="entry-date">2023</span></div>
-        <p class="entry-org">University Name</p>
-        <p>Honors, Dean's List.</p>
-      </article>
+    <section id="publications">
+      <h2>Publications &amp; preprints</h2>
+      <ol class="pub-ordered">
+        <li>
+          <cite>Author, A., <strong>Your Name</strong>, &amp; Author, C. (2025). Paper title in sentence case. <em>Journal Name</em>, <em>volume</em>(issue), pages. <a href="#">DOI link</a></cite>
+          <a class="file-download" href="../assets/paper.pdf">PDF</a>
+        </li>
+        <li>
+          <cite><strong>Your Name</strong> (2024). Thesis chapter or working paper title. <em>Institution</em>.</cite>
+          <a class="file-download" href="#">PDF</a>
+        </li>
+      </ol>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <article class="entry">
-        <div class="entry-header"><h3>Research Intern</h3><span class="entry-date">Summer 2025</span></div>
-        <p class="entry-org">Organization or Lab Name</p>
-        <ul><li>Describe work with action verbs and measurable outcomes.</li></ul>
-      </article>
-      <article class="entry">
-        <div class="entry-header"><h3>Teaching Assistant</h3><span class="entry-date">2024 – Present</span></div>
-        <p class="entry-org">Department, University Name</p>
-        <ul><li>Led discussion sections for 30 students in [Course Name].</li></ul>
-      </article>
+    <section id="poster">
+      <h2>Research poster</h2>
+      <!-- ADD PROJECT IMAGE HERE — research poster, figure, or diagram -->
+      <figure class="media-figure poster-figure">
+        <div class="media-placeholder media-placeholder--wide">
+          <span aria-hidden="true">🖼</span>
+          ADD POSTER OR FIGURE HERE — assets/poster.jpg (use high-res for readability)
+        </div>
+        <!--
+        <img src="../assets/poster.jpg" alt="Research poster: title and key finding described for screen readers" width="900" height="600" loading="lazy" class="media-img media-img--wide">
+        -->
+        <figcaption>Figure 1. Caption describing the poster, conference name, and year. Required for accessibility.</figcaption>
+      </figure>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
-      <article class="entry">
-        <h3>Project Title</h3>
-        <p>One or two sentences on the project, methods, and findings.</p>
-      </article>
-      <article class="entry">
-        <h3>Thesis / Conference Poster</h3>
-        <p>Capstone or presentation summary.</p>
-      </article>
+    <section id="talk">
+      <h2>Conference presentation</h2>
+      <p><strong>Talk title</strong> — Conference Name, Year</p>
+      <!-- ADD VIDEO HERE
+      <div class="media-embed">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Conference talk: [full talk title]" loading="lazy" allowfullscreen></iframe>
+      </div>
+      -->
+      <div class="media-placeholder media-placeholder--video">
+        <span aria-hidden="true">▶</span>
+        ADD VIDEO HERE — recorded talk or slides with audio
+      </div>
+      <p><a class="file-download" href="../assets/slides.pdf">Download slides (PDF)</a></p>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <table class="skills-table">
-        <tr><th>Research</th><td>Statistical modeling, literature review, experimental design</td></tr>
-        <tr><th>Tools</th><td>Python, R, SPSS, LaTeX, Git</td></tr>
-        <tr><th>Professional</th><td>Academic writing, public speaking, mentoring</td></tr>
+    <section id="experience">
+      <h2>Education &amp; experience</h2>
+      <table class="cv-table">
+        <tbody>
+          <tr><th scope="row">2025 – Present</th><td>Research Assistant, Lab Name, University</td></tr>
+          <tr><th scope="row">Expected 2027</th><td>MS in [Field], University Name</td></tr>
+          <tr><th scope="row">2023</th><td>BS in [Field], University Name, <em>summa cum laude</em></td></tr>
+        </tbody>
       </table>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Open to research collaborations and graduate program inquiries.</p>
+      <p>Available for doctoral program inquiries and research collaborations.</p>
+      <p><a href="mailto:you@university.edu">you@university.edu</a></p>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name · Academic layout</p>
-  </footer>
+  <footer class="site-footer"><p>&copy; <span id="year"></span> Your Name · Academic</p></footer>
   <script src="../js/main.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="../css/minimal.css">
 </head>
-<body class="has-theme-switcher">
+<body class="has-theme-switcher theme-minimal">
 
   <nav class="theme-switcher" aria-label="Switch layout">
     <div class="theme-switcher-inner">
@@ -23,98 +23,116 @@
     </div>
   </nav>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#">Your Name</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
       <nav id="nav" class="site-nav" aria-label="Main">
-        <a href="#about">About</a>
+        <a href="#statement">Statement</a>
         <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="wrap">
+  <main id="main" class="wrap narrow">
+
+    <div class="privacy-notice">
+      <strong>🔒 This website is public</strong>
+      Never share passwords, unpublished research, personal phone numbers, or anything confidential. If you wouldn't email it to a stranger, don't put it here.
+    </div>
 
     <div class="trainer-tip">
-      <strong>👋 Tip</strong> Search for <code>EDIT HERE</code>. Colors → <code>css/minimal.css</code> top of file.
+      <strong>👋 Minimal layout</strong> Text-first with optional <strong>inline thumbnails, collapsible video, and PDF link</strong>. Less visual noise — great when your writing carries the page.
     </div>
 
-    <!-- ADD YOUR PHOTO HERE
-         <div class="photo-row"><img src="../assets/photo.jpg" alt="Photo of Your Name"></div> -->
-    <div class="photo-row photo-placeholder" style="max-width:12rem;aspect-ratio:1;">
-      <span>📷</span> ADD YOUR PHOTO HERE
-    </div>
+    <header class="page-intro">
+      <p class="intro-label">Portfolio / 2026</p>
+      <h1>Your Name</h1>
+      <p class="intro-lead">One precise sentence about who you are and what you do.</p>
+    </header>
 
-    <!-- EDIT HERE — NAME -->
-    <h1>Your Name</h1>
-    <!-- EDIT HERE — TAGLINE -->
-    <p class="lead">One sentence about your field, interests, and direction.</p>
-
-    <hr class="rule">
-
-    <section id="about" class="block">
-      <h2>About</h2>
-      <!-- EDIT HERE — ABOUT -->
-      <p>Write 2–3 paragraphs about your background, research interests, and career goals.</p>
-      <p>What motivates your work? What experience backs it up?</p>
+    <section id="statement">
+      <h2>Statement</h2>
+      <p>Your professional or artistic statement. 2–3 tight paragraphs. No fluff — every sentence should earn its place.</p>
+      <p>What questions drive you? What have you already done about them?</p>
     </section>
 
-    <section id="work" class="block">
-      <h2>Education &amp; Experience</h2>
-      <article class="entry">
-        <div class="entry-head"><h3>Master of Science in [Field]</h3><span class="entry-date">2027</span></div>
-        <p class="entry-org">University Name</p>
-        <p>GPA 3.9 · Statistics, Machine Learning, Research Methods</p>
-      </article>
-      <article class="entry">
-        <div class="entry-head"><h3>Bachelor of Science in [Field]</h3><span class="entry-date">2023</span></div>
-        <p class="entry-org">University Name</p>
-      </article>
-      <article class="entry">
-        <div class="entry-head"><h3>Research Intern</h3><span class="entry-date">2025</span></div>
-        <p class="entry-org">Organization or Lab Name</p>
-        <ul><li>Describe work with action verbs and measurable outcomes.</li></ul>
-      </article>
-      <article class="entry">
-        <div class="entry-head"><h3>Teaching Assistant</h3><span class="entry-date">2024 — Now</span></div>
-        <p class="entry-org">Department, University Name</p>
-        <ul><li>Led discussion sections for 30 students.</li></ul>
-      </article>
-    </section>
+    <section id="work">
+      <h2>Selected work</h2>
 
-    <section id="projects" class="block">
-      <h2>Projects</h2>
-      <article class="project">
-        <h3>Project Title</h3>
-        <p>One or two sentences on the project and outcome.</p>
-        <!-- EDIT LINK HERE -->
-        <a href="#">View project →</a>
+      <article class="work-item">
+        <div class="work-text">
+          <h3>Project Title <span class="work-year">2025</span></h3>
+          <p>Description with outcome. Methods in one line if relevant.</p>
+          <a href="#">Read more →</a>
+        </div>
+        <!-- ADD PROJECT IMAGE HERE — optional small thumb -->
+        <div class="work-thumb media-placeholder media-placeholder--square" aria-label="Optional project thumbnail"><span>🖼</span></div>
       </article>
-      <article class="project">
-        <h3>Another Project</h3>
-        <p>Brief description.</p>
-        <a href="#">View project →</a>
+
+      <article class="work-item">
+        <div class="work-text">
+          <h3>Second Project <span class="work-year">2024</span></h3>
+          <p>Brief description.</p>
+          <a href="#">PDF →</a>
+        </div>
+        <div class="work-thumb media-placeholder media-placeholder--square" aria-hidden="true"><span>🖼</span></div>
+      </article>
+
+      <article class="work-item work-item--plain">
+        <div class="work-text">
+          <h3>Teaching / Service <span class="work-year">2024</span></h3>
+          <p>Not every entry needs an image — delete the thumb column if you prefer.</p>
+        </div>
       </article>
     </section>
 
-    <section id="contact" class="block">
-      <h2>Contact</h2>
-      <div class="contact-row">
-        <!-- EDIT HERE — EMAIL -->
-        <a href="mailto:you@university.edu">Email</a>
-        <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+    <section id="media">
+      <h2>Talks &amp; media</h2>
+      <p class="section-note">Optional. Expand to add a video, or delete this section entirely.</p>
+
+      <details class="media-details">
+        <summary>Watch: presentation or demo (ADD VIDEO HERE)</summary>
+        <div class="media-details-body">
+          <!-- ADD VIDEO HERE
+          <div class="media-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Describe the video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          -->
+          <div class="media-placeholder media-placeholder--video">
+            <span aria-hidden="true">▶</span>
+            Paste a YouTube/Vimeo embed above — see HTML comment
+          </div>
+        </div>
+      </details>
+
+      <!-- ADD PDF HERE -->
+      <p class="file-row"><a class="file-download" href="../assets/cv.pdf">Download CV (PDF)</a></p>
+
+      <!-- ADD AUDIO HERE — optional podcast or interview clip
+      <div class="media-audio">
+        <p class="section-note">Audio clip title</p>
+        <audio controls preload="none" src="../assets/interview.mp3">Your browser does not support audio.</audio>
       </div>
+      -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <address class="contact-block">
+        <a href="mailto:you@university.edu">you@university.edu</a><br>
+        <a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="https://github.com/yourusername" rel="noopener noreferrer">GitHub</a>
+      </address>
     </section>
 
   </main>
 
-  <footer class="site-footer wrap">
-    <p>&copy; <span id="year"></span> Your Name · Minimal layout</p>
-  </footer>
+  <footer class="site-footer wrap narrow"><p>&copy; <span id="year"></span> Your Name · Minimal</p></footer>
   <script src="../js/main.js"></script>
 </body>
 </html>
