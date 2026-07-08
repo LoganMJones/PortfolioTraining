@@ -1,6 +1,6 @@
 # Portfolio Template — 10 Layouts
 
-Ten portfolio designs for graduate school and professional development — from plain CV pages to terminal windows and full-screen slides. **No coding tools required** — edit everything on github.com in your browser.
+Ten portfolio designs for graduate school and professional development. **Preview on the demo site, then use the template for your chosen layout.**
 
 **Live demo:** [loganmjones.github.io/PortfolioTraining](https://loganmjones.github.io/PortfolioTraining/)
 
@@ -8,133 +8,41 @@ Ten portfolio designs for graduate school and professional development — from 
 
 ## Start here
 
-1. **[Preview layouts](index.html)** on the live demo — see all 10 in your browser
-2. **[Download your layout](guide.html#get-layout)** — one ZIP per theme, no bloat
-3. **Upload to GitHub** — follow the setup guide (no Terminal needed)
+1. **[Preview layouts](index.html)** on the live demo
+2. **[Use your layout's template](guide.html#get-layout)** on GitHub — one repo per layout
+3. **Enable GitHub Pages** — follow the setup guide
 4. **Edit `index.html`** — search for `EDIT HERE`
 
-> **Students:** preview on the demo site, then download **only** the ZIP for your chosen layout.  
-> **Instructors:** you can still **Use this template** on GitHub to demo all 10 layouts in one repo.
+| Layout | Template repository |
+|--------|---------------------|
+| Document | [PortfolioTraining-document](https://github.com/LoganMJones/PortfolioTraining-document) |
+| Classic | [PortfolioTraining-classic](https://github.com/LoganMJones/PortfolioTraining-classic) |
+| Minimal | [PortfolioTraining-minimal](https://github.com/LoganMJones/PortfolioTraining-minimal) |
+| Terminal | [PortfolioTraining-terminal](https://github.com/LoganMJones/PortfolioTraining-terminal) |
+| Brutalist | [PortfolioTraining-brutalist](https://github.com/LoganMJones/PortfolioTraining-brutalist) |
+| Deck | [PortfolioTraining-deck](https://github.com/LoganMJones/PortfolioTraining-deck) |
+| Editorial | [PortfolioTraining-editorial](https://github.com/LoganMJones/PortfolioTraining-editorial) |
+| Bold | [PortfolioTraining-bold](https://github.com/LoganMJones/PortfolioTraining-bold) |
+| Academic | [PortfolioTraining-academic](https://github.com/LoganMJones/PortfolioTraining-academic) |
+| Creative | [PortfolioTraining-creative](https://github.com/LoganMJones/PortfolioTraining-creative) |
+
+> **Instructors:** use [PortfolioTraining](https://github.com/LoganMJones/PortfolioTraining) (this repo) to demo all 10 layouts.  
+> **Students:** preview here, then **Use this template** on the single layout you chose.
+
+**Contact the architect:** [Logan Jones](https://www.loganjones.org/)
 
 ---
 
-## The 10 layouts
+## Maintainer: publish template repos
 
-### Simple starters
+After editing themes, regenerate and publish:
 
-| Layout | File | Style |
-|--------|------|-------|
-| **Document** | `themes/document.html` | Plain single-column CV — easiest start |
-| **Classic** | `themes/classic.html` | Sidebar + photo, resume-style |
-| **Minimal** | `themes/minimal.html` | Black & white, text-first |
-
-### Distinct layouts
-
-| Layout | File | Style |
-|--------|------|-------|
-| **Terminal** | `themes/terminal.html` | CLI window, developer vibe |
-| **Brutalist** | `themes/brutalist.html` | Giant type, thick borders, raw energy |
-| **Deck** | `themes/deck.html` | Full-screen scroll-snap slides |
-| **Editorial** | `themes/editorial.html` | Magazine hero, gallery, video |
-| **Bold** | `themes/bold.html` | Gradients, colorful impact cards |
-| **Academic** | `themes/academic.html` | Formal serif, publications, poster |
-| **Creative** | `themes/creative.html` | Dark mosaic grid, playful |
-
-Every layout shares a **black bar at the top** on the demo site so you can compare them like separate pages.
-
-**Download one layout:** [solo/zips/](solo/zips/) — each ZIP is a complete mini-site (`index.html` + CSS + JS). See the [setup guide](guide.html#get-layout).
-
----
-
-## Quick customization
-
-### On GitHub (no VS Code, no Terminal)
-
-1. Open your repo → click `themes/your-layout.html` → click the **pencil icon**
-2. Press **Cmd+F** (Mac) or **Ctrl+F** (Windows)
-3. Search these labels:
-
-| Search for | What to change |
-|------------|----------------|
-| `EDIT HERE — NAME` | Your full name |
-| `EDIT HERE — TAGLINE` | One-sentence description |
-| `EDIT HERE — ABOUT` | Your bio |
-| `EDIT HERE — EMAIL` | Your email |
-| `ADD YOUR PHOTO HERE` | Instructions to add a headshot |
-| `EDIT LINK HERE` | LinkedIn, GitHub, project URLs |
-
-4. For colors: edit `css/[layout].css` — only change the hex codes in the **CHANGE YOUR COLORS HERE** section at the top
-5. Click **Commit changes** at the bottom
-
-### Delete when done
-
-Search for `trainer-tip` and delete those yellow boxes — they're training helpers, not part of your final site.
-
----
-
-## Add a photo
-
-1. In your repo, go to the `assets` folder
-2. **Add file** → **Upload files** → drag in `photo.jpg`
-3. In your theme file, find `ADD YOUR PHOTO HERE` and follow the comment instructions
-
----
-
-## GitHub Pages setup
-
-1. Repo → **Settings** → **Pages**
-2. Source: **Deploy from a branch** → `main` → `/ (root)`
-3. Your site URL: `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
-
-**Don't** preview by clicking `index.html` in the repo — that shows unstyled HTML. Use your Pages URL.
-
----
-
-## File structure
-
-```
-├── index.html              ← layout picker (homepage)
-├── guide.html              ← detailed setup guide
-├── themes/
-│   ├── document.html
-│   ├── classic.html
-│   ├── minimal.html
-│   ├── terminal.html
-│   ├── brutalist.html
-│   ├── deck.html
-│   ├── editorial.html
-│   ├── bold.html
-│   ├── academic.html
-│   └── creative.html
-├── css/
-│   ├── shared.css          ← theme switcher (don't edit)
-│   ├── document.css        ← colors for Document
-│   ├── classic.css
-│   └── ...
-├── js/main.js
-└── assets/                 ← put photos here
+```bash
+python3 scripts/build-solo.py
+./scripts/publish-template-repos.sh   # requires GitHub CLI (gh auth login)
 ```
 
----
-
-## Workshop outline (90 min)
-
-| Time | Activity |
-|------|----------|
-| 10 min | Why portfolios matter; demo the 10 layouts |
-| 15 min | Copy template, enable GitHub Pages |
-| 10 min | Walk through [guide.html](guide.html) together |
-| 30 min | Students pick a layout, search `EDIT HERE`, fill in content |
-| 15 min | Add photos, change accent color |
-| 10 min | Share live URLs, delete trainer-tip boxes |
-
----
-
-## GitHub Copilot prompts
-
-- "Rewrite my about section for a PhD application in cognitive science"
-- "Change the accent color in css/academic.css to Northwestern purple"
-- "What does ADD YOUR PHOTO HERE mean in this file?"
+This creates/updates `LoganMJones/PortfolioTraining-{layout}` as GitHub template repositories.
 
 ---
 

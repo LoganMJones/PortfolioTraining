@@ -1,0 +1,20 @@
+{
+  "projectUrl": "https://loganmjones.github.io/PortfolioTraining/",
+  "projectRepo": "https://github.com/LoganMJones/PortfolioTraining",
+  "architectUrl": "https://www.loganjones.org/",
+  "architectName": "Logan Jones",
+  "githubOrg": "LoganMJones",
+  "repoPrefix": "PortfolioTraining",
+  "themes": {
+    "document": { "label": "Document", "starter": true },
+    "classic": { "label": "Classic", "starter": true },
+    "minimal": { "label": "Minimal", "starter": true },
+    "terminal": { "label": "Terminal", "starter": false },
+    "brutalist": { "label": "Brutalist", "starter": false },
+    "deck": { "label": "Deck", "starter": false },
+    "editorial": { "label": "Editorial", "starter": false },
+    "bold": { "label": "Bold", "starter": false },
+    "academic": { "label": "Academic", "starter": false },
+    "creative": { "label": "Creative", "starter": false }
+  }
+}

@@ -59,6 +59,9 @@ a { color: var(--term-blue); }
 .term-notice, .term-tip { font-family: system-ui, sans-serif; font-size: 0.875rem; margin-bottom: 1rem; }
 .term-notice a { color: #fca5a5; }
 
+.template-credit-footer { padding: 1rem; background: #010409; }
+.template-credit-footer .template-credit a { color: #8b949e; border-bottom-color: #30363d; }
+
 .media-placeholder { border-color: var(--term-border); background: rgba(255,255,255,0.04); color: var(--term-muted); }
 .media-placeholder span { color: var(--term-green); }
 

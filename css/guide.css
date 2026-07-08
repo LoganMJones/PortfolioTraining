@@ -332,6 +332,15 @@ body {
 
 .guide-footer a { color: #2563eb; font-weight: 600; }
 
+.guide-architect {
+  margin-top: 0.5rem !important;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #94a3b8;
+}
+.guide-architect a { color: #64748b; font-weight: 500; }
+.guide-architect a:hover { color: #2563eb; }
+
 .guide a { color: #2563eb; }
 
 .guide-subhead {

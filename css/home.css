@@ -111,13 +111,16 @@ a { color: var(--home-accent); }
 }
 
 .theme-card-link,
+.theme-card-template,
 .theme-card-download {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   text-decoration: none;
 }
 
 .theme-card-link { color: var(--home-accent); }
+.theme-card-template { color: #7c3aed; }
+.theme-card-template:hover { text-decoration: underline; }
 .theme-card-download { color: #0f766e; }
 .theme-card-download:hover { text-decoration: underline; }
 
@@ -227,3 +230,11 @@ a { color: var(--home-accent); }
 }
 
 .home-footer p { margin: 0; }
+
+.home-architect {
+  margin-top: 0.5rem !important;
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+.home-architect a { color: #64748b; font-weight: 500; }
+.home-architect a:hover { color: var(--home-accent); }
