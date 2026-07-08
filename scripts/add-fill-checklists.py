@@ -11,6 +11,9 @@ CHECKLISTS = json.loads((ROOT / "theme-checklists.json").read_text(encoding="utf
 MARKER_START = '    <div class="fill-checklist"'
 MARKER_END = '    </div>\n\n'
 
+AI_TIP = """      <p class="fill-checklist-ai"><strong>Using an AI coding assistant?</strong> Select and copy this entire blue box into Cursor or another agentic coding AI. Ask it to walk you through every item below — your text, photos, PDFs, and video — then implement the changes in <code>index.html</code> and tell you what to upload to <code>assets/</code>.</p>
+
+"""
 
 def image_rows(images: list) -> str:
     if not images:
@@ -73,7 +76,7 @@ def build_html(theme: str, data: dict) -> str:
       <strong>📋 To fully fill out {label}</strong>
       <span class="fill-checklist-summary">Gather: {summary}</span>
       <p class="fill-checklist-intro">Replace every placeholder below — no extra sections needed. Delete this box when done.</p>
-
+{AI_TIP}
       <p><strong>Text to write</strong> (search <code>EDIT HERE</code> or replace placeholder copy)</p>
       <ul class="fill-checklist-text">
 {text_list(data['text'])}      </ul>

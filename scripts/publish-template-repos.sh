@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Publish each solo/ folder as a separate GitHub template repository.
-# Prerequisites: git, GitHub CLI (gh), and `gh auth login`
+# Prerequisites: git, GitHub CLI (gh), and `gh auth login` (or GH_TOKEN in CI)
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ORG="LoganMJones"
 PREFIX="PortfolioTraining"
+SOURCE_SHA="$(git -C "$ROOT" rev-parse --short HEAD 2>/dev/null || echo "local")"
+SYNC_MSG="Sync from ${PREFIX}@${SOURCE_SHA}"
 
 THEMES=(
   document classic minimal terminal brutalist deck
@@ -24,20 +26,26 @@ if ! command -v gh >/dev/null 2>&1; then
   fi
 fi
 
+if [[ -z "${GH_TOKEN:-}" ]] && ! gh auth status >/dev/null 2>&1; then
+  echo "Error: gh is not authenticated. Run: gh auth login"
+  echo "In CI, set GH_TOKEN or repository secret TEMPLATE_PUBLISH_TOKEN."
+  exit 1
+fi
+
 for theme in "${THEMES[@]}"; do
   REPO="${ORG}/${PREFIX}-${theme}"
   DIR="${ROOT}/solo/${theme}"
   echo "=== Publishing ${REPO} ==="
 
   if [[ ! -d "$DIR" ]]; then
-    echo "Missing ${DIR} — run: python3 scripts/build-solo.py"
+    echo "Missing ${DIR} — run: ./scripts/regenerate-all.sh"
     exit 1
   fi
 
   rm -rf "${DIR}/.git"
   git -C "$DIR" init -b main
   git -C "$DIR" add -A
-  git -C "$DIR" commit -m "Initial commit: ${theme} portfolio template"
+  git -C "$DIR" commit -m "${SYNC_MSG}"
 
   if gh repo view "$REPO" >/dev/null 2>&1; then
     echo "Repo exists — force pushing main"
@@ -55,5 +63,5 @@ for theme in "${THEMES[@]}"; do
 done
 
 echo ""
-echo "Done. Update templates.json / guide links if repo names changed."
+echo "Done. Template repos synced from ${SYNC_MSG}."
 echo "Main project: ${ORG}/${PREFIX}"

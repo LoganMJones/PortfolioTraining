@@ -1,0 +1,67 @@
+# Regenerate solo packages and sync each layout to its GitHub template repo.
+#
+# One-time setup (repo owner):
+#   1. Create a fine-grained PAT with Contents: Read and write on all
+#      PortfolioTraining-* repositories (and this repo).
+#   2. Add it as repository secret: TEMPLATE_PUBLISH_TOKEN
+#
+# Triggers:
+#   - Push to main when themes, styles, scripts, or checklists change
+#   - Manual "Run workflow" from the Actions tab
+
+name: Publish template repos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'themes/**'
+      - 'css/**'
+      - 'js/**'
+      - 'scripts/**'
+      - 'theme-checklists.json'
+      - 'templates.json'
+      - '.github/workflows/publish-templates.yml'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate solo packages
+        run: ./scripts/regenerate-all.sh
+
+      - name: Commit regenerated solo/ to main repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add solo/
+          if git diff --staged --quiet; then
+            echo "solo/ unchanged — skip commit"
+          else
+            git commit -m "chore: regenerate solo packages [skip ci]"
+            git push
+          fi
+
+      - name: Publish to template repositories
+        env:
+          GH_TOKEN: ${{ secrets.TEMPLATE_PUBLISH_TOKEN }}
+        run: |
+          if [[ -z "${GH_TOKEN}" ]]; then
+            echo "::warning::TEMPLATE_PUBLISH_TOKEN is not set — skipping template repo sync."
+            echo "Add a PAT as repository secret TEMPLATE_PUBLISH_TOKEN to enable automatic publishing."
+            exit 0
+          fi
+          ./scripts/publish-template-repos.sh

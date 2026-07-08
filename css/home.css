@@ -231,6 +231,26 @@ a { color: var(--home-accent); }
 
 .home-footer p { margin: 0; }
 
+.home-footer .template-credit {
+  margin-top: 0.75rem;
+}
+
+.home-footer .architect-credit {
+  margin-top: 0.5rem;
+  max-width: 48ch;
+  margin-inline: auto;
+}
+
+.home-fork-note {
+  margin-top: 0.5rem !important;
+  font-size: 0.8125rem;
+  color: #64748b;
+  max-width: 42ch;
+  margin-inline: auto;
+}
+
+.home-fork-note a { font-weight: 500; }
+
 .home-architect {
   margin-top: 0.5rem !important;
   font-size: 0.8125rem;

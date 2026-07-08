@@ -25,6 +25,23 @@
   color: #57534e;
   border-bottom-color: #a8a29e;
 }
+.architect-credit {
+  margin: 0.35rem 0 0;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #78716c;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.architect-credit a {
+  color: #78716c;
+  text-decoration: none;
+  border-bottom: 1px solid #d4d4d4;
+}
+.architect-credit a:hover {
+  color: #57534e;
+  border-bottom-color: #a8a29e;
+}
 .template-credit-footer {
   padding: 1rem 1.5rem 1.5rem;
   text-align: center;
@@ -94,6 +111,17 @@
   margin-bottom: 0.5rem;
 }
 .fill-checklist-intro { margin: 0 0 0.75rem; font-size: 0.8125rem; }
+.fill-checklist-ai {
+  margin: 0 0 0.85rem;
+  padding: 0.65rem 0.85rem;
+  background: #e0f2fe;
+  border: 1px dashed #38bdf8;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.fill-checklist-ai strong { display: inline; font-size: inherit; color: inherit; margin: 0; }
 .fill-checklist p { margin: 0.75rem 0 0.35rem; font-weight: 600; font-size: 0.8125rem; }
 .fill-checklist-text {
   margin: 0 0 0.5rem;

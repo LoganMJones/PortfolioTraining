@@ -74,6 +74,8 @@ def template_readme(theme: str) -> str:
     zip_url = f"{REPO_RAW}/{theme}.zip"
     architect = CONFIG["architectName"]
     architect_url = CONFIG["architectUrl"]
+    cursor_url = CONFIG["cursorUrl"]
+    cursor_name = CONFIG["cursorName"]
     checklists = json.loads((ROOT / "theme-checklists.json").read_text(encoding="utf-8"))
     checklist_md = checklist_markdown(theme, checklists[theme])
     return f"""# {label} Portfolio Template
@@ -120,7 +122,7 @@ Download the [ZIP]({zip_url}) and upload files to a new repo manually.
 
 ---
 
-Part of [Portfolio Training]({PROJECT_URL}) · Template by [{architect}]({architect_url})
+Part of [Portfolio Training]({PROJECT_URL}) · Entire project architected by [{architect}]({architect_url}) with [{cursor_name}]({cursor_url}) assistance
 """
 
 
@@ -129,6 +131,8 @@ def checklist_markdown(theme: str, data: dict) -> str:
         f"## What you need to fill out {data['label']}",
         "",
         "Everything below completes the **basic template** — no extra sections required.",
+        "",
+        "**AI shortcut:** Copy this entire checklist into Cursor or another agentic coding AI. Ask it to prompt you for each text block, image, PDF, and video, then implement the changes in `index.html` and tell you what to upload to `assets/`.",
         "",
         "### Text",
         "",
@@ -230,7 +234,7 @@ Source builds for **10 separate GitHub template repositories**. Students preview
 |--------|---------------|--------------|
 {table_rows}
 
-Regenerate: `python3 scripts/build-solo.py` · Publish repos: `scripts/publish-template-repos.sh`
+Regenerate: `./scripts/regenerate-all.sh` · Publish repos: `./scripts/publish-template-repos.sh` · Auto: GitHub Actions `publish-templates.yml`
 """,
         encoding="utf-8",
     )
