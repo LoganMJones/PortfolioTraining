@@ -1,0 +1,14 @@
+/* print.css — print-friendly rules for resume */
+@media print{
+  :root{color-scheme:light}
+  body{background:transparent;color:#000}
+  .site-header,.site-footer,.site-nav,.skip-link{display:none !important}
+  .container{max-width:100%;padding:0;margin:0}
+  .resume{display:block !important}
+  .resume header .download{display:none}
+  h2{border:0;padding:0;margin-top:1rem}
+  /* Avoid breaking inside important blocks */
+  .item, .skills, .education{page-break-inside:avoid}
+  /* Make fonts slightly smaller to fit more on a page if needed */
+  body{font-size:12.5pt}
+}
