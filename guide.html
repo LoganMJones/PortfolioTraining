@@ -40,6 +40,7 @@
         <ul>
           <li><a href="#setup">Setup steps 1–7</a></li>
           <li><a href="#get-layout">Use your layout template</a></li>
+          <li><a href="#fill-checklists">What to gather per layout</a></li>
           <li><a href="#cheat-sheet">Search cheat sheet</a></li>
           <li><a href="#colors">Color palettes</a></li>
           <li><a href="#contrast">Contrast checking</a></li>
@@ -166,6 +167,7 @@
           <h2><span class="step-num">7</span> Clean up when done</h2>
           <ul>
             <li>Delete the <strong>yellow trainer tip boxes</strong> from <code>index.html</code> (search for <code>trainer-tip</code>).</li>
+            <li>Delete the <strong>blue fill checklist</strong> when you've gathered everything (search for <code>fill-checklist</code>).</li>
             <li>Update your links — search for <code>EDIT LINK HERE</code> and replace <code>#</code> with real URLs.</li>
             <li>Hard-refresh your live site: <strong>Cmd+Shift+R</strong> or <strong>Ctrl+Shift+R</strong>.</li>
           </ul>
@@ -174,10 +176,35 @@
 
       </div>
 
+      <section id="fill-checklists" class="guide-step">
+        <h2>What to gather for each layout</h2>
+        <p>Every template includes a <strong>blue checklist box</strong> at the top of <code>index.html</code> with exact filenames, image sizes, and text blocks. Delete that box when you're done. Summary:</p>
+        <table class="guide-table">
+          <thead>
+            <tr><th>Layout</th><th>Photos</th><th>PDFs</th><th>Video</th><th>What you're building</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Document</strong></td><td>0</td><td>1 (CV)</td><td>—</td><td>Plain text CV page</td></tr>
+            <tr><td><strong>Classic</strong></td><td>3</td><td>2</td><td>—</td><td>Sidebar + project thumbs</td></tr>
+            <tr><td><strong>Minimal</strong></td><td>1 optional</td><td>1</td><td>1 embed</td><td>Text-first + collapsible video</td></tr>
+            <tr><td>Terminal</td><td>0</td><td>1</td><td>1 embed</td><td>CLI-style blocks</td></tr>
+            <tr><td>Brutalist</td><td>1</td><td>1</td><td>—</td><td>Poster or project still</td></tr>
+            <tr><td>Deck</td><td>1</td><td>1</td><td>1 embed</td><td>5 full-screen slides</td></tr>
+            <tr><td>Editorial</td><td>9</td><td>1</td><td>1 embed</td><td>Hero + gallery + featured project</td></tr>
+            <tr><td>Bold</td><td>4</td><td>1</td><td>1 embed</td><td>Split hero + 3 project cards</td></tr>
+            <tr><td>Academic</td><td>2</td><td>3</td><td>1 embed</td><td>Headshot + poster + talk</td></tr>
+            <tr><td>Creative</td><td>12</td><td>—</td><td>1 embed</td><td>Mosaic + gallery + projects</td></tr>
+          </tbody>
+        </table>
+        <p class="section-note"><strong>Image tips:</strong> JPG for photos, PNG for charts with text. Minimum sizes are in each checklist — going larger is fine. Compress at <a href="https://squoosh.app" target="_blank" rel="noopener noreferrer">squoosh.app</a> to ~500 KB before uploading.</p>
+      </section>
+
       <section id="cheat-sheet" class="guide-step guide-cheat">
         <h2>Search cheat sheet</h2>
         <p>Use Cmd+F / Ctrl+F in your theme file to find these:</p>
         <dl class="cheat-list">
+          <dt><code>fill-checklist</code></dt>
+          <dd>Blue box — everything you need to gather (delete when done)</dd>
           <dt><code>EDIT HERE — NAME</code></dt>
           <dd>Your full name</dd>
           <dt><code>EDIT HERE — TAGLINE</code></dt>

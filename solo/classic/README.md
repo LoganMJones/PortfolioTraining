@@ -10,12 +10,44 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Edit `index.html` on GitHub — search for `EDIT HERE`.
-4. Colors: edit `css/classic.css` — only the hex codes at the top.
+3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+4. Search `EDIT HERE` and `ADD` to replace placeholders.
+5. Colors: edit `css/classic.css` — only the hex codes at the top.
 
 **Full setup guide:** [https://loganmjones.github.io/PortfolioTraining/guide.html](https://loganmjones.github.io/PortfolioTraining/guide.html)
 
 **Other layouts:** [https://loganmjones.github.io/PortfolioTraining/](https://loganmjones.github.io/PortfolioTraining/)
+
+---
+
+## What you need to fill out Classic
+
+Everything below completes the **basic template** — no extra sections required.
+
+### Text
+
+- Name, role, email, LinkedIn, GitHub
+- Profile summary — 2–3 sentences
+- Experience — 2 entries (title, org, year, bullets)
+- Projects — 2 entries (title, description, link)
+- Publications — 2 entries (title, year, link or PDF label)
+
+### Photos (upload to `assets/`)
+
+**3 images total** — JPG recommended, ~500 KB each after compression.
+
+| Qty | Subject | Min size | Filename |
+|-----|---------|----------|----------|
+| 1 | Professional headshot | 400×400 px (1:1 square) | `assets/photo.jpg` |
+| 2 | Project thumbnails (one per project row) | 400×400 px (1:1 square) | `assets/project-1-1.jpg … assets/project-1-2.jpg` |
+
+### PDFs
+
+| Document | Filename | Notes |
+|----------|----------|-------|
+| CV | `assets/cv.pdf` | PDF, under 2 MB |
+| Publication PDF | `assets/paper.pdf` | Paper, poster, or writing sample |
+
 
 ---
 

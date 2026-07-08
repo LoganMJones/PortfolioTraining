@@ -10,3 +10,4 @@ Thumbs.db
 
 # Local preview tools (optional)
 .sass-cache/
+.tools/

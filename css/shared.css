@@ -127,6 +127,61 @@
 .trainer-tip strong { display: block; margin-bottom: 0.25rem; font-size: 1rem; }
 .trainer-tip code { background: rgba(0,0,0,0.06); padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.875em; }
 
+/* ── Fill-out checklist — DELETE when your content is complete ── */
+.fill-checklist {
+  background: #f0f9ff;
+  border: 1px solid #7dd3fc;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #0c4a6e;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.fill-checklist strong { display: block; font-size: 0.9375rem; color: #075985; margin-bottom: 0.25rem; }
+.fill-checklist-summary {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0369a1;
+  margin-bottom: 0.5rem;
+}
+.fill-checklist-intro { margin: 0 0 0.75rem; font-size: 0.8125rem; }
+.fill-checklist p { margin: 0.75rem 0 0.35rem; font-weight: 600; font-size: 0.8125rem; }
+.fill-checklist-text {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+  font-weight: 400;
+}
+.fill-checklist-text li { margin-bottom: 0.25rem; }
+.fill-checklist ul:not(.fill-checklist-text) {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+  font-weight: 400;
+}
+.fill-checklist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.fill-checklist-table th,
+.fill-checklist-table td {
+  text-align: left;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #bae6fd;
+  vertical-align: top;
+}
+.fill-checklist-table th { background: #e0f2fe; font-weight: 600; }
+.fill-checklist code { background: rgba(0,0,0,0.05); padding: 0.1rem 0.3rem; border-radius: 0.2rem; font-size: 0.9em; }
+
+@media (max-width: 40rem) {
+  .fill-checklist-table { font-size: 0.6875rem; }
+  .fill-checklist-table th, .fill-checklist-table td { padding: 0.35rem; }
+}
+
 /* ── Generic media placeholders (replace with real content) ── */
 .media-placeholder,
 .photo-placeholder {

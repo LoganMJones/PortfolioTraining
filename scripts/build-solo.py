@@ -74,6 +74,8 @@ def template_readme(theme: str) -> str:
     zip_url = f"{REPO_RAW}/{theme}.zip"
     architect = CONFIG["architectName"]
     architect_url = CONFIG["architectUrl"]
+    checklists = json.loads((ROOT / "theme-checklists.json").read_text(encoding="utf-8"))
+    checklist_md = checklist_markdown(theme, checklists[theme])
     return f"""# {label} Portfolio Template
 
 A single-layout portfolio starter for graduate school and professional development. **No coding tools required** — edit everything on github.com in your browser.
@@ -86,12 +88,17 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Edit `index.html` on GitHub — search for `EDIT HERE`.
-4. Colors: edit `css/{theme}.css` — only the hex codes at the top.
+3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+4. Search `EDIT HERE` and `ADD` to replace placeholders.
+5. Colors: edit `css/{theme}.css` — only the hex codes at the top.
 
 **Full setup guide:** [{GUIDE_URL}]({GUIDE_URL})
 
 **Other layouts:** [{PROJECT_URL}]({PROJECT_URL})
+
+---
+
+{checklist_md}
 
 ---
 
@@ -115,6 +122,50 @@ Download the [ZIP]({zip_url}) and upload files to a new repo manually.
 
 Part of [Portfolio Training]({PROJECT_URL}) · Template by [{architect}]({architect_url})
 """
+
+
+def checklist_markdown(theme: str, data: dict) -> str:
+    lines = [
+        f"## What you need to fill out {data['label']}",
+        "",
+        "Everything below completes the **basic template** — no extra sections required.",
+        "",
+        "### Text",
+        "",
+    ]
+    for item in data["text"]:
+        lines.append(f"- {item}")
+    lines.extend(["", "### Photos (upload to `assets/`)", ""])
+    if data["images"]:
+        total = sum(i["count"] for i in data["images"])
+        lines.append(f"**{total} images total** — JPG recommended, ~500 KB each after compression.")
+        lines.append("")
+        lines.append("| Qty | Subject | Min size | Filename |")
+        lines.append("|-----|---------|----------|----------|")
+        for img in data["images"]:
+            fn = img["file"]
+            if img["count"] > 1:
+                stem, ext = fn.rsplit(".", 1)
+                fn = f"{stem}-1.{ext} … {stem}-{img['count']}.{ext}"
+            lines.append(
+                f"| {img['count']} | {img['subject']} | {img['minWidth']}×{img['minHeight']} px ({img['ratio']}) | `{fn}` |"
+            )
+    else:
+        lines.append("_No photos required for this layout._")
+    lines.extend(["", "### PDFs", ""])
+    if data["files"]:
+        lines.append("| Document | Filename | Notes |")
+        lines.append("|----------|----------|-------|")
+        for f in data["files"]:
+            lines.append(f"| {f['label']} | `{f['file']}` | {f['notes']} |")
+    else:
+        lines.append("_No PDFs required._")
+    if data["video"]:
+        lines.extend(["", "### Video", ""])
+        for v in data["video"]:
+            lines.append(f"- {v['count']}× — {v['notes']}")
+    lines.append("")
+    return "\n".join(lines)
 
 
 def zip_dir(source: Path, dest: Path) -> None:

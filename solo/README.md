@@ -16,3 +16,5 @@ Source builds for **10 separate GitHub template repositories**. Students preview
 | Creative | [Use template](https://github.com/LoganMJones/PortfolioTraining-creative) | [ZIP](https://github.com/LoganMJones/PortfolioTraining/raw/main/solo/zips/creative.zip) |
 
 Regenerate: `python3 scripts/build-solo.py` · Publish repos: `scripts/publish-template-repos.sh`
+
+Fill checklists: edit `theme-checklists.json`, then run `python3 scripts/add-fill-checklists.py && python3 scripts/build-solo.py`

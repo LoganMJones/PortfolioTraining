@@ -10,12 +10,51 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Edit `index.html` on GitHub — search for `EDIT HERE`.
-4. Colors: edit `css/academic.css` — only the hex codes at the top.
+3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+4. Search `EDIT HERE` and `ADD` to replace placeholders.
+5. Colors: edit `css/academic.css` — only the hex codes at the top.
 
 **Full setup guide:** [https://loganmjones.github.io/PortfolioTraining/guide.html](https://loganmjones.github.io/PortfolioTraining/guide.html)
 
 **Other layouts:** [https://loganmjones.github.io/PortfolioTraining/](https://loganmjones.github.io/PortfolioTraining/)
+
+---
+
+## What you need to fill out Academic
+
+Everything below completes the **basic template** — no extra sections required.
+
+### Text
+
+- Name, degree, department, university
+- Research summary
+- Publications — 2+ citations
+- Poster caption (figcaption)
+- Talk title, conference, year
+- Education table — 3 rows
+- Email, ORCID if applicable
+
+### Photos (upload to `assets/`)
+
+**2 images total** — JPG recommended, ~500 KB each after compression.
+
+| Qty | Subject | Min size | Filename |
+|-----|---------|----------|----------|
+| 1 | Formal headshot | 240×320 px (3:4 portrait) | `assets/photo.jpg` |
+| 1 | Research poster or figure — use high resolution for readability | 900×600 px (3:2 landscape) | `assets/poster.jpg` |
+
+### PDFs
+
+| Document | Filename | Notes |
+|----------|----------|-------|
+| CV | `assets/cv.pdf` | PDF |
+| Publication PDF | `assets/paper.pdf` | Preprint or reprint |
+| Talk slides | `assets/slides.pdf` | Conference slide deck |
+
+### Video
+
+- 1× — Recorded conference talk — YouTube/Vimeo embed
+
 
 ---
 

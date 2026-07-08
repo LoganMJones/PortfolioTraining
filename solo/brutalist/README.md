@@ -10,12 +10,41 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Edit `index.html` on GitHub — search for `EDIT HERE`.
-4. Colors: edit `css/brutalist.css` — only the hex codes at the top.
+3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+4. Search `EDIT HERE` and `ADD` to replace placeholders.
+5. Colors: edit `css/brutalist.css` — only the hex codes at the top.
 
 **Full setup guide:** [https://loganmjones.github.io/PortfolioTraining/guide.html](https://loganmjones.github.io/PortfolioTraining/guide.html)
 
 **Other layouts:** [https://loganmjones.github.io/PortfolioTraining/](https://loganmjones.github.io/PortfolioTraining/)
+
+---
+
+## What you need to fill out Brutalist
+
+Everything below completes the **basic template** — no extra sections required.
+
+### Text
+
+- Name, field, and city (hero)
+- About — 1 lead paragraph
+- Work — 3 cards (title, org, description)
+- Contact email, GitHub
+
+### Photos (upload to `assets/`)
+
+**1 images total** — JPG recommended, ~500 KB each after compression.
+
+| Qty | Subject | Min size | Filename |
+|-----|---------|----------|----------|
+| 1 | Poster, project still, or figure | 900×600 px (3:2 landscape) | `assets/poster.jpg` |
+
+### PDFs
+
+| Document | Filename | Notes |
+|----------|----------|-------|
+| CV | `assets/cv.pdf` | PDF download block |
+
 
 ---
 

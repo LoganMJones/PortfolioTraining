@@ -1,0 +1,206 @@
+{
+  "document": {
+    "label": "Document",
+    "text": [
+      "Your name, city/state, role, and field",
+      "About — 2–4 sentences",
+      "Education — 2 entries (degree, school, year, honors)",
+      "Research — 2 entries",
+      "Experience — 1+ entries",
+      "Skills — 1–2 bullet lines",
+      "Projects — 2 entries (title, link, one-line description)",
+      "Email and GitHub URL"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "Resume / CV", "required": true, "notes": "PDF only, under 2 MB" }
+    ],
+    "images": [],
+    "video": [],
+    "audio": []
+  },
+  "classic": {
+    "label": "Classic",
+    "text": [
+      "Name, role, email, LinkedIn, GitHub",
+      "Profile summary — 2–3 sentences",
+      "Experience — 2 entries (title, org, year, bullets)",
+      "Projects — 2 entries (title, description, link)",
+      "Publications — 2 entries (title, year, link or PDF label)"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF, under 2 MB" },
+      { "file": "assets/paper.pdf", "label": "Publication PDF", "required": true, "notes": "Paper, poster, or writing sample" }
+    ],
+    "images": [
+      { "file": "assets/photo.jpg", "slot": "ADD YOUR PHOTO HERE", "count": 1, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Professional headshot" },
+      { "file": "assets/project-1.jpg", "slot": "ADD PROJECT IMAGE HERE", "count": 2, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Project thumbnails (one per project row)" }
+    ],
+    "video": [],
+    "audio": []
+  },
+  "minimal": {
+    "label": "Minimal",
+    "text": [
+      "Name and one-line tagline",
+      "Statement — 1 short paragraph",
+      "Work — 2 entries (role, org, description)",
+      "Contact email, LinkedIn, GitHub"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF, under 2 MB" }
+    ],
+    "images": [
+      { "file": "assets/project-thumb.jpg", "slot": "ADD PROJECT IMAGE HERE", "count": 1, "minWidth": 300, "minHeight": 300, "ratio": "1:1 square", "subject": "Optional thumbnail for first project only" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "YouTube or Vimeo embed URL (no file upload)" }
+    ],
+    "audio": []
+  },
+  "terminal": {
+    "label": "Terminal",
+    "text": [
+      "Name (whoami block)",
+      "About — 1 paragraph",
+      "Education — 2 lines",
+      "Research — 2 lines",
+      "Skills — one line",
+      "Email, GitHub, and CV filename in contact block"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "Linked as cv.pdf in contact block" }
+    ],
+    "images": [],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "YouTube/Vimeo embed or &lt;video&gt; file in assets/" }
+    ],
+    "audio": []
+  },
+  "brutalist": {
+    "label": "Brutalist",
+    "text": [
+      "Name, field, and city (hero)",
+      "About — 1 lead paragraph",
+      "Work — 3 cards (title, org, description)",
+      "Contact email, GitHub"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF download block" }
+    ],
+    "images": [
+      { "file": "assets/poster.jpg", "slot": "ADD GALLERY IMAGE HERE", "count": 1, "minWidth": 900, "minHeight": 600, "ratio": "3:2 landscape", "subject": "Poster, project still, or figure" }
+    ],
+    "video": [],
+    "audio": []
+  },
+  "deck": {
+    "label": "Deck",
+    "text": [
+      "Name, role, and field (title slide)",
+      "About — 1 paragraph",
+      "Selected work — 3 items",
+      "Email, GitHub"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF link on contact slide" }
+    ],
+    "images": [
+      { "file": "assets/hero.jpg", "slot": "ADD HERO IMAGE HERE", "count": 1, "minWidth": 800, "minHeight": 800, "ratio": "1:1 or 4:3", "subject": "Photo or project image on media slide" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "YouTube/Vimeo embed on media slide" }
+    ],
+    "audio": []
+  },
+  "editorial": {
+    "label": "Editorial",
+    "text": [
+      "Name, tagline, about (2–3 paragraphs + optional quote)",
+      "Experience — 2 entries",
+      "Featured project — title, description, tags",
+      "2 more projects (title, description, links)",
+      "Contact email, LinkedIn, GitHub"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "Hero download button" }
+    ],
+    "images": [
+      { "file": "assets/hero.jpg", "slot": "ADD HERO IMAGE HERE", "count": 1, "minWidth": 1600, "minHeight": 900, "ratio": "16:9 wide", "subject": "Banner — campus, lab, or research visual" },
+      { "file": "assets/photo.jpg", "slot": "ADD YOUR PHOTO HERE", "count": 1, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Headshot in about section" },
+      { "file": "assets/project-featured.jpg", "slot": "ADD PROJECT IMAGE HERE", "count": 1, "minWidth": 800, "minHeight": 450, "ratio": "16:9 wide", "subject": "Featured project image" },
+      { "file": "assets/project-2.jpg", "slot": "Project image", "count": 2, "minWidth": 600, "minHeight": 340, "ratio": "16:9 wide", "subject": "Thumbnails on “More projects” cards" },
+      { "file": "assets/gallery-1.jpg", "slot": "ADD GALLERY IMAGE HERE", "count": 4, "minWidth": 300, "minHeight": 300, "ratio": "1:1 square", "subject": "Gallery grid (rename gallery-1 through gallery-4)" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "Featured project — YouTube/Vimeo embed" }
+    ],
+    "audio": []
+  },
+  "bold": {
+    "label": "Bold",
+    "text": [
+      "Name, tagline, impact statement",
+      "3 stat values + labels",
+      "3 project cards (title, description)",
+      "Contact email, LinkedIn, GitHub"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF in contact row" }
+    ],
+    "images": [
+      { "file": "assets/hero.jpg", "slot": "ADD HERO IMAGE HERE", "count": 1, "minWidth": 600, "minHeight": 800, "ratio": "3:4 portrait", "subject": "Split-screen hero portrait or action shot" },
+      { "file": "assets/project-1.jpg", "slot": "ADD PROJECT IMAGE HERE", "count": 3, "minWidth": 800, "minHeight": 450, "ratio": "16:9 wide", "subject": "One cover image per project card" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "Highlight section — YouTube/Vimeo embed" }
+    ],
+    "audio": []
+  },
+  "academic": {
+    "label": "Academic",
+    "text": [
+      "Name, degree, department, university",
+      "Research summary",
+      "Publications — 2+ citations",
+      "Poster caption (figcaption)",
+      "Talk title, conference, year",
+      "Education table — 3 rows",
+      "Email, ORCID if applicable"
+    ],
+    "files": [
+      { "file": "assets/cv.pdf", "label": "CV", "required": true, "notes": "PDF" },
+      { "file": "assets/paper.pdf", "label": "Publication PDF", "required": true, "notes": "Preprint or reprint" },
+      { "file": "assets/slides.pdf", "label": "Talk slides", "required": true, "notes": "Conference slide deck" }
+    ],
+    "images": [
+      { "file": "assets/photo.jpg", "slot": "ADD PHOTO HERE", "count": 1, "minWidth": 240, "minHeight": 320, "ratio": "3:4 portrait", "subject": "Formal headshot" },
+      { "file": "assets/poster.jpg", "slot": "ADD POSTER OR FIGURE HERE", "count": 1, "minWidth": 900, "minHeight": 600, "ratio": "3:2 landscape", "subject": "Research poster or figure — use high resolution for readability" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "Recorded conference talk — YouTube/Vimeo embed" }
+    ],
+    "audio": []
+  },
+  "creative": {
+    "label": "Creative",
+    "text": [
+      "Name and short intro (mosaic tiles)",
+      "Gallery intro line",
+      "3 project tiles (title, description)",
+      "Contact email, LinkedIn, GitHub"
+    ],
+    "files": [],
+    "images": [
+      { "file": "assets/photo.jpg", "slot": "ADD YOUR PHOTO HERE", "count": 1, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Mosaic intro tile" },
+      { "file": "assets/hero.jpg", "slot": "ADD HERO IMAGE HERE", "count": 1, "minWidth": 1200, "minHeight": 600, "ratio": "2:1 wide", "subject": "Large mosaic hero tile" },
+      { "file": "assets/gallery-1.jpg", "slot": "ADD GALLERY IMAGES HERE", "count": 6, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Gallery grid (gallery-1 through gallery-6)" },
+      { "file": "assets/project-1.jpg", "slot": "ADD PROJECT IMAGE", "count": 1, "minWidth": 800, "minHeight": 450, "ratio": "16:9 wide", "subject": "Featured project banner" },
+      { "file": "assets/project-a.jpg", "slot": "Project square", "count": 2, "minWidth": 400, "minHeight": 400, "ratio": "1:1 square", "subject": "Secondary project tiles" },
+      { "file": "assets/process.jpg", "slot": "Image — process or detail", "count": 1, "minWidth": 800, "minHeight": 450, "ratio": "16:9 wide", "subject": "Media row still image" }
+    ],
+    "video": [
+      { "slot": "ADD VIDEO HERE", "count": 1, "notes": "Media row — reel, demo, or timelapse embed" }
+    ],
+    "audio": []
+  }
+}

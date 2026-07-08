@@ -10,12 +10,41 @@ A single-layout portfolio starter for graduate school and professional developme
 
 1. Click the green **Use this template** button above → create a repo named `my-portfolio`.
 2. **Settings** → **Pages** → Source: **main** branch, **/ (root)** → Save.
-3. Edit `index.html` on GitHub — search for `EDIT HERE`.
-4. Colors: edit `css/document.css` — only the hex codes at the top.
+3. Open `index.html` — the blue **fill checklist** box lists every photo, PDF, and text block you need.
+4. Search `EDIT HERE` and `ADD` to replace placeholders.
+5. Colors: edit `css/document.css` — only the hex codes at the top.
 
 **Full setup guide:** [https://loganmjones.github.io/PortfolioTraining/guide.html](https://loganmjones.github.io/PortfolioTraining/guide.html)
 
 **Other layouts:** [https://loganmjones.github.io/PortfolioTraining/](https://loganmjones.github.io/PortfolioTraining/)
+
+---
+
+## What you need to fill out Document
+
+Everything below completes the **basic template** — no extra sections required.
+
+### Text
+
+- Your name, city/state, role, and field
+- About — 2–4 sentences
+- Education — 2 entries (degree, school, year, honors)
+- Research — 2 entries
+- Experience — 1+ entries
+- Skills — 1–2 bullet lines
+- Projects — 2 entries (title, link, one-line description)
+- Email and GitHub URL
+
+### Photos (upload to `assets/`)
+
+_No photos required for this layout._
+
+### PDFs
+
+| Document | Filename | Notes |
+|----------|----------|-------|
+| Resume / CV | `assets/cv.pdf` | PDF only, under 2 MB |
+
 
 ---
 

@@ -13,8 +13,15 @@ THEMES=(
 )
 
 if ! command -v gh >/dev/null 2>&1; then
-  echo "Error: GitHub CLI (gh) is required. Install: https://cli.github.com/"
-  exit 1
+  SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+  LOCAL_GH="${SCRIPT_DIR}/../.tools/gh_2.96.0_macOS_arm64/bin/gh"
+  if [[ -x "$LOCAL_GH" ]]; then
+    gh() { "$LOCAL_GH" "$@"; }
+  else
+    echo "Error: GitHub CLI (gh) is required. Install: https://cli.github.com/"
+    echo "Or run from repo root after downloading gh to .tools/"
+    exit 1
+  fi
 fi
 
 for theme in "${THEMES[@]}"; do
