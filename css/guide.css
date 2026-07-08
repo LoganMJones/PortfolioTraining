@@ -165,6 +165,10 @@ body {
   border-radius: 0.75rem;
   padding: 1.5rem 1.75rem;
   margin-bottom: 1.25rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: clip;
 }
 
 .guide-step h2 {
@@ -232,6 +236,9 @@ body {
   .guide-wrap {
     overflow-x: clip;
     max-width: 100%;
+  }
+  .guide-step {
+    padding: 1.25rem 1rem;
   }
   /* Keep wide tables inside a local scroller so the page itself never grows */
   .guide-table {
@@ -498,6 +505,8 @@ body {
   display: grid;
   gap: 1rem;
   margin: 1rem 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 @media (min-width: 40rem) {
@@ -509,6 +518,10 @@ body {
   border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
   padding: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .file-tree--after {
@@ -523,14 +536,30 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #64748b;
+  overflow-wrap: anywhere;
 }
 
 .file-tree pre {
   margin: 0;
   font-size: 0.75rem;
   line-height: 1.5;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   color: #334155;
+}
+
+@media (max-width: 40rem) {
+  .file-tree {
+    padding: 0.85rem;
+  }
+  .file-tree pre {
+    font-size: 0.6875rem;
+  }
 }
 
 .copilot-prompt {
