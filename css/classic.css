@@ -25,7 +25,7 @@ h3 { font-size: 1rem; margin: 0; }
 .skip-link { position: fixed; top: -100%; left: 1rem; z-index: 9999; padding: 0.5rem 1rem; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
 .skip-link:focus { top: calc(var(--theme-switcher-height) + 0.5rem); }
 
-.layout { display: grid; min-height: 100svh; padding-top: var(--theme-switcher-height); }
+.layout { display: grid; min-height: 100svh; padding-top: var(--theme-switcher-height); max-width: 100%; overflow-x: clip; }
 @media (min-width: 56rem) { .layout { grid-template-columns: var(--sidebar-w) 1fr; } }
 
 .sidebar { background: var(--sidebar-bg); color: #fff; padding: 1.5rem; }

@@ -18,8 +18,11 @@ a { color: var(--home-accent); }
 
 .home-wrap {
   width: min(100% - 2.5rem, 64rem);
+  max-width: 100%;
+  min-width: 0;
   margin-inline: auto;
   padding-block: 3rem 4rem;
+  box-sizing: border-box;
 }
 
 .home-hero h1 {

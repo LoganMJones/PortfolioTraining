@@ -17,7 +17,7 @@ a { color: var(--brut-ink); }
 
 .brut-hero { padding: 3rem 1.5rem 2rem; border-bottom: var(--brut-border); background: var(--brut-ink); color: var(--brut-paper); }
 .brut-label { margin: 0 0 1rem; font-size: 0.875rem; letter-spacing: 0.2em; font-family: monospace; color: var(--brut-accent); }
-.brut-name { margin: 0; font-size: clamp(3.5rem, 18vw, 9rem); line-height: 0.9; letter-spacing: -0.04em; text-transform: uppercase; }
+.brut-name { margin: 0; font-size: clamp(2.5rem, 14vw, 9rem); line-height: 0.9; letter-spacing: -0.04em; text-transform: uppercase; max-width: 100%; overflow-wrap: anywhere; }
 .brut-tag { margin: 1.25rem 0 0; font-family: monospace; font-size: 1rem; font-weight: 400; letter-spacing: 0.05em; }
 
 .brut-box { margin: 0; border-bottom: var(--brut-border); }
@@ -67,7 +67,7 @@ a { color: var(--brut-ink); }
 @media (max-width: 700px) {
   .brut-hero { padding: 2rem 1.25rem 1.5rem; }
   .brut-section { padding: 2rem 1.25rem; }
-  .brut-name { font-size: clamp(2.75rem, 16vw, 5rem); overflow-wrap: anywhere; }
+  .brut-name { font-size: clamp(2.25rem, 14vw, 4.5rem); }
   .brut-link { box-shadow: 4px 4px 0 var(--brut-accent); font-size: 1rem; padding: 0.875rem 1.15rem; }
   .file-download { box-shadow: 4px 4px 0 var(--brut-ink); }
   .brut-card:last-child { border-bottom: none; }

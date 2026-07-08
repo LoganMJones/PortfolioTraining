@@ -12,7 +12,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: var(--page-top); }
 body { margin: 0; font-family: var(--font); font-size: 1.0625rem; line-height: 1.75; color: var(--text); background: #fff; }
-.wrap { width: min(100% - 2rem, 40rem); margin-inline: auto; }
+.wrap { width: min(100% - 2rem, 40rem); max-width: 100%; min-width: 0; margin-inline: auto; box-sizing: border-box; }
 .narrow { max-width: 36rem; }
 a { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
