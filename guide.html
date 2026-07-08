@@ -29,109 +29,123 @@
     <div class="guide-wrap">
 
       <h1>Setup Guide</h1>
-      <p class="guide-lead">No coding experience needed. Everything happens on <strong>github.com</strong> in your browser.</p>
+      <p class="guide-lead">No coding experience needed. Everything happens on <strong>github.com</strong> in your browser. Use the table of contents to jump around.</p>
 
-      <!-- Step 1 -->
-      <section class="guide-step">
-        <h2><span class="step-num">1</span> Copy this template</h2>
-        <ol>
-          <li>Go to the template repo on GitHub.</li>
-          <li>Click the green <strong>Use this template</strong> button → <strong>Create a new repository</strong>.</li>
-          <li>Name it something like <code>my-portfolio</code>.</li>
-          <li>Click <strong>Create repository</strong>.</li>
-        </ol>
-      </section>
-
-      <!-- Step 2 -->
-      <section class="guide-step">
-        <h2><span class="step-num">2</span> Turn on GitHub Pages (free hosting)</h2>
-        <ol>
-          <li>In your new repo, click <strong>Settings</strong> (top tab).</li>
-          <li>Click <strong>Pages</strong> in the left sidebar.</li>
-          <li>Under <strong>Build and deployment</strong> → <strong>Source</strong>: pick <strong>Deploy from a branch</strong>.</li>
-          <li>Branch: <strong>main</strong> · Folder: <strong>/ (root)</strong> → click <strong>Save</strong>.</li>
-          <li>Wait 1–2 minutes. Your URL appears at the top of the Pages settings page:<br>
-            <code>https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</code>
-          </li>
-        </ol>
-        <div class="trainer-tip">
-          <strong>⚠️ Important</strong>
-          Do NOT preview your site by clicking <code>index.html</code> inside the repo — that shows unstyled HTML.
-          Always use your <strong>GitHub Pages URL</strong> from Settings → Pages.
-        </div>
-      </section>
-
-      <!-- Step 3 -->
-      <section class="guide-step">
-        <h2><span class="step-num">3</span> Pick a layout</h2>
-        <p>Open your live site URL. You'll see 6 layout options. Click through them using the <strong>black bar at the top</strong>. Pick the one you like best — you'll only customize that one file.</p>
-        <table class="guide-table">
-          <thead>
-            <tr><th>Layout</th><th>File to edit</th><th>Best for</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Editorial</td><td><code>themes/editorial.html</code></td><td>Modern, bold, creative fields</td></tr>
-            <tr><td>Classic</td><td><code>themes/classic.html</code></td><td>Traditional resume look</td></tr>
-            <tr><td>Minimal</td><td><code>themes/minimal.html</code></td><td>Clean and simple</td></tr>
-            <tr><td>Bold</td><td><code>themes/bold.html</code></td><td>Eye-catching, colorful</td></tr>
-            <tr><td>Academic</td><td><code>themes/academic.html</code></td><td>Grad school applications</td></tr>
-            <tr><td>Creative</td><td><code>themes/creative.html</code></td><td>Design-forward portfolios</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Step 4 -->
-      <section class="guide-step">
-        <h2><span class="step-num">4</span> Edit your content on GitHub</h2>
-        <ol>
-          <li>Go to your repo on github.com.</li>
-          <li>Click <code>themes</code> folder → click your chosen file (e.g. <code>editorial.html</code>).</li>
-          <li>Click the <strong>pencil icon</strong> (✏️ Edit this file) in the top-right.</li>
-          <li>Press <strong>Cmd+F</strong> (Mac) or <strong>Ctrl+F</strong> (Windows) and search: <code>EDIT HERE</code></li>
-          <li>Change each labeled spot to your real information.</li>
-          <li>Scroll to the bottom → click <strong>Commit changes</strong>.</li>
-        </ol>
-      </section>
-
-      <!-- Step 5 -->
-      <section class="guide-step">
-        <h2><span class="step-num">5</span> Add your photo</h2>
-        <ol>
-          <li>In your repo, click the <code>assets</code> folder.</li>
-          <li>Click <strong>Add file</strong> → <strong>Upload files</strong>.</li>
-          <li>Drag in your photo (name it something simple like <code>photo.jpg</code>).</li>
-          <li>Click <strong>Commit changes</strong>.</li>
-          <li>Go back to your theme file and search for <code>ADD YOUR PHOTO HERE</code>.</li>
-          <li>Follow the instructions in that comment to uncomment the <code>&lt;img&gt;</code> line and update the filename.</li>
-        </ol>
-      </section>
-
-      <!-- Step 6 -->
-      <section class="guide-step">
-        <h2><span class="step-num">6</span> Change your colors</h2>
-        <ol>
-          <li>Click the <code>css</code> folder in your repo.</li>
-          <li>Click the file matching your layout (e.g. <code>editorial.css</code> for Editorial layout).</li>
-          <li>Click the pencil icon to edit.</li>
-          <li>At the very top you'll see a section labeled <strong>CHANGE YOUR COLORS HERE</strong>.</li>
-          <li>Only edit the hex color codes (like <code>#2563eb</code>). Don't change anything else unless you know CSS.</li>
-          <li>Commit changes.</li>
-        </ol>
-        <p>Need a color? Google <em>"color picker"</em> or use <a href="https://htmlcolorcodes.com/" rel="noopener noreferrer">htmlcolorcodes.com</a>.</p>
-      </section>
-
-      <!-- Step 7 -->
-      <section class="guide-step">
-        <h2><span class="step-num">7</span> Clean up when done</h2>
+      <nav class="guide-toc" aria-label="Table of contents">
+        <h2>On this page</h2>
         <ul>
-          <li>Delete the <strong>yellow trainer tip boxes</strong> from your HTML file (search for <code>trainer-tip</code>).</li>
-          <li>Update your links — search for <code>EDIT LINK HERE</code> and replace <code>#</code> with real URLs.</li>
-          <li>Hard-refresh your live site: <strong>Cmd+Shift+R</strong> or <strong>Ctrl+Shift+R</strong>.</li>
+          <li><a href="#setup">Setup steps 1–7</a></li>
+          <li><a href="#cheat-sheet">Search cheat sheet</a></li>
+          <li><a href="#colors">Color palettes</a></li>
+          <li><a href="#contrast">Contrast checking</a></li>
+          <li><a href="#extract">Grab colors from images</a></li>
+          <li><a href="#icons">Icons &amp; SVG</a></li>
+          <li><a href="#illustrations">Illustrations</a></li>
+          <li><a href="#photos">Free photos</a></li>
+          <li><a href="#fonts">Free fonts</a></li>
+          <li><a href="#plug-in">Plug assets into your site</a></li>
+          <li><a href="#copilot">GitHub Copilot</a></li>
         </ul>
-      </section>
+      </nav>
 
-      <!-- Cheat sheet -->
-      <section class="guide-step guide-cheat">
+      <div id="setup">
+
+        <section class="guide-step">
+          <h2><span class="step-num">1</span> Copy this template</h2>
+          <ol>
+            <li>Go to the template repo on GitHub.</li>
+            <li>Click the green <strong>Use this template</strong> button → <strong>Create a new repository</strong>.</li>
+            <li>Name it something like <code>my-portfolio</code>.</li>
+            <li>Click <strong>Create repository</strong>.</li>
+          </ol>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">2</span> Turn on GitHub Pages (free hosting)</h2>
+          <ol>
+            <li>In your new repo, click <strong>Settings</strong> (top tab).</li>
+            <li>Click <strong>Pages</strong> in the left sidebar.</li>
+            <li>Under <strong>Build and deployment</strong> → <strong>Source</strong>: pick <strong>Deploy from a branch</strong>.</li>
+            <li>Branch: <strong>main</strong> · Folder: <strong>/ (root)</strong> → click <strong>Save</strong>.</li>
+            <li>Wait 1–2 minutes. Your URL appears at the top of the Pages settings page:<br>
+              <code>https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</code>
+            </li>
+          </ol>
+          <div class="trainer-tip">
+            <strong>⚠️ Important</strong>
+            Do NOT preview your site by clicking <code>index.html</code> inside the repo — that shows unstyled HTML.
+            Always use your <strong>GitHub Pages URL</strong> from Settings → Pages.
+          </div>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">3</span> Pick a layout</h2>
+          <p>Open your live site URL. You'll see 6 layout options. Click through them using the <strong>black bar at the top</strong>. Pick the one you like best — you'll only customize that one file.</p>
+          <table class="guide-table">
+            <thead>
+              <tr><th>Layout</th><th>File to edit</th><th>Colors file</th><th>Best for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Editorial</td><td><code>themes/editorial.html</code></td><td><code>css/editorial.css</code></td><td>Modern, bold</td></tr>
+              <tr><td>Classic</td><td><code>themes/classic.html</code></td><td><code>css/classic.css</code></td><td>Resume-style</td></tr>
+              <tr><td>Minimal</td><td><code>themes/minimal.html</code></td><td><code>css/minimal.css</code></td><td>Clean &amp; simple</td></tr>
+              <tr><td>Bold</td><td><code>themes/bold.html</code></td><td><code>css/bold.css</code></td><td>Colorful</td></tr>
+              <tr><td>Academic</td><td><code>themes/academic.html</code></td><td><code>css/academic.css</code></td><td>Grad school apps</td></tr>
+              <tr><td>Creative</td><td><code>themes/creative.html</code></td><td><code>css/creative.css</code></td><td>Visual &amp; playful</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">4</span> Edit your content on GitHub</h2>
+          <ol>
+            <li>Go to your repo on github.com.</li>
+            <li>Click <code>themes</code> folder → click your chosen file (e.g. <code>editorial.html</code>).</li>
+            <li>Click the <strong>pencil icon</strong> (✏️ Edit this file) in the top-right.</li>
+            <li>Press <strong>Cmd+F</strong> (Mac) or <strong>Ctrl+F</strong> (Windows) and search: <code>EDIT HERE</code></li>
+            <li>Change each labeled spot to your real information.</li>
+            <li>Scroll to the bottom → click <strong>Commit changes</strong>.</li>
+          </ol>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">5</span> Add your photo</h2>
+          <ol>
+            <li>In your repo, click the <code>assets</code> folder.</li>
+            <li>Click <strong>Add file</strong> → <strong>Upload files</strong>.</li>
+            <li>Drag in your photo (name it something simple like <code>photo.jpg</code>).</li>
+            <li>Click <strong>Commit changes</strong>.</li>
+            <li>Go back to your theme file and search for <code>ADD YOUR PHOTO HERE</code>.</li>
+            <li>Follow the instructions in that comment to uncomment the <code>&lt;img&gt;</code> line and update the filename.</li>
+          </ol>
+          <p>Need a free photo? See the <a href="#photos">Free stock photos</a> dropdown below.</p>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">6</span> Change your colors</h2>
+          <ol>
+            <li>Use a tool from the <a href="#colors">Color palettes</a> section below to pick colors you like.</li>
+            <li>Copy the <strong>hex codes</strong> (they look like <code>#2563eb</code>).</li>
+            <li>In your repo, open <code>css/[your-layout].css</code> (see table in Step 3).</li>
+            <li>At the top, find <strong>CHANGE YOUR COLORS HERE</strong>.</li>
+            <li>Paste your hex codes over the existing ones. Only change the color values.</li>
+            <li>Check contrast with a tool from <a href="#contrast">Contrast checking</a> before you commit.</li>
+            <li>Click <strong>Commit changes</strong>.</li>
+          </ol>
+        </section>
+
+        <section class="guide-step">
+          <h2><span class="step-num">7</span> Clean up when done</h2>
+          <ul>
+            <li>Delete the <strong>yellow trainer tip boxes</strong> from your HTML file (search for <code>trainer-tip</code>).</li>
+            <li>Update your links — search for <code>EDIT LINK HERE</code> and replace <code>#</code> with real URLs.</li>
+            <li>Hard-refresh your live site: <strong>Cmd+Shift+R</strong> or <strong>Ctrl+Shift+R</strong>.</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <section id="cheat-sheet" class="guide-step guide-cheat">
         <h2>Search cheat sheet</h2>
         <p>Use Cmd+F / Ctrl+F in your theme file to find these:</p>
         <dl class="cheat-list">
@@ -150,14 +164,477 @@
         </dl>
       </section>
 
-      <!-- Copilot -->
-      <section class="guide-step">
+      <!-- ═══════════════════════════════════════════════════════════════
+           RESOURCE LIBRARY — free, no-account, plug-and-play tools
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="resource-library" aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Free design resources</h2>
+        <p class="resource-intro">
+          Every tool below is <strong>free</strong>, needs <strong>no account</strong>, and is safe for student portfolios.
+          Click a section to expand it. All links open in a new tab.
+        </p>
+
+        <!-- COLORS -->
+        <details id="colors" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">🎨</span> Color palettes &amp; generators</summary>
+          <div class="dropdown-body">
+            <p>Generate a color scheme, then copy the hex codes into your <code>css/[layout].css</code> file.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">Coolors.co</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>The fastest palette generator. Press <strong>spacebar</strong> to shuffle colors. Click a color to copy its hex code.</p>
+              <ol class="how-to">
+                <li>Go to coolors.co — a 5-color palette appears instantly.</li>
+                <li>Press <strong>spacebar</strong> until you like the combination.</li>
+                <li>Click any color → hex code copies to clipboard.</li>
+                <li>Paste into <code>--accent</code> (or similar) in your CSS file.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://color.adobe.com/create/color-wheel" target="_blank" rel="noopener noreferrer">Adobe Color Wheel</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Professional color harmonies — complementary, analogous, triadic, and more. Great when you have one color and need matching ones.</p>
+              <ol class="how-to">
+                <li>Drag the circles on the wheel to pick a base color.</li>
+                <li>Use the <strong>Color Harmony</strong> dropdown (left side) to try different schemes.</li>
+                <li>Click any swatch below the wheel to copy its hex code.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://htmlcolorcodes.com/color-picker/" target="_blank" rel="noopener noreferrer">HTML Color Codes — Picker</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Simple visual color picker. Click anywhere on the gradient, copy the hex. Good when you know the general color you want.</p>
+              <ol class="how-to">
+                <li>Click on the color gradient to pick a shade.</li>
+                <li>Copy the <code>#</code> hex code shown on the right.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://www.realtimecolors.com/" target="_blank" rel="noopener noreferrer">Realtime Colors</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Preview how a full palette looks on a real website layout before you commit. Adjust text, background, and accent together.</p>
+              <ol class="how-to">
+                <li>Edit the colors on the left panel.</li>
+                <li>See a live preview on the right.</li>
+                <li>Copy the hex codes when you're happy with the look.</li>
+              </ol>
+            </article>
+          </div>
+        </details>
+
+        <!-- CONTRAST -->
+        <details id="contrast" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">♿</span> Contrast &amp; accessibility checking</summary>
+          <div class="dropdown-body">
+            <p>Text must be readable for everyone. Check that your text color has enough contrast against your background <em>before</em> publishing.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">WebAIM Contrast Checker</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>The gold standard. Enter your foreground (text) and background hex codes. Aim for <strong>AA</strong> or <strong>AAA</strong> pass.</p>
+              <ol class="how-to">
+                <li>Paste your text color in <strong>Foreground Color</strong>.</li>
+                <li>Paste your background color in <strong>Background Color</strong>.</li>
+                <li>Check that "WCAG AA" shows <strong>Pass</strong> for normal text.</li>
+                <li>If it fails, darken the text or lighten the background and try again.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://color.adobe.com/create/color-contrast-analyzer" target="_blank" rel="noopener noreferrer">Adobe Color — Contrast Analyzer</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Visual contrast checker from Adobe. Pick two colors on the wheel and see if they pass accessibility standards.</p>
+              <ol class="how-to">
+                <li>Select two colors using the color pickers.</li>
+                <li>Read the contrast ratio and pass/fail result below.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://colourcontrast.cc/" target="_blank" rel="noopener noreferrer">Colour Contrast Checker</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Minimal, fast checker. Type or paste two hex codes side by side and get an instant pass/fail.</p>
+            </article>
+          </div>
+        </details>
+
+        <!-- EXTRACT COLORS -->
+        <details id="extract" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">🖼️</span> Grab colors from an image</summary>
+          <div class="dropdown-body">
+            <p>Already have a photo, logo, or mood board? Extract a matching palette automatically.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://coolors.co/image-picker" target="_blank" rel="noopener noreferrer">Coolors — Image Picker</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Upload any image and Coolors extracts a palette from it. Perfect for matching your site to a headshot or university colors.</p>
+              <ol class="how-to">
+                <li>Click <strong>Upload image</strong> (or drag a photo in).</li>
+                <li>Click on the image to pick which colors to extract.</li>
+                <li>Click any swatch to copy its hex code.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://color.adobe.com/create/image" target="_blank" rel="noopener noreferrer">Adobe Color — Extract Theme</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Upload a photo and Adobe pulls out a harmonious color theme. Switch between Color Mood options (bright, muted, deep, etc.).</p>
+              <ol class="how-to">
+                <li>Drag an image onto the page.</li>
+                <li>Try different <strong>Color Mood</strong> tabs.</li>
+                <li>Click swatches to copy hex codes.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://imagecolorpicker.com/" target="_blank" rel="noopener noreferrer">ImageColorPicker.com</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Upload an image and click any pixel to get its exact hex color. Simple and precise for grabbing one specific color.</p>
+              <ol class="how-to">
+                <li>Upload your image.</li>
+                <li>Click anywhere on the image.</li>
+                <li>Copy the hex code that appears.</li>
+              </ol>
+            </article>
+          </div>
+        </details>
+
+        <!-- ICONS -->
+        <details id="icons" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">⚡</span> Icons &amp; SVG (copy &amp; paste)</summary>
+          <div class="dropdown-body">
+            <p>All of these let you <strong>click an icon → copy SVG code → paste into your HTML</strong>. No download, no account.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://heroicons.com/" target="_blank" rel="noopener noreferrer">Heroicons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">MIT License</span>
+              </div>
+              <p>Clean, modern icons by the makers of Tailwind CSS. 200+ icons in outline and solid styles.</p>
+              <ol class="how-to">
+                <li>Search or browse for an icon.</li>
+                <li>Click the icon → click <strong>Copy SVG</strong>.</li>
+                <li>Paste the code into your HTML where you want the icon.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://lucide.dev/icons/" target="_blank" rel="noopener noreferrer">Lucide Icons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">ISC License</span>
+              </div>
+              <p>1,500+ consistent icons. Click any icon, copy the SVG, done.</p>
+              <ol class="how-to">
+                <li>Search for an icon (e.g. "mail", "github", "book").</li>
+                <li>Click it → click the <strong>SVG</strong> copy button.</li>
+                <li>Paste into your HTML.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer">Feather Icons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">MIT License</span>
+              </div>
+              <p>Minimal line icons. Click any icon on the grid to instantly copy its SVG to your clipboard.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://tabler.io/icons" target="_blank" rel="noopener noreferrer">Tabler Icons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">MIT License</span>
+              </div>
+              <p>5,000+ icons with a consistent stroke width. Great for professional portfolios.</p>
+              <ol class="how-to">
+                <li>Search → click an icon → <strong>Copy SVG</strong>.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://phosphoricons.com/" target="_blank" rel="noopener noreferrer">Phosphor Icons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">MIT License</span>
+              </div>
+              <p>Flexible icon family with 6 weights (thin, light, regular, bold, fill, duotone). Click to copy SVG.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://icons.getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap Icons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">MIT License</span>
+              </div>
+              <p>2,000+ icons. Click any icon → <strong>Copy HTML</strong> or <strong>Copy SVG</strong>.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://openclipart.org/" target="_blank" rel="noopener noreferrer">Openclipart</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Public Domain</span>
+              </div>
+              <p>Thousands of public domain clipart SVGs. Search, click <strong>Download</strong> — no signup. Use for decorative graphics.</p>
+            </article>
+          </div>
+        </details>
+
+        <!-- ILLUSTRATIONS -->
+        <details id="illustrations" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">✏️</span> Free illustrations &amp; graphics</summary>
+          <div class="dropdown-body">
+            <p>SVG illustrations you can download and use without copyright worries.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://undraw.co/illustrations" target="_blank" rel="noopener noreferrer">unDraw</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Open-source illustrations for any project. Pick a color, search, download SVG — no signup required.</p>
+              <ol class="how-to">
+                <li>Use the color picker (top right) to match your accent color.</li>
+                <li>Search for a topic (e.g. "research", "team", "resume").</li>
+                <li>Click an illustration → <strong>Download SVG</strong>.</li>
+                <li>Upload the SVG to your <code>assets/</code> folder on GitHub.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://www.svgrepo.com/collections/monocolor/" target="_blank" rel="noopener noreferrer">SVG Repo — Monocolor</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">CC0 / Open License</span>
+              </div>
+              <p>Large library of free SVG vectors. Browse collections, download SVG directly — no login needed for downloads.</p>
+              <ol class="how-to">
+                <li>Browse or search for an SVG.</li>
+                <li>Click <strong>Download SVG</strong> (skip any signup prompts — direct download works).</li>
+                <li>Upload to your <code>assets/</code> folder.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Public Domain / CC</span>
+              </div>
+              <p>Millions of free images, diagrams, and SVGs. Filter by license. Always check the license label on each file — look for <strong>Public Domain</strong> or <strong>CC0</strong>.</p>
+            </article>
+          </div>
+        </details>
+
+        <!-- PHOTOS -->
+        <details id="photos" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">📷</span> Free stock photos (no copyright)</summary>
+          <div class="dropdown-body">
+            <p>Download photos for free — no account, no watermark. All listed sites allow commercial use. Still read each site's license page if unsure.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Pexels License</span>
+              </div>
+              <p>High-quality stock photos. Search, click a photo, hit <strong>Free Download</strong> — no signup needed.</p>
+              <ol class="how-to">
+                <li>Search (e.g. "university", "library", "portrait").</li>
+                <li>Click a photo → <strong>Free Download</strong> → choose size.</li>
+                <li>Upload to <code>assets/</code> on GitHub.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Pixabay License</span>
+              </div>
+              <p>Photos, illustrations, and vectors. Click <strong>Download</strong> on any image without creating an account.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://stocksnap.io/" target="_blank" rel="noopener noreferrer">StockSnap.io</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">CC0</span>
+              </div>
+              <p>All photos are CC0 (public domain). Download any size for free with one click.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://negativespace.co/" target="_blank" rel="noopener noreferrer">NegativeSpace</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">CC0</span>
+              </div>
+              <p>CC0 photography. Click a photo → <strong>Download</strong>. No registration.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://picjumbo.com/" target="_blank" rel="noopener noreferrer">Picjumbo</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Free stock photos for personal and commercial use. Direct download, no signup.</p>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://burst.shopify.com/" target="_blank" rel="noopener noreferrer">Burst (by Shopify)</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+              </div>
+              <p>Free stock photo library. Click any photo → <strong>Download free</strong>. Good for professional-looking backgrounds.</p>
+            </article>
+          </div>
+        </details>
+
+        <!-- FONTS -->
+        <details id="fonts" class="resource-dropdown">
+          <summary><span class="dropdown-icon" aria-hidden="true">🔤</span> Free fonts</summary>
+          <div class="dropdown-body">
+            <p>Swap the font on your portfolio by changing one line in your HTML <code>&lt;head&gt;</code> and one line in your CSS.</p>
+
+            <article class="resource-card">
+              <h3><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Open Source</span>
+              </div>
+              <p>1,500+ free fonts. Pick a font, click <strong>Get font</strong> → <strong>Get embed code</strong> → copy the <code>&lt;link&gt;</code> tag into your HTML head.</p>
+              <ol class="how-to">
+                <li>Search for a font (e.g. "Inter", "Lora", "Merriweather").</li>
+                <li>Click <strong>Get font</strong> → <strong>Get embed code</strong>.</li>
+                <li>Copy the <code>&lt;link&gt;</code> line into your theme's <code>&lt;head&gt;</code>.</li>
+                <li>In your CSS, change <code>font-family</code> to the font name.</li>
+              </ol>
+            </article>
+
+            <article class="resource-card">
+              <h3><a href="https://fontshare.com/" target="_blank" rel="noopener noreferrer">Fontshare</a></h3>
+              <div class="resource-badges">
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-no-account">No account</span>
+                <span class="badge badge-license">Free for commercial use</span>
+              </div>
+              <p>High-quality free fonts from Indian Type Foundry. Click a font → <strong>Download</strong> or use the CDN embed link. No signup for browsing and embedding.</p>
+            </article>
+          </div>
+        </details>
+
+        <!-- PLUG IN -->
+        <details id="plug-in" class="resource-dropdown" open>
+          <summary><span class="dropdown-icon" aria-hidden="true">🔌</span> How to plug assets into your site</summary>
+          <div class="dropdown-body">
+            <p>Quick reference for using everything above in your portfolio template.</p>
+
+            <div class="workflow-box">
+              <strong>Photos &amp; downloaded SVGs</strong>
+              <ol>
+                <li>Download the file to your computer.</li>
+                <li>On GitHub, go to your <code>assets/</code> folder → <strong>Add file</strong> → <strong>Upload files</strong>.</li>
+                <li>Drag the file in → <strong>Commit changes</strong>.</li>
+                <li>In your theme HTML, reference it: <code>&lt;img src="../assets/yourfile.jpg" alt="Description"&gt;</code></li>
+              </ol>
+            </div>
+
+            <div class="workflow-box">
+              <strong>Icons (copied SVG code)</strong>
+              <ol>
+                <li>Copy SVG from Heroicons, Lucide, etc.</li>
+                <li>In your theme HTML, paste the SVG code where you want the icon to appear.</li>
+                <li>Add <code>aria-hidden="true"</code> to decorative icons, or <code>aria-label="Email"</code> if it's meaningful.</li>
+                <li>To resize, add <code>width="24" height="24"</code> to the SVG tag.</li>
+              </ol>
+            </div>
+
+            <div class="workflow-box">
+              <strong>Colors (hex codes)</strong>
+              <ol>
+                <li>Generate or pick colors using Coolors or Adobe Color.</li>
+                <li>Check contrast on WebAIM.</li>
+                <li>Open <code>css/[your-layout].css</code> on GitHub.</li>
+                <li>Replace hex values in the <strong>CHANGE YOUR COLORS HERE</strong> section.</li>
+                <li>Commit → hard-refresh your live site.</li>
+              </ol>
+            </div>
+
+            <div class="workflow-box">
+              <strong>Fonts (Google Fonts)</strong>
+              <ol>
+                <li>Get the <code>&lt;link&gt;</code> embed code from fonts.google.com.</li>
+                <li>Paste it in your theme HTML's <code>&lt;head&gt;</code> (near the other font links).</li>
+                <li>In your CSS file, update <code>font-family</code> to match.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+      </section>
+
+      <section id="copilot" class="guide-step">
         <h2>Using GitHub Copilot</h2>
         <p>Copilot can rewrite your bio, suggest project descriptions, or help fix links. Open your file for editing on GitHub, then use Copilot Chat and try:</p>
         <ul>
           <li><em>"Rewrite the about section for a PhD application in neuroscience"</em></li>
           <li><em>"Make this experience bullet more professional"</em></li>
           <li><em>"What does EDIT HERE — EMAIL mean in this file?"</em></li>
+          <li><em>"I copied this hex color #7f1d1d from Coolors — where do I paste it in editorial.css?"</em></li>
         </ul>
       </section>
 

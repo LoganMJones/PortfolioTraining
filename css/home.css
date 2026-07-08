@@ -43,6 +43,12 @@ a { color: var(--home-accent); }
   text-decoration: none;
 }
 
+.home-resource-note {
+  font-size: 0.9375rem;
+  color: var(--home-muted);
+  margin: 1rem 0 0;
+}
+
 .theme-grid {
   display: grid;
   gap: 1.25rem;
