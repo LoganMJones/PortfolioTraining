@@ -334,6 +334,73 @@ body {
 
 .guide a { color: #2563eb; }
 
+.guide-subhead {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.section-note {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 3px solid #94a3b8;
+}
+
+.file-tree-compare {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (min-width: 40rem) {
+  .file-tree-compare { grid-template-columns: 1fr 1fr; }
+}
+
+.file-tree {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.file-tree--after {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.file-tree-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.file-tree pre {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  color: #334155;
+}
+
+.copilot-prompt {
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.copilot-prompt strong { color: #fff; }
+
 @media (prefers-reduced-motion: reduce) {
   .resource-dropdown summary::after { transition: none; }
 }

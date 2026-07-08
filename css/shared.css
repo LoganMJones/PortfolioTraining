@@ -278,4 +278,6 @@ figcaption {
 
 @media (prefers-reduced-motion: reduce) {
   .theme-switcher a { transition: none; }
+  .file-download { transition: none; }
+  .brut-link { transition: none; }
 }

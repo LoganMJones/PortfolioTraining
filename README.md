@@ -38,6 +38,8 @@ Ten portfolio designs for graduate school and professional development — from 
 
 Every layout shares a **black bar at the top** so you can switch between them like separate pages.
 
+After you pick one, follow the **[slim-down guide](guide.html#single-theme)** to remove the other layouts and make yours the homepage.
+
 ---
 
 ## Quick customization

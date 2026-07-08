@@ -52,6 +52,10 @@ a { color: var(--term-blue); }
 .term-cursor { color: var(--term-green); animation: blink 1s step-end infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
+@media (prefers-reduced-motion: reduce) {
+  .term-cursor { animation: none; opacity: 1; }
+}
+
 .term-notice, .term-tip { font-family: system-ui, sans-serif; font-size: 0.875rem; margin-bottom: 1rem; }
 .term-notice a { color: #fca5a5; }
 

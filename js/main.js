@@ -62,4 +62,24 @@
   } else {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
   }
+
+  var deckSlides = document.querySelectorAll(".deck-slide[id]");
+  var deckDots = document.querySelectorAll(".deck-dots a[href^='#']");
+
+  if (deckSlides.length && deckDots.length) {
+    var deckObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            deckDots.forEach(function (dot) {
+              dot.setAttribute("aria-current", dot.getAttribute("href") === "#" + id ? "true" : "false");
+            });
+          }
+        });
+      },
+      { root: document.querySelector(".deck"), threshold: 0.55 }
+    );
+    deckSlides.forEach(function (slide) { deckObserver.observe(slide); });
+  }
 })();
